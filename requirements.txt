@@ -13,5 +13,6 @@ lifelines>=0.29
 statsmodels>=0.14
 biopython>=1.84
 GEOparse>=2.0
+streamlit>=1.40
 xenaPython>=1.0.14
 xgboost>=3.4

@@ -1,0 +1,9 @@
+{
+  "age": 55.5,
+  "ca125": 87.2,
+  "clinical_features": [
+    "age",
+    "ca125"
+  ],
+  "policy": "median values fitted on the curated GSE94533 Stage I/II cancer versus benign/control training cohort"
+}

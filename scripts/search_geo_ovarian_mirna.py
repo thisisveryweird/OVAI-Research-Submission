@@ -13,6 +13,7 @@ import logging
 import os
 import re
 import sys
+import tempfile
 import time
 from dataclasses import dataclass
 from pathlib import Path
@@ -27,6 +28,7 @@ PROJECT = Path(__file__).resolve().parents[1]
 DEFAULT_REPORT = PROJECT / "reports" / "potential_external_datasets.md"
 DEFAULT_TOOL = "ovai-geo-ovarian-mirna-scout"
 DEFAULT_RETMAX = 100
+DEFAULT_TIMEOUT_SECONDS = 30
 NO_TISSUE_TERMS = (
     "tissue",
     "tumor sample",
@@ -76,7 +78,12 @@ def configure_logging(verbose: bool) -> None:
     )
 
 
-def configure_entrez(email: str | None, api_key: str | None, tool: str) -> None:
+def configure_entrez(
+    email: str | None,
+    api_key: str | None,
+    tool: str,
+    timeout_seconds: int,
+) -> None:
     """Configure Entrez contact information and refuse anonymous misuse."""
 
     resolved_email = email or os.environ.get("NCBI_EMAIL")
@@ -87,11 +94,13 @@ def configure_entrez(email: str | None, api_key: str | None, tool: str) -> None:
     Entrez.email = resolved_email
     Entrez.tool = tool
     Entrez.api_key = api_key or os.environ.get("NCBI_API_KEY")
+    Entrez.timeout = timeout_seconds
     LOGGER.info(
         "Configured Entrez with tool=%s api_key=%s",
         tool,
         "yes" if Entrez.api_key else "no; using <=3 requests/second",
     )
+    LOGGER.info("Entrez request timeout=%ss", timeout_seconds)
 
 
 def as_text(value: Any) -> str:
@@ -174,7 +183,18 @@ def fetch_summaries(uids: Sequence[str], limiter: RateLimiter) -> list[Mapping[s
         id=", ".join(uids),
         retmode="xml",
     )
-    documents = result.get("DocumentSummarySet", {}).get("DocumentSummary", [])
+    if isinstance(result, Mapping):
+        summary_set = result.get("DocumentSummarySet", result)
+        if isinstance(summary_set, Mapping):
+            documents = summary_set.get("DocumentSummary", [])
+        else:
+            documents = summary_set
+    else:
+        # Biopython returns the XML DocumentSummarySet as a ListElement for
+        # retmode=xml, with each list item already representing one summary.
+        documents = result
+    if isinstance(documents, Mapping):
+        documents = [documents]
     return [dict(document) for document in documents]
 
 
@@ -194,6 +214,9 @@ def parse_platform(record: Mapping[str, Any]) -> str:
 
     raw = first_field(record, ("platformacc", "platform", "gpl", "platforms"))
     platforms = sorted(set(re.findall(r"GPL\d+", raw, flags=re.IGNORECASE)))
+    if not platforms:
+        numeric_ids = sorted(set(re.findall(r"(?<!\d)\d{4,6}(?!\d)", raw)))
+        platforms = [f"GPL{platform_id}" for platform_id in numeric_ids]
     return ", ".join(platforms) if platforms else (raw or "Unknown")
 
 
@@ -307,7 +330,13 @@ def write_report(
         "- This scout does not download expression matrices and does not infer patient-level independence.",
     ])
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text("\n".join(lines) + "\n")
+    report_text = "\n".join(lines) + "\n"
+    with tempfile.NamedTemporaryFile(
+        "w", encoding="utf-8", dir=path.parent, delete=False
+    ) as temporary:
+        temporary.write(report_text)
+        temporary_path = Path(temporary.name)
+    temporary_path.replace(path)
 
 
 def parse_args() -> argparse.Namespace:
@@ -317,6 +346,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--retmax", type=int, default=DEFAULT_RETMAX, help="Maximum GEO series to inspect.")
     parser.add_argument("--output", type=Path, default=DEFAULT_REPORT, help="Markdown report path.")
     parser.add_argument("--tool", default=DEFAULT_TOOL, help="Entrez tool identifier.")
+    parser.add_argument(
+        "--timeout",
+        type=int,
+        default=DEFAULT_TIMEOUT_SECONDS,
+        help="Entrez request timeout in seconds.",
+    )
     parser.add_argument("--verbose", action="store_true", help="Enable debug logging.")
     return parser.parse_args()
 
@@ -326,7 +361,9 @@ def main() -> int:
     configure_logging(args.verbose)
     if args.retmax < 1 or args.retmax > 1000:
         raise ValueError("--retmax must be between 1 and 1000.")
-    configure_entrez(args.email, args.api_key, args.tool)
+    if args.timeout < 1:
+        raise ValueError("--timeout must be at least 1 second.")
+    configure_entrez(args.email, args.api_key, args.tool, args.timeout)
     interval = 0.11 if (args.api_key or os.environ.get("NCBI_API_KEY")) else 0.34
     limiter = RateLimiter(interval)
     LOGGER.info("Searching GEO with query: %s", QUERY)

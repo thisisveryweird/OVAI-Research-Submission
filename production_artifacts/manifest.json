@@ -1,0 +1,27 @@
+{
+  "source": "reports/error_analysis_predictions.csv",
+  "endpoint": "GSE94533 Stage I/II invasive cancer versus benign/control",
+  "n_training_samples": 113,
+  "positive_samples": 52,
+  "negative_samples": 61,
+  "features": [
+    "hsa-miR-200b-3p",
+    "hsa-miR-296-3p",
+    "hsa-miR-6826-5p",
+    "hsa-miR-32-3p",
+    "hsa-miR-1255a",
+    "age",
+    "ca125",
+    "mirna_200b_ca125",
+    "mirna_296_age"
+  ],
+  "miRNA_transform": "log1p(max(value, 0))",
+  "interaction_features": {
+    "mirna_200b_ca125": "hsa-miR-200b-3p_log1p * ca125_imputed",
+    "mirna_296_age": "hsa-miR-296-3p_log1p * age_imputed"
+  },
+  "clinical_transform": "median imputation using imputation_defaults.json",
+  "scaler": "StandardScaler fitted after imputation",
+  "model": "LogisticRegression(C=0.3, class_weight=balanced, solver=liblinear)",
+  "random_state": 20260919
+}
