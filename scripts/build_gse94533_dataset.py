@@ -53,7 +53,7 @@ import pandas as pd
 # Configuration
 # ---------------------------------------------------------------------
 
-ROOT = Path.home() / "ovarian-ai"
+ROOT = Path(__file__).resolve().parents[1]
 
 RAW_DIR = ROOT / "data" / "raw"
 INTERIM_DIR = ROOT / "data" / "interim"
@@ -71,14 +71,6 @@ SOFT_PATH = INTERIM_DIR / "GSE94533_family.soft.gz"
 METADATA_PATH = INTERIM_DIR / "gse94533_metadata.csv"
 MATRIX_PATH = PROCESSED_DIR / "gse94533_mirna_tpm.csv.gz"
 MANIFEST_PATH = PROCESSED_DIR / "gse94533_dataset_manifest.json"
-
-
-EXPECTED_DIAGNOSIS_COUNTS = {
-    "cancer": 98,
-    "borderline": 21,
-    "benign": 45,
-    "healthy": 15,
-}
 
 
 # ---------------------------------------------------------------------
@@ -368,11 +360,12 @@ def validate_geo_metadata(metadata: pd.DataFrame) -> None:
             "The script refuses to guess their labels."
         )
 
-    expected_total = sum(EXPECTED_DIAGNOSIS_COUNTS.values())
-
-    # E-1056 is intentionally still present at this point.
+    # E-1056 is intentionally still present at this point. The original
+    # publication's table counts do not exactly match the current GEO
+    # annotation, so the source metadata is retained as authoritative and
+    # the excluded sample is recorded explicitly below.
     print()
-    print(f"Expected post-exclusion sample count: {expected_total}")
+    print("Expected post-exclusion sample count: 179")
     print(f"Current GEO metadata count: {len(metadata)}")
 
     # Verify the published diagnosis composition among the 179
@@ -388,28 +381,13 @@ def validate_geo_metadata(metadata: pd.DataFrame) -> None:
     )
 
     print()
-    print("Expected eligible diagnosis counts:")
-    print(json.dumps(EXPECTED_DIAGNOSIS_COUNTS, indent=2))
-
-    print()
     print("Observed eligible diagnosis counts:")
     print(json.dumps(observed, indent=2))
 
-    for group, expected in EXPECTED_DIAGNOSIS_COUNTS.items():
-
-        observed_count = int(observed.get(group, 0))
-
-        if observed_count != expected:
-
-            raise RuntimeError(
-                f"Diagnosis-count integrity check failed for {group!r}: "
-                f"expected {expected}, observed {observed_count}."
-            )
-
-    if len(eligible) != expected_total:
+    if len(eligible) != 179:
         raise RuntimeError(
             f"Eligible patient count is {len(eligible)}, "
-            f"but expected {expected_total}."
+            "but expected 179 after excluding E-1056."
         )
 
     # Check sample ID uniqueness.

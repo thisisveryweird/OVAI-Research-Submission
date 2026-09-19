@@ -6,7 +6,7 @@ import re
 import urllib.request
 import pandas as pd
 
-ROOT = Path.home() / "ovarian-ai"
+ROOT = Path(__file__).resolve().parents[1]
 INTERIM = ROOT / "data" / "interim"
 RAW = ROOT / "data" / "raw"
 

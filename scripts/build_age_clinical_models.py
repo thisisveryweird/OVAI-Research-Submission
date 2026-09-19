@@ -23,7 +23,7 @@ from sklearn.preprocessing import StandardScaler
 
 warnings.filterwarnings("ignore")
 
-ROOT = Path.home() / "ovarian-ai"
+ROOT = Path(__file__).resolve().parents[1]
 
 DATA = (
     ROOT

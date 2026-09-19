@@ -15,7 +15,7 @@ import pandas as pd
 # PROJECT PATHS
 # ================================================================
 
-ROOT = Path.home() / "ovarian-ai"
+ROOT = Path(__file__).resolve().parents[1]
 
 RAW_DIR = ROOT / "data" / "raw"
 INTERIM_DIR = ROOT / "data" / "interim"
