@@ -1,0 +1,33 @@
+# Every modality table must contain one row per patient/sample unit and a
+# stable patient_id column. Do NOT use a sample ID that changes across assays
+# unless you also have a validated patient-level mapping.
+
+required:
+  patient_id: string
+  label: 0_or_1
+
+optional_clinical:
+  age: numeric
+  menopausal_status: categorical
+  pelvic_pain: binary
+  abdominal_bloating: binary
+  early_satiety: binary
+  urinary_frequency_or_urgency: binary
+  abnormal_vaginal_bleeding: binary
+  family_history_ovarian_cancer: binary
+  family_history_breast_cancer: binary
+  ca125: numeric
+  he4: numeric
+  o_rads_score: numeric_or_categorical
+
+modalities:
+  mirna: wide_numeric_table
+  methylation: wide_numeric_table
+  fragmentomics: wide_numeric_table
+  cnv: wide_numeric_table
+  mutations: wide_numeric_table_or_pathway_features
+  mrna: wide_numeric_table
+
+missingness:
+  each_modality_gets_presence_mask: true
+  missing_is_not_equal_to_biological_zero: true

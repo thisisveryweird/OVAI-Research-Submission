@@ -1,0 +1,16 @@
+OVARIAN AI — START HERE
+
+1. cd ~/ovarian-ai
+2. source .venv/bin/activate
+3. bash scripts/run_public_mirna_baseline.sh
+
+The baseline runner downloads public GSE94533 serum-miRNA files, audits their
+Excel structure, tries to identify the phenotype without guessing, trains a
+patient-level logistic-regression baseline, and runs a PyTorch fusion-model
+smoke test.
+
+Do NOT treat any model output as medical advice or a clinical diagnosis.
+
+After the baseline works, the next development step is to create a truly
+patient-linked multimodal cohort table rather than fabricating multimodal rows
+from unrelated studies.

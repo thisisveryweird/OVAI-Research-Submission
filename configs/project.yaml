@@ -1,0 +1,53 @@
+project:
+  name: ovarian_multimodal_ai
+  version: 0.1.0
+  task: early_detection_of_epithelial_ovarian_cancer
+  clinical_status: research_prototype_only
+
+paths:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+  external: data/external
+  models: models
+  reports: reports
+
+modalities:
+  clinical:
+    description: symptoms, age, menopausal status, CA-125, HE4, family history, imaging-derived structured variables
+    required_for_full_model: true
+  mirna:
+    description: circulating serum miRNA sequencing
+    dataset: GSE94533
+  methylation:
+    description: cfDNA CpG methylation
+    reference_study: MethylBERT-EOC
+    study_accession: HRA011451
+  fragmentomics:
+    description: cfDNA fragment size and copy-number derived features
+    status: scaffold
+  mutations:
+    description: somatic alterations / pathway-level genomic features
+    status: scaffold
+  cnv:
+    description: copy-number alterations
+    status: scaffold
+  mrna:
+    description: tissue or circulating RNA expression, preferably patient-linked if used in fusion
+    status: reference_or_future_modality
+
+modeling:
+  seed: 42
+  test_size: 0.20
+  validation_size: 0.20
+  max_missing_fraction_for_score: 0.70
+  classification_target: invasive_ovarian_cancer
+  secondary_target: early_stage_ovarian_cancer
+
+safety:
+  no_clinical_use: true
+  patient_level_split_only: true
+  refuse_ambiguous_labels: true
+  report_calibration: true
+  report_auprc: true
+  report_sensitivity_specificity: true
