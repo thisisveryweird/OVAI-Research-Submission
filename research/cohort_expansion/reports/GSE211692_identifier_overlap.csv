@@ -1,0 +1,6 @@
+cohort,GSE211692_unique_sample_titles,comparator_roster_n,exact_identifier_overlap,normalized_identifier_overlap,comparison_method,independence_proven,interpretation
+GSE94533,16190,179,0,0,local GEO-aligned prediction rows; 179 unique patients,False,"No exact overlap detected, but independence cannot be proven from available identifiers."
+GSE106817,16190,4046,0,0,"official SOFT roster: 4,046 samples; all titles compared directly",False,"No exact overlap detected, but independence cannot be proven from available identifiers."
+GSE113486,16190,972,0,0,official SOFT roster: 972 samples; all titles compared directly,False,"No exact overlap detected, but independence cannot be proven from available identifiers."
+Gockley 2022,16190,275,0,0,patient sample IDs in audited workbook,False,"No exact overlap detected, but independence cannot be proven from available identifiers."
+2024 adnexal FirePlex,16190,678,0,0,patient IDs in audited workbook,False,"No exact overlap detected, but independence cannot be proven from available identifiers."

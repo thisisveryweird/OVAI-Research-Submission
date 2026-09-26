@@ -1,0 +1,7 @@
+comparison,cancer_n,control_n,status,notes
+all cancer vs all workbook controls,286,392,reconstructible; control subtype pooled,This is not a benign-mass-only comparison.
+all cancer vs benign adnexal mass,286,not identifiable,not reconstructible,No patient-level control subtype field distinguishes benign mass from healthy control.
+all cancer vs healthy control,286,not identifiable,not reconstructible,No patient-level control subtype field distinguishes healthy control from benign mass.
+unambiguous Stage I/II cancer vs all workbook controls,56,392,reconstructible; grouped stage and pooled controls,"56 unique, unambiguous early-stage cancer IDs; excludes one conflicting-stage ID and cancers without histology rows."
+unambiguous Stage I/II cancer vs benign adnexal mass,56,not identifiable,not reconstructible,Control subtype is not encoded at patient level.
+unambiguous Stage I/II cancer vs healthy control,56,not identifiable,not reconstructible,Control subtype is not encoded at patient level.

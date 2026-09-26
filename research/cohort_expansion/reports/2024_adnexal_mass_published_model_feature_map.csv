@@ -1,0 +1,11 @@
+published_model_feature,2024_identifier,exact_match,measured,notes
+hsa-miR-320e,hsa-mir-320e,True,True,Exact mature-name match after case/format normalization.
+hsa-miR-195-5p,hsa-mir-195-5p,True,True,Exact mature-name match after case/format normalization.
+hsa-miR-103-3p,,False,False,No exact workbook assay identifier; not treated as an alias.
+hsa-miR-320c,hsa-mir-320c,True,True,Exact mature-name match after case/format normalization.
+cel-miR-39-3p,cel-mir-39-3p,True,True,Exact mature-name match after case/format normalization.
+hsa-miR-200c-3p,hsa-mir-200c-3p,True,True,Exact mature-name match after case/format normalization.
+hsa-miR-770-5p,hsa-mir-770-5p,True,True,Exact mature-name match after case/format normalization.
+hsa-miR-122-5p,hsa-mir-122-5p,True,True,Exact mature-name match after case/format normalization.
+hsa-miR-19a-3p,hsa-mir-19a-3p,True,True,Exact mature-name match after case/format normalization.
+hsa-miR-424-5p,hsa-mir-424-5p,True,True,Exact mature-name match after case/format normalization.

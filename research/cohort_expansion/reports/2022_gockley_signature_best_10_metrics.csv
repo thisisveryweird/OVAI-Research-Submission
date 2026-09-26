@@ -1,0 +1,17 @@
+endpoint,subset,n_cases,n_controls,n_total,roc_auc_margin,sensitivity_pmml_argmax,specificity_pmml_argmax,true_negative,false_positive,false_negative,true_positive,decision_rule,score_for_auc
+stage_I_II_cancer_vs_benign_mass,All,72,100,172,0.821388888888889,0.5277777777777778,0.93,93,7,34,38,PMML maximum output neuron; no threshold tuned,malignant output minus benign/control output
+stage_I_II_cancer_vs_benign_mass,Test,14,20,34,0.7142857142857144,0.5,1.0,20,0,7,7,PMML maximum output neuron; no threshold tuned,malignant output minus benign/control output
+stage_I_II_cancer_vs_benign_mass,Training,43,60,103,0.848062015503876,0.4883720930232558,0.9166666666666666,55,5,22,21,PMML maximum output neuron; no threshold tuned,malignant output minus benign/control output
+stage_I_II_cancer_vs_benign_mass,Validation,15,20,35,0.85,0.6666666666666666,0.9,18,2,5,10,PMML maximum output neuron; no threshold tuned,malignant output minus benign/control output
+stage_I_II_cancer_vs_benign_plus_healthy,All,72,200,272,0.8426388888888889,0.5277777777777778,0.96,192,8,34,38,PMML maximum output neuron; no threshold tuned,malignant output minus benign/control output
+stage_I_II_cancer_vs_benign_plus_healthy,Test,14,40,54,0.7196428571428571,0.5,1.0,40,0,7,7,PMML maximum output neuron; no threshold tuned,malignant output minus benign/control output
+stage_I_II_cancer_vs_benign_plus_healthy,Training,43,120,163,0.873062015503876,0.4883720930232558,0.95,114,6,22,21,PMML maximum output neuron; no threshold tuned,malignant output minus benign/control output
+stage_I_II_cancer_vs_benign_plus_healthy,Validation,15,40,55,0.8866666666666667,0.6666666666666666,0.95,38,2,5,10,PMML maximum output neuron; no threshold tuned,malignant output minus benign/control output
+all_cancer_vs_benign_mass,All,75,100,175,0.8165333333333333,0.52,0.93,93,7,36,39,PMML maximum output neuron; no threshold tuned,malignant output minus benign/control output
+all_cancer_vs_benign_mass,Test,15,20,35,0.7266666666666666,0.4666666666666667,1.0,20,0,8,7,PMML maximum output neuron; no threshold tuned,malignant output minus benign/control output
+all_cancer_vs_benign_mass,Training,45,60,105,0.837037037037037,0.4888888888888889,0.9166666666666666,55,5,23,22,PMML maximum output neuron; no threshold tuned,malignant output minus benign/control output
+all_cancer_vs_benign_mass,Validation,15,20,35,0.85,0.6666666666666666,0.9,18,2,5,10,PMML maximum output neuron; no threshold tuned,malignant output minus benign/control output
+all_cancer_vs_benign_plus_healthy,All,75,200,275,0.8385333333333334,0.52,0.96,192,8,36,39,PMML maximum output neuron; no threshold tuned,malignant output minus benign/control output
+all_cancer_vs_benign_plus_healthy,Test,15,40,55,0.7316666666666666,0.4666666666666667,1.0,40,0,8,7,PMML maximum output neuron; no threshold tuned,malignant output minus benign/control output
+all_cancer_vs_benign_plus_healthy,Training,45,120,165,0.8637037037037036,0.4888888888888889,0.95,114,6,23,22,PMML maximum output neuron; no threshold tuned,malignant output minus benign/control output
+all_cancer_vs_benign_plus_healthy,Validation,15,40,55,0.8866666666666667,0.6666666666666666,0.95,38,2,5,10,PMML maximum output neuron; no threshold tuned,malignant output minus benign/control output

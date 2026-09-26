@@ -1,0 +1,5 @@
+split,total_n,cancer_n,benign_n,healthy_n,stage_I_n,stage_II_n,stage_IIIA1_n,stage_IIIA2_n,published_endpoint_n,strict_stage_I_II_cases_n,stage_accounts_for_cancer_rows
+All,275,75,100,100,50,22,2,1,275,72,True
+Training,165,45,60,60,30,13,1,1,165,43,True
+Test,55,15,20,20,9,5,1,0,55,14,True
+Validation,55,15,20,20,11,4,0,0,55,15,True

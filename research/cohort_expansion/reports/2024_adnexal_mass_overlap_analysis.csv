@@ -1,0 +1,28 @@
+feature,present_in_2024,present_in_current_OVAI,present_in_historical_OVAI,present_in_published_2024_model,measurement_identifier,measurement_type,notes
+hsa-miR-200b-3p,False,True,False,False,,not measured,No exact 2024 FirePlex panel identifier; no fuzzy/family substitution used.
+hsa-miR-296-3p,False,True,False,False,,not measured,No exact 2024 FirePlex panel identifier; no fuzzy/family substitution used.
+hsa-miR-6826-5p,False,True,False,False,,not measured,No exact 2024 FirePlex panel identifier; no fuzzy/family substitution used.
+hsa-miR-32-3p,False,True,False,False,,not measured,No exact 2024 FirePlex panel identifier; no fuzzy/family substitution used.
+hsa-miR-1255a,False,True,False,False,,not measured,No exact 2024 FirePlex panel identifier; no fuzzy/family substitution used.
+hsa-miR-23b-3p,True,False,True,False,hsa-mir-23b-3p,MFI (as stated in workbook column header),Exact workbook mature-name match; all 678 values present.
+hsa-miR-29a-3p,True,False,True,False,hsa-mir-29a-3p,MFI (as stated in workbook column header),Exact workbook mature-name match; all 678 values present.
+hsa-miR-32-5p,True,False,True,False,hsa-mir-32-5p,MFI (as stated in workbook column header),Exact workbook mature-name match; all 678 values present.
+hsa-miR-92a-3p,True,False,True,False,hsa-mir-92a-3p,MFI (as stated in workbook column header),Exact workbook mature-name match; all 678 values present.
+hsa-miR-150-5p,True,False,True,False,hsa-mir-150-5p,MFI (as stated in workbook column header),Exact workbook mature-name match; all 678 values present.
+hsa-miR-200a-3p,False,False,True,False,,not measured,No exact 2024 FirePlex panel identifier; no fuzzy/family substitution used.
+hsa-miR-200c-3p,True,False,True,True,hsa-mir-200c-3p,MFI (as stated in workbook column header),Exact workbook mature-name match; all 678 values present.
+hsa-miR-203a,False,False,True,False,,not measured,No exact 2024 FirePlex panel identifier; no fuzzy/family substitution used.
+hsa-miR-320c,True,False,True,True,hsa-mir-320c,MFI (as stated in workbook column header),Exact workbook mature-name match; all 678 values present.
+hsa-miR-320d,True,False,True,False,hsa-mir-320d,MFI (as stated in workbook column header),Exact workbook mature-name match; all 678 values present.
+hsa-miR-335-5p,False,False,True,False,,not measured,No exact 2024 FirePlex panel identifier; no fuzzy/family substitution used.
+hsa-miR-450b-5p,False,False,True,False,,not measured,No exact 2024 FirePlex panel identifier; no fuzzy/family substitution used.
+hsa-miR-1246,False,False,True,False,,not measured,No exact 2024 FirePlex panel identifier; no fuzzy/family substitution used.
+hsa-miR-1307-5p,False,False,True,False,,not measured,No exact 2024 FirePlex panel identifier; no fuzzy/family substitution used.
+hsa-miR-320e,True,False,False,True,hsa-mir-320e,MFI (as stated in workbook column header),Exact workbook mature-name match; all 678 values present.
+hsa-miR-195-5p,True,False,False,True,hsa-mir-195-5p,MFI (as stated in workbook column header),Exact workbook mature-name match; all 678 values present.
+hsa-miR-103-3p,False,False,False,True,,not measured,No exact 2024 FirePlex panel identifier; no fuzzy/family substitution used.
+cel-miR-39-3p,True,False,False,True,cel-mir-39-3p,MFI (as stated in workbook column header),Exact workbook mature-name match; all 678 values present.
+hsa-miR-770-5p,True,False,False,True,hsa-mir-770-5p,MFI (as stated in workbook column header),Exact workbook mature-name match; all 678 values present.
+hsa-miR-122-5p,True,False,False,True,hsa-mir-122-5p,MFI (as stated in workbook column header),Exact workbook mature-name match; all 678 values present.
+hsa-miR-19a-3p,True,False,False,True,hsa-mir-19a-3p,MFI (as stated in workbook column header),Exact workbook mature-name match; all 678 values present.
+hsa-miR-424-5p,True,False,False,True,hsa-mir-424-5p,MFI (as stated in workbook column header),Exact workbook mature-name match; all 678 values present.

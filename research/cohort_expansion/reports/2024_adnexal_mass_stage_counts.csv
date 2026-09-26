@@ -1,0 +1,33 @@
+published_split,stage_category,patient_count,worksheet_row_count,denominator_cancer,notes
+all,Stage I,not separately reported,not separately reported,286,Not separately reported; workbook only provides grouped I/II.
+all,Stage II,not separately reported,not separately reported,286,Not separately reported; workbook only provides grouped I/II.
+all,Stage III,not separately reported,not separately reported,286,Not separately reported; workbook only provides grouped III/IV.
+all,Stage IV,not separately reported,not separately reported,286,Not separately reported; workbook only provides grouped III/IV.
+all,stage I/II,56,59,286,Grouped stage only; not separable into Stage I versus II.
+all,stage III/IV,84,86,286,Grouped stage only; not separable into Stage III versus IV.
+all,Unknown (conflicting worksheet entries),1,2,286,The ASPIRA training split includes one patient with both Stage I/II and Stage III/IV records.
+all,Unknown (not present in histologies worksheet),145,0,286,Stage is not supplied for this patient.
+development/training,Stage I,not separately reported,not separately reported,191,Not separately reported; workbook only provides grouped I/II.
+development/training,Stage II,not separately reported,not separately reported,191,Not separately reported; workbook only provides grouped I/II.
+development/training,Stage III,not separately reported,not separately reported,191,Not separately reported; workbook only provides grouped III/IV.
+development/training,Stage IV,not separately reported,not separately reported,191,Not separately reported; workbook only provides grouped III/IV.
+development/training,stage I/II,31,34,191,Grouped stage only; not separable into Stage I versus II.
+development/training,stage III/IV,42,44,191,Grouped stage only; not separable into Stage III versus IV.
+development/training,Unknown (conflicting worksheet entries),1,2,191,The ASPIRA training split includes one patient with both Stage I/II and Stage III/IV records.
+development/training,Unknown (not present in histologies worksheet),117,0,191,Stage is not supplied for this patient.
+internal validation,Stage I,not separately reported,not separately reported,44,Not separately reported; workbook only provides grouped I/II.
+internal validation,Stage II,not separately reported,not separately reported,44,Not separately reported; workbook only provides grouped I/II.
+internal validation,Stage III,not separately reported,not separately reported,44,Not separately reported; workbook only provides grouped III/IV.
+internal validation,Stage IV,not separately reported,not separately reported,44,Not separately reported; workbook only provides grouped III/IV.
+internal validation,stage I/II,5,5,44,Grouped stage only; not separable into Stage I versus II.
+internal validation,stage III/IV,11,11,44,Grouped stage only; not separable into Stage III versus IV.
+internal validation,Unknown (conflicting worksheet entries),0,0,44,The ASPIRA training split includes one patient with both Stage I/II and Stage III/IV records.
+internal validation,Unknown (not present in histologies worksheet),28,0,44,Stage is not supplied for this patient.
+external validation,Stage I,not separately reported,not separately reported,51,Not separately reported; workbook only provides grouped I/II.
+external validation,Stage II,not separately reported,not separately reported,51,Not separately reported; workbook only provides grouped I/II.
+external validation,Stage III,not separately reported,not separately reported,51,Not separately reported; workbook only provides grouped III/IV.
+external validation,Stage IV,not separately reported,not separately reported,51,Not separately reported; workbook only provides grouped III/IV.
+external validation,stage I/II,20,20,51,Grouped stage only; not separable into Stage I versus II.
+external validation,stage III/IV,31,31,51,Grouped stage only; not separable into Stage III versus IV.
+external validation,Unknown (conflicting worksheet entries),0,0,51,The ASPIRA training split includes one patient with both Stage I/II and Stage III/IV records.
+external validation,Unknown (not present in histologies worksheet),0,0,51,Stage is not supplied for this patient.

@@ -1,0 +1,21 @@
+{
+  "analysis_name": "transportability_characterization",
+  "root": "/workspaces/OVAI",
+  "source_artifacts": [
+    "production_artifacts/manifest.json",
+    "reports/gse106817_phase5_results.json",
+    "reports/gse106817_phase5_distribution.csv",
+    "reports/gse106817_platform_shift_audit.json"
+  ],
+  "pipeline_policy": "No external labels were used for model selection, feature tuning, or threshold selection.",
+  "transformations_evaluated": [
+    "raw_values",
+    "log1p_values",
+    "within_dataset_standard",
+    "training_derived_standard",
+    "within_dataset_quantile",
+    "training_derived_quantile"
+  ],
+  "seed": 20260919,
+  "notes": "This study uses only saved OVAI outputs. It does not refit canonical models or claim improved transportability."
+}
