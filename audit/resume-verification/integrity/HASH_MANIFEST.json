@@ -1,0 +1,11 @@
+{
+  "audit/resume-verification/integrity/FILES_CREATED.csv": "691d3176172e885eb44dcbd53df92a8b365d6a9b23d9606354a8b9d1e5e9a59c",
+  "audit/resume-verification/integrity/REPORT.md": "8c049a02cc14783debee6737ee17465c41c9d3e5e6c1bdc75705186394c66e9e",
+  "audit/resume-verification/integrity/check_current.py": "85f4c93673a272d55506595644fb24308077ed1c726668ec6e8356bc9d4dc7e3",
+  "audit/resume-verification/integrity/evidence.json": "91d3b7096c0fc695a50cbc9a54940a1eeebc551b8553d8e5522c453d5ee51caa",
+  "audit/resume-verification/integrity/initial_snapshot.json": "668f346194f02cd48c2b779ebfcad3e2ad0b7553b00f57c5934a5cf9a86e107c",
+  "audit/resume-verification/integrity/integrity_helper.py": "9c792a5a264c23432ddcd7d320cde8b432cd3048ac990d6d70e5759840c930e8",
+  "audit/resume-verification/integrity/preservation_recheck.json": "defea220295ad25b5dd8dd4b5b0f6139c1120b35422870f25a148bed44dd2bb8",
+  "audit/resume-verification/integrity/synthetic/sample.txt": "03f9cb0aca1cd7a762e965f4cb9b328d3b6034b9c4de9e936ad2defa41973e1d",
+  "audit/resume-verification/integrity/synthetic_results.json": "fcda37e2cbf16a517f5705b4c7dea0dc0134054c05fefc5dfddb180a6e035bbd"
+}

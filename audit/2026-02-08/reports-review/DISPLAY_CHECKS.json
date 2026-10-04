@@ -1,0 +1,7578 @@
+{
+  "numeric_rows": [
+    {
+      "report": "clinical_ablation_results",
+      "line": 15,
+      "key": {
+        "endpoint": "all_cancer_vs_non_cancer",
+        "pipeline": "clinical_only",
+        "model": "calibrated_svm",
+        "imputation": "knn_ca125"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.642",
+          "stored": "0.6417008513931889",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.595",
+          "stored": "0.5953637770897833",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.686",
+          "stored": "0.6863157894736841",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.504",
+          "stored": "0.5044117647058823",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.235",
+          "stored": "0.23525369717677935",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 16,
+      "key": {
+        "endpoint": "all_cancer_vs_non_cancer",
+        "pipeline": "clinical_only",
+        "model": "calibrated_svm",
+        "imputation": "median"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.688",
+          "stored": "0.6879392414860682",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.665",
+          "stored": "0.6652902476780186",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.656",
+          "stored": "0.6563157894736842",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.674",
+          "stored": "0.674264705882353",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.221",
+          "stored": "0.22133493312626645",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 17,
+      "key": {
+        "endpoint": "all_cancer_vs_non_cancer",
+        "pipeline": "clinical_only",
+        "model": "regularized_logistic",
+        "imputation": "knn_ca125"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.648",
+          "stored": "0.6479044117647059",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.596",
+          "stored": "0.5955379256965945",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.552",
+          "stored": "0.5521052631578948",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.639",
+          "stored": "0.6389705882352941",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.235",
+          "stored": "0.2350036831509886",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 18,
+      "key": {
+        "endpoint": "all_cancer_vs_non_cancer",
+        "pipeline": "clinical_only",
+        "model": "regularized_logistic",
+        "imputation": "median"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.684",
+          "stored": "0.6838215944272446",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.635",
+          "stored": "0.6352012383900929",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.512",
+          "stored": "0.511578947368421",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.759",
+          "stored": "0.7588235294117647",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.225",
+          "stored": "0.2245433142376847",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 19,
+      "key": {
+        "endpoint": "all_cancer_vs_non_cancer",
+        "pipeline": "combined",
+        "model": "calibrated_svm",
+        "imputation": "knn_ca125"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.748",
+          "stored": "0.7482430340557276",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.693",
+          "stored": "0.6927399380804953",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.738",
+          "stored": "0.738421052631579",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.647",
+          "stored": "0.6470588235294118",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.214",
+          "stored": "0.2138187567443924",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 20,
+      "key": {
+        "endpoint": "all_cancer_vs_non_cancer",
+        "pipeline": "combined",
+        "model": "calibrated_svm",
+        "imputation": "median"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.750",
+          "stored": "0.7496091331269349",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.705",
+          "stored": "0.705123839009288",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.728",
+          "stored": "0.7278947368421054",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.682",
+          "stored": "0.6823529411764706",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.211",
+          "stored": "0.21080533823595968",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 21,
+      "key": {
+        "endpoint": "all_cancer_vs_non_cancer",
+        "pipeline": "combined",
+        "model": "regularized_logistic",
+        "imputation": "knn_ca125"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.753",
+          "stored": "0.7527438080495356",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.701",
+          "stored": "0.7010061919504645",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.708",
+          "stored": "0.7078947368421054",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.694",
+          "stored": "0.6941176470588235",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.211",
+          "stored": "0.2105200082047872",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 22,
+      "key": {
+        "endpoint": "all_cancer_vs_non_cancer",
+        "pipeline": "combined",
+        "model": "regularized_logistic",
+        "imputation": "median"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.762",
+          "stored": "0.7623974458204335",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.703",
+          "stored": "0.7026122291021671",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.687",
+          "stored": "0.6868421052631579",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.718",
+          "stored": "0.7183823529411765",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.207",
+          "stored": "0.2068610443327239",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 23,
+      "key": {
+        "endpoint": "all_cancer_vs_non_cancer",
+        "pipeline": "mirna_only",
+        "model": "calibrated_svm",
+        "imputation": "knn_ca125"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.736",
+          "stored": "0.7361397058823529",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.678",
+          "stored": "0.677592879256966",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.718",
+          "stored": "0.718421052631579",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.637",
+          "stored": "0.6367647058823529",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.215",
+          "stored": "0.2147686393463461",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 24,
+      "key": {
+        "endpoint": "all_cancer_vs_non_cancer",
+        "pipeline": "mirna_only",
+        "model": "calibrated_svm",
+        "imputation": "median"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.736",
+          "stored": "0.7361397058823529",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.678",
+          "stored": "0.677592879256966",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.718",
+          "stored": "0.718421052631579",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.637",
+          "stored": "0.6367647058823529",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.215",
+          "stored": "0.2147686393463461",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 25,
+      "key": {
+        "endpoint": "all_cancer_vs_non_cancer",
+        "pipeline": "mirna_only",
+        "model": "regularized_logistic",
+        "imputation": "knn_ca125"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.743",
+          "stored": "0.7425986842105262",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.680",
+          "stored": "0.6804373065015479",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.676",
+          "stored": "0.6763157894736842",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.685",
+          "stored": "0.6845588235294118",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.211",
+          "stored": "0.2113416385512536",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 26,
+      "key": {
+        "endpoint": "all_cancer_vs_non_cancer",
+        "pipeline": "mirna_only",
+        "model": "regularized_logistic",
+        "imputation": "median"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.743",
+          "stored": "0.7425986842105262",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.680",
+          "stored": "0.6804373065015479",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.676",
+          "stored": "0.6763157894736842",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.685",
+          "stored": "0.6845588235294118",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.211",
+          "stored": "0.2113416385512536",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 27,
+      "key": {
+        "endpoint": "early_stage_vs_benign_control",
+        "pipeline": "clinical_only",
+        "model": "calibrated_svm",
+        "imputation": "knn_ca125"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.565",
+          "stored": "0.5651107226107226",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.530",
+          "stored": "0.5304545454545455",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.211",
+          "stored": "0.21090909090909093",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.850",
+          "stored": "0.85",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.246",
+          "stored": "0.24618723560951422",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 28,
+      "key": {
+        "endpoint": "early_stage_vs_benign_control",
+        "pipeline": "clinical_only",
+        "model": "calibrated_svm",
+        "imputation": "median"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.665",
+          "stored": "0.6646212121212122",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.601",
+          "stored": "0.6008275058275059",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.349",
+          "stored": "0.34909090909090906",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.853",
+          "stored": "0.8525641025641025",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.235",
+          "stored": "0.23471455003357522",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 29,
+      "key": {
+        "endpoint": "early_stage_vs_benign_control",
+        "pipeline": "clinical_only",
+        "model": "regularized_logistic",
+        "imputation": "knn_ca125"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.586",
+          "stored": "0.5862762237762238",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.567",
+          "stored": "0.5666899766899768",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.444",
+          "stored": "0.44363636363636366",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.690",
+          "stored": "0.6897435897435897",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.248",
+          "stored": "0.2475107101157791",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 30,
+      "key": {
+        "endpoint": "early_stage_vs_benign_control",
+        "pipeline": "clinical_only",
+        "model": "regularized_logistic",
+        "imputation": "median"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.642",
+          "stored": "0.6416958041958041",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.601",
+          "stored": "0.601048951048951",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.464",
+          "stored": "0.4636363636363637",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.738",
+          "stored": "0.7384615384615385",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.241",
+          "stored": "0.24082836733286786",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 31,
+      "key": {
+        "endpoint": "early_stage_vs_benign_control",
+        "pipeline": "combined",
+        "model": "calibrated_svm",
+        "imputation": "knn_ca125"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.813",
+          "stored": "0.8134149184149184",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.774",
+          "stored": "0.7743123543123543",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.713",
+          "stored": "0.7127272727272727",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.836",
+          "stored": "0.8358974358974359",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.162",
+          "stored": "0.16227258541301365",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 32,
+      "key": {
+        "endpoint": "early_stage_vs_benign_control",
+        "pipeline": "combined",
+        "model": "calibrated_svm",
+        "imputation": "median"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.821",
+          "stored": "0.820990675990676",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.801",
+          "stored": "0.8010955710955712",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.751",
+          "stored": "0.750909090909091",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.851",
+          "stored": "0.8512820512820513",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.162",
+          "stored": "0.16181612102502335",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 33,
+      "key": {
+        "endpoint": "early_stage_vs_benign_control",
+        "pipeline": "combined",
+        "model": "regularized_logistic",
+        "imputation": "knn_ca125"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.826",
+          "stored": "0.8258158508158508",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.801",
+          "stored": "0.8010955710955712",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.751",
+          "stored": "0.750909090909091",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.851",
+          "stored": "0.8512820512820513",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.161",
+          "stored": "0.1606026440955904",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 34,
+      "key": {
+        "endpoint": "early_stage_vs_benign_control",
+        "pipeline": "combined",
+        "model": "regularized_logistic",
+        "imputation": "median"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.827",
+          "stored": "0.8274825174825174",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.793",
+          "stored": "0.7927622377622378",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.751",
+          "stored": "0.750909090909091",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.835",
+          "stored": "0.8346153846153846",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.161",
+          "stored": "0.16076801865996598",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 35,
+      "key": {
+        "endpoint": "early_stage_vs_benign_control",
+        "pipeline": "mirna_only",
+        "model": "calibrated_svm",
+        "imputation": "knn_ca125"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.808",
+          "stored": "0.808111888111888",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.773",
+          "stored": "0.7727622377622378",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.711",
+          "stored": "0.7109090909090908",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.835",
+          "stored": "0.8346153846153846",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.164",
+          "stored": "0.1641947109233627",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 36,
+      "key": {
+        "endpoint": "early_stage_vs_benign_control",
+        "pipeline": "mirna_only",
+        "model": "calibrated_svm",
+        "imputation": "median"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.808",
+          "stored": "0.808111888111888",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.773",
+          "stored": "0.7727622377622378",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.711",
+          "stored": "0.7109090909090908",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.835",
+          "stored": "0.8346153846153846",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.164",
+          "stored": "0.1641947109233627",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 37,
+      "key": {
+        "endpoint": "early_stage_vs_benign_control",
+        "pipeline": "mirna_only",
+        "model": "regularized_logistic",
+        "imputation": "knn_ca125"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.815",
+          "stored": "0.8146270396270395",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.766",
+          "stored": "0.766095571095571",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.731",
+          "stored": "0.7309090909090908",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.801",
+          "stored": "0.8012820512820513",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.165",
+          "stored": "0.1650460960616292",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 38,
+      "key": {
+        "endpoint": "early_stage_vs_benign_control",
+        "pipeline": "mirna_only",
+        "model": "regularized_logistic",
+        "imputation": "median"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.815",
+          "stored": "0.8146270396270395",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.766",
+          "stored": "0.766095571095571",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.731",
+          "stored": "0.7309090909090908",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.801",
+          "stored": "0.8012820512820513",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.165",
+          "stored": "0.1650460960616292",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 19,
+      "key": {
+        "task": "all_cancer_vs_non_cancer",
+        "selection_method": "elastic_net",
+        "signature_size": "5"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.626",
+          "stored": "0.6261339009287925",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.617",
+          "stored": "0.6169233746130031",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.561",
+          "stored": "0.5610526315789472",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.673",
+          "stored": "0.6727941176470588",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.614",
+          "stored": "0.6141269841269841",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 20,
+      "key": {
+        "task": "all_cancer_vs_non_cancer",
+        "selection_method": "elastic_net",
+        "signature_size": "10"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.680",
+          "stored": "0.6798239164086686",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.641",
+          "stored": "0.6412538699690402",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.624",
+          "stored": "0.6236842105263157",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.659",
+          "stored": "0.6588235294117647",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.642",
+          "stored": "0.6423809523809523",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 21,
+      "key": {
+        "task": "all_cancer_vs_non_cancer",
+        "selection_method": "elastic_net",
+        "signature_size": "14"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.698",
+          "stored": "0.6977302631578948",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.641",
+          "stored": "0.6411068111455108",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.634",
+          "stored": "0.6336842105263158",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.649",
+          "stored": "0.6485294117647059",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.642",
+          "stored": "0.6422222222222224",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 22,
+      "key": {
+        "task": "all_cancer_vs_non_cancer",
+        "selection_method": "elastic_net",
+        "signature_size": "20"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.691",
+          "stored": "0.6913196594427244",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.648",
+          "stored": "0.648343653250774",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.623",
+          "stored": "0.6231578947368421",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.674",
+          "stored": "0.6735294117647059",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.648",
+          "stored": "0.6482539682539683",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 23,
+      "key": {
+        "task": "all_cancer_vs_non_cancer",
+        "selection_method": "elastic_net",
+        "signature_size": "30"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.656",
+          "stored": "0.655717879256966",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.629",
+          "stored": "0.629156346749226",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.707",
+          "stored": "0.7068421052631579",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.551",
+          "stored": "0.5514705882352942",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.637",
+          "stored": "0.6366666666666666",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 24,
+      "key": {
+        "task": "all_cancer_vs_non_cancer",
+        "selection_method": "elastic_net",
+        "signature_size": "50"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.623",
+          "stored": "0.6232565789473684",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.616",
+          "stored": "0.6156153250773994",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.666",
+          "stored": "0.6657894736842105",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.565",
+          "stored": "0.5654411764705882",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.620",
+          "stored": "0.62",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 25,
+      "key": {
+        "task": "all_cancer_vs_non_cancer",
+        "selection_method": "l1",
+        "signature_size": "5"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.706",
+          "stored": "0.7060913312693498",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.685",
+          "stored": "0.6854140866873064",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.614",
+          "stored": "0.6142105263157894",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.757",
+          "stored": "0.7566176470588235",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.681",
+          "stored": "0.6814285714285714",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 26,
+      "key": {
+        "task": "all_cancer_vs_non_cancer",
+        "selection_method": "l1",
+        "signature_size": "10"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.716",
+          "stored": "0.7156830495356037",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.682",
+          "stored": "0.6817685758513932",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.644",
+          "stored": "0.6436842105263157",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.720",
+          "stored": "0.7198529411764706",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.681",
+          "stored": "0.6814285714285714",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 27,
+      "key": {
+        "task": "all_cancer_vs_non_cancer",
+        "selection_method": "l1",
+        "signature_size": "14"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.687",
+          "stored": "0.6870859133126934",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.676",
+          "stored": "0.6755301857585139",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.655",
+          "stored": "0.6547368421052631",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.696",
+          "stored": "0.6963235294117647",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.676",
+          "stored": "0.6760317460317461",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 28,
+      "key": {
+        "task": "all_cancer_vs_non_cancer",
+        "selection_method": "l1",
+        "signature_size": "20"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.642",
+          "stored": "0.6422581269349845",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.596",
+          "stored": "0.5956965944272445",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.603",
+          "stored": "0.6031578947368421",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.588",
+          "stored": "0.5882352941176471",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.598",
+          "stored": "0.5977777777777777",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 29,
+      "key": {
+        "task": "all_cancer_vs_non_cancer",
+        "selection_method": "l1",
+        "signature_size": "30"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.664",
+          "stored": "0.6640499226006191",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.635",
+          "stored": "0.6354760061919504",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.623",
+          "stored": "0.6231578947368421",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.648",
+          "stored": "0.6477941176470589",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.637",
+          "stored": "0.6366666666666666",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 30,
+      "key": {
+        "task": "all_cancer_vs_non_cancer",
+        "selection_method": "l1",
+        "signature_size": "50"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.659",
+          "stored": "0.6590228328173374",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.645",
+          "stored": "0.6447523219814243",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.654",
+          "stored": "0.6542105263157895",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.635",
+          "stored": "0.6352941176470589",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.648",
+          "stored": "0.6476190476190476",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 31,
+      "key": {
+        "task": "early_stage_vs_benign_control",
+        "selection_method": "elastic_net",
+        "signature_size": "5"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.639",
+          "stored": "0.6387878787878789",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.648",
+          "stored": "0.6477972027972028",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.476",
+          "stored": "0.47636363636363627",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.819",
+          "stored": "0.8192307692307693",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.660",
+          "stored": "0.6604743083003952",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 32,
+      "key": {
+        "task": "early_stage_vs_benign_control",
+        "selection_method": "elastic_net",
+        "signature_size": "10"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.670",
+          "stored": "0.6702214452214452",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.676",
+          "stored": "0.675979020979021",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.633",
+          "stored": "0.6327272727272727",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.719",
+          "stored": "0.7192307692307692",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.679",
+          "stored": "0.6790513833992095",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 33,
+      "key": {
+        "task": "early_stage_vs_benign_control",
+        "selection_method": "elastic_net",
+        "signature_size": "14"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.669",
+          "stored": "0.6691375291375292",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.647",
+          "stored": "0.6468881118881119",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.575",
+          "stored": "0.5745454545454546",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.719",
+          "stored": "0.7192307692307691",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.653",
+          "stored": "0.6525691699604743",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 34,
+      "key": {
+        "task": "early_stage_vs_benign_control",
+        "selection_method": "elastic_net",
+        "signature_size": "20"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.698",
+          "stored": "0.6982983682983682",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.642",
+          "stored": "0.6422610722610722",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.613",
+          "stored": "0.6127272727272727",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.672",
+          "stored": "0.6717948717948719",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.645",
+          "stored": "0.6446640316205533",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 35,
+      "key": {
+        "task": "early_stage_vs_benign_control",
+        "selection_method": "elastic_net",
+        "signature_size": "30"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.682",
+          "stored": "0.6823659673659673",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.650",
+          "stored": "0.6504428904428904",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.629",
+          "stored": "0.6290909090909091",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.672",
+          "stored": "0.6717948717948719",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.654",
+          "stored": "0.6537549407114625",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 36,
+      "key": {
+        "task": "early_stage_vs_benign_control",
+        "selection_method": "elastic_net",
+        "signature_size": "50"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.694",
+          "stored": "0.6937412587412588",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.622",
+          "stored": "0.6224125874125874",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.556",
+          "stored": "0.5563636363636364",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.688",
+          "stored": "0.6884615384615385",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.628",
+          "stored": "0.6284584980237155",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 37,
+      "key": {
+        "task": "early_stage_vs_benign_control",
+        "selection_method": "l1",
+        "signature_size": "5"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.749",
+          "stored": "0.7487062937062936",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.723",
+          "stored": "0.7229137529137529",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.595",
+          "stored": "0.5945454545454545",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.851",
+          "stored": "0.8512820512820513",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.733",
+          "stored": "0.7332015810276681",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 38,
+      "key": {
+        "task": "early_stage_vs_benign_control",
+        "selection_method": "l1",
+        "signature_size": "10"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.726",
+          "stored": "0.726025641025641",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.709",
+          "stored": "0.7088228438228438",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.616",
+          "stored": "0.6163636363636363",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.801",
+          "stored": "0.8012820512820513",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.716",
+          "stored": "0.7162055335968379",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 39,
+      "key": {
+        "task": "early_stage_vs_benign_control",
+        "selection_method": "l1",
+        "signature_size": "14"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.728",
+          "stored": "0.7282750582750583",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.695",
+          "stored": "0.6953729603729603",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.638",
+          "stored": "0.6381818181818182",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.753",
+          "stored": "0.7525641025641024",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.699",
+          "stored": "0.6988142292490118",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 40,
+      "key": {
+        "task": "early_stage_vs_benign_control",
+        "selection_method": "l1",
+        "signature_size": "20"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.724",
+          "stored": "0.7237762237762237",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.686",
+          "stored": "0.6863986013986014",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.638",
+          "stored": "0.6381818181818182",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.735",
+          "stored": "0.7346153846153846",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.691",
+          "stored": "0.6909090909090908",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 41,
+      "key": {
+        "task": "early_stage_vs_benign_control",
+        "selection_method": "l1",
+        "signature_size": "30"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.739",
+          "stored": "0.739125874125874",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.634",
+          "stored": "0.6337062937062937",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.598",
+          "stored": "0.5981818181818181",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.669",
+          "stored": "0.6692307692307693",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.638",
+          "stored": "0.6375494071146244",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 42,
+      "key": {
+        "task": "early_stage_vs_benign_control",
+        "selection_method": "l1",
+        "signature_size": "50"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.724",
+          "stored": "0.7239393939393939",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.650",
+          "stored": "0.6503729603729603",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.598",
+          "stored": "0.5981818181818181",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.703",
+          "stored": "0.7025641025641025",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.655",
+          "stored": "0.6549407114624506",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "model_ensemble_comparison",
+      "line": 13,
+      "key": {
+        "model": "stacked_logistic"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.825",
+          "stored": "0.82488344988345",
+          "rounding_match": true
+        },
+        {
+          "metric": "pr_auc_mean",
+          "display": "0.841",
+          "stored": "0.84107526950174",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.760",
+          "stored": "0.7600790513833993",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.766",
+          "stored": "0.7664685314685314",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.829",
+          "stored": "0.8290909090909091",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.704",
+          "stored": "0.7038461538461538",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.184",
+          "stored": "0.18421294836770155",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "model_ensemble_comparison",
+      "line": 14,
+      "key": {
+        "model": "soft_voting"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.823",
+          "stored": "0.8233449883449884",
+          "rounding_match": true
+        },
+        {
+          "metric": "pr_auc_mean",
+          "display": "0.843",
+          "stored": "0.8433767082590611",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.804",
+          "stored": "0.8043478260869564",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.804",
+          "stored": "0.8044289044289045",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.791",
+          "stored": "0.790909090909091",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.818",
+          "stored": "0.8179487179487179",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.159",
+          "stored": "0.15869013912288688",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "model_ensemble_comparison",
+      "line": 15,
+      "key": {
+        "model": "regularized_logistic"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.823",
+          "stored": "0.8229370629370629",
+          "rounding_match": true
+        },
+        {
+          "metric": "pr_auc_mean",
+          "display": "0.834",
+          "stored": "0.8338667234897885",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.813",
+          "stored": "0.8134387351778656",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.811",
+          "stored": "0.8110955710955711",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.771",
+          "stored": "0.770909090909091",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.851",
+          "stored": "0.8512820512820513",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.162",
+          "stored": "0.16176734998425696",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "model_ensemble_comparison",
+      "line": 16,
+      "key": {
+        "model": "xgboost"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.823",
+          "stored": "0.8227097902097903",
+          "rounding_match": true
+        },
+        {
+          "metric": "pr_auc_mean",
+          "display": "0.844",
+          "stored": "0.8439289890067402",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.796",
+          "stored": "0.7956521739130435",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.798",
+          "stored": "0.7984032634032634",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.811",
+          "stored": "0.8109090909090909",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.786",
+          "stored": "0.7858974358974359",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.166",
+          "stored": "0.16579909920692443",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "model_ensemble_comparison",
+      "line": 17,
+      "key": {
+        "model": "calibrated_svm"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.823",
+          "stored": "0.8225058275058276",
+          "rounding_match": true
+        },
+        {
+          "metric": "pr_auc_mean",
+          "display": "0.832",
+          "stored": "0.8317921620862796",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.804",
+          "stored": "0.8039525691699605",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.801",
+          "stored": "0.8010955710955712",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.751",
+          "stored": "0.750909090909091",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.851",
+          "stored": "0.8512820512820513",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.162",
+          "stored": "0.16202363715746243",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "model_ensemble_comparison",
+      "line": 18,
+      "key": {
+        "model": "random_forest"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.812",
+          "stored": "0.8123426573426574",
+          "rounding_match": true
+        },
+        {
+          "metric": "pr_auc_mean",
+          "display": "0.829",
+          "stored": "0.8285028563060539",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.804",
+          "stored": "0.8043478260869564",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.806",
+          "stored": "0.8060955710955711",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.811",
+          "stored": "0.8109090909090909",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.801",
+          "stored": "0.8012820512820513",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.178",
+          "stored": "0.17847237454083306",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "data_augmentation_results",
+      "line": 15,
+      "key": {
+        "model": "random_forest",
+        "augmentation": "borderline_smote"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.809",
+          "stored": "0.8089743589743591",
+          "rounding_match": true
+        },
+        {
+          "metric": "pr_auc_mean",
+          "display": "0.822",
+          "stored": "0.8215889834493861",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.804",
+          "stored": "0.8043478260869564",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.804",
+          "stored": "0.8044289044289045",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.791",
+          "stored": "0.790909090909091",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.818",
+          "stored": "0.8179487179487179",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.177",
+          "stored": "0.1765010293464638",
+          "rounding_match": true
+        },
+        {
+          "metric": "geometric_mean_mean",
+          "display": "0.792",
+          "stored": "0.792377762592652",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "data_augmentation_results",
+      "line": 16,
+      "key": {
+        "model": "random_forest",
+        "augmentation": "none"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.806",
+          "stored": "0.8063053613053613",
+          "rounding_match": true
+        },
+        {
+          "metric": "pr_auc_mean",
+          "display": "0.828",
+          "stored": "0.8284830256816637",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.787",
+          "stored": "0.7869565217391304",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.788",
+          "stored": "0.7884032634032632",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.791",
+          "stored": "0.7909090909090908",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.786",
+          "stored": "0.7858974358974359",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.175",
+          "stored": "0.17545776279781994",
+          "rounding_match": true
+        },
+        {
+          "metric": "geometric_mean_mean",
+          "display": "0.774",
+          "stored": "0.774433250525105",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "data_augmentation_results",
+      "line": 17,
+      "key": {
+        "model": "random_forest",
+        "augmentation": "smote"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.809",
+          "stored": "0.8092540792540793",
+          "rounding_match": true
+        },
+        {
+          "metric": "pr_auc_mean",
+          "display": "0.825",
+          "stored": "0.8253096992035948",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.805",
+          "stored": "0.8047430830039527",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.804",
+          "stored": "0.8044289044289045",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.791",
+          "stored": "0.7909090909090908",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.818",
+          "stored": "0.8179487179487179",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.177",
+          "stored": "0.17656360800650978",
+          "rounding_match": true
+        },
+        {
+          "metric": "geometric_mean_mean",
+          "display": "0.791",
+          "stored": "0.7907109217721378",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "data_augmentation_results",
+      "line": 18,
+      "key": {
+        "model": "regularized_logistic",
+        "augmentation": "borderline_smote"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.825",
+          "stored": "0.8246037296037295",
+          "rounding_match": true
+        },
+        {
+          "metric": "pr_auc_mean",
+          "display": "0.836",
+          "stored": "0.8361646507087684",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.813",
+          "stored": "0.8130434782608695",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.809",
+          "stored": "0.8094289044289045",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.751",
+          "stored": "0.750909090909091",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.868",
+          "stored": "0.8679487179487179",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.162",
+          "stored": "0.16228270847400356",
+          "rounding_match": true
+        },
+        {
+          "metric": "geometric_mean_mean",
+          "display": "0.797",
+          "stored": "0.796646582539091",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "data_augmentation_results",
+      "line": 19,
+      "key": {
+        "model": "regularized_logistic",
+        "augmentation": "none"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.827",
+          "stored": "0.8274825174825174",
+          "rounding_match": true
+        },
+        {
+          "metric": "pr_auc_mean",
+          "display": "0.838",
+          "stored": "0.8384170274170275",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.795",
+          "stored": "0.7948616600790512",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.793",
+          "stored": "0.7927622377622378",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.751",
+          "stored": "0.750909090909091",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.835",
+          "stored": "0.8346153846153846",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.161",
+          "stored": "0.16076801865996604",
+          "rounding_match": true
+        },
+        {
+          "metric": "geometric_mean_mean",
+          "display": "0.776",
+          "stored": "0.776194024947398",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "data_augmentation_results",
+      "line": 20,
+      "key": {
+        "model": "regularized_logistic",
+        "augmentation": "smote"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.821",
+          "stored": "0.8214219114219115",
+          "rounding_match": true
+        },
+        {
+          "metric": "pr_auc_mean",
+          "display": "0.831",
+          "stored": "0.8314216848682794",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.786",
+          "stored": "0.7861660079051384",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.784",
+          "stored": "0.7844289044289046",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.751",
+          "stored": "0.750909090909091",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.818",
+          "stored": "0.8179487179487179",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.163",
+          "stored": "0.162886735681003",
+          "rounding_match": true
+        },
+        {
+          "metric": "geometric_mean_mean",
+          "display": "0.770",
+          "stored": "0.7701860710531502",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "data_augmentation_results",
+      "line": 21,
+      "key": {
+        "model": "soft_voting",
+        "augmentation": "borderline_smote"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.819",
+          "stored": "0.8187762237762237",
+          "rounding_match": true
+        },
+        {
+          "metric": "pr_auc_mean",
+          "display": "0.833",
+          "stored": "0.8330610304727951",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.795",
+          "stored": "0.7952569169960474",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.794",
+          "stored": "0.7944289044289043",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.771",
+          "stored": "0.770909090909091",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.818",
+          "stored": "0.8179487179487179",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.164",
+          "stored": "0.16369989220851605",
+          "rounding_match": true
+        },
+        {
+          "metric": "geometric_mean_mean",
+          "display": "0.782",
+          "stored": "0.7822428587865925",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "data_augmentation_results",
+      "line": 22,
+      "key": {
+        "model": "soft_voting",
+        "augmentation": "none"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.825",
+          "stored": "0.8251398601398602",
+          "rounding_match": true
+        },
+        {
+          "metric": "pr_auc_mean",
+          "display": "0.840",
+          "stored": "0.8396999417694605",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.804",
+          "stored": "0.8039525691699605",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.803",
+          "stored": "0.8027622377622379",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.771",
+          "stored": "0.770909090909091",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.835",
+          "stored": "0.8346153846153846",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.163",
+          "stored": "0.16266362235830412",
+          "rounding_match": true
+        },
+        {
+          "metric": "geometric_mean_mean",
+          "display": "0.791",
+          "stored": "0.7907574372353249",
+          "rounding_match": true
+        }
+      ]
+    },
+    {
+      "report": "data_augmentation_results",
+      "line": 23,
+      "key": {
+        "model": "soft_voting",
+        "augmentation": "smote"
+      },
+      "checks": [
+        {
+          "metric": "roc_auc_mean",
+          "display": "0.817",
+          "stored": "0.8172610722610724",
+          "rounding_match": true
+        },
+        {
+          "metric": "pr_auc_mean",
+          "display": "0.828",
+          "stored": "0.8280977813036637",
+          "rounding_match": true
+        },
+        {
+          "metric": "accuracy_mean",
+          "display": "0.804",
+          "stored": "0.8043478260869567",
+          "rounding_match": true
+        },
+        {
+          "metric": "balanced_accuracy_mean",
+          "display": "0.803",
+          "stored": "0.8027622377622377",
+          "rounding_match": true
+        },
+        {
+          "metric": "sensitivity_mean",
+          "display": "0.771",
+          "stored": "0.770909090909091",
+          "rounding_match": true
+        },
+        {
+          "metric": "specificity_mean",
+          "display": "0.835",
+          "stored": "0.8346153846153846",
+          "rounding_match": true
+        },
+        {
+          "metric": "brier_score_mean",
+          "display": "0.164",
+          "stored": "0.16385034567560747",
+          "rounding_match": true
+        },
+        {
+          "metric": "geometric_mean_mean",
+          "display": "0.792",
+          "stored": "0.7924224555843293",
+          "rounding_match": true
+        }
+      ]
+    }
+  ],
+  "stability_expressions": [
+    {
+      "report": "clinical_ablation_results",
+      "line": 46,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 46,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 46,
+      "feature": "hsa-miR-30d-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 46,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 46,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 46,
+      "feature": "hsa-miR-10a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 46,
+      "feature": "hsa-miR-1255a",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 46,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 46,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 46,
+      "feature": "hsa-miR-3150a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 47,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 47,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 47,
+      "feature": "hsa-miR-30d-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 47,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 47,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 47,
+      "feature": "hsa-miR-10a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 47,
+      "feature": "hsa-miR-1255a",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 47,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 47,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 47,
+      "feature": "hsa-miR-3150a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 48,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 48,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 48,
+      "feature": "hsa-miR-30d-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 48,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 48,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 48,
+      "feature": "hsa-miR-10a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 48,
+      "feature": "hsa-miR-1255a",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 48,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 48,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 48,
+      "feature": "hsa-miR-3150a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 49,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 49,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 49,
+      "feature": "hsa-miR-30d-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 49,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 49,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 49,
+      "feature": "hsa-miR-10a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 49,
+      "feature": "hsa-miR-1255a",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 49,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 49,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 49,
+      "feature": "hsa-miR-3150a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 50,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 50,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 50,
+      "feature": "hsa-miR-30d-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 50,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 50,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 50,
+      "feature": "hsa-miR-10a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 50,
+      "feature": "hsa-miR-1255a",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 50,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 50,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 50,
+      "feature": "hsa-miR-3150a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 51,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 51,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 51,
+      "feature": "hsa-miR-30d-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 51,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 51,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 51,
+      "feature": "hsa-miR-10a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 51,
+      "feature": "hsa-miR-1255a",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 51,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 51,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 51,
+      "feature": "hsa-miR-3150a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 52,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 52,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 52,
+      "feature": "hsa-miR-30d-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 52,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 52,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 52,
+      "feature": "hsa-miR-10a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 52,
+      "feature": "hsa-miR-1255a",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 52,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 52,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 52,
+      "feature": "hsa-miR-3150a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 53,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 53,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 53,
+      "feature": "hsa-miR-30d-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 53,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 53,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 53,
+      "feature": "hsa-miR-10a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 53,
+      "feature": "hsa-miR-1255a",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 53,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 53,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 53,
+      "feature": "hsa-miR-3150a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 54,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 54,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 54,
+      "feature": "hsa-miR-30d-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 54,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 54,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 54,
+      "feature": "hsa-miR-10a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 54,
+      "feature": "hsa-miR-1255a",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 54,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 54,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 54,
+      "feature": "hsa-miR-3150a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 55,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 55,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 55,
+      "feature": "hsa-miR-30d-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 55,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 55,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 55,
+      "feature": "hsa-miR-10a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 55,
+      "feature": "hsa-miR-1255a",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 55,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 55,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 55,
+      "feature": "hsa-miR-3150a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 56,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 56,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 56,
+      "feature": "hsa-miR-30d-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 56,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 56,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 56,
+      "feature": "hsa-miR-10a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 56,
+      "feature": "hsa-miR-1255a",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 56,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 56,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 56,
+      "feature": "hsa-miR-3150a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 57,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 57,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 57,
+      "feature": "hsa-miR-30d-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 57,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 57,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 57,
+      "feature": "hsa-miR-10a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 57,
+      "feature": "hsa-miR-1255a",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 57,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 57,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 57,
+      "feature": "hsa-miR-3150a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 61,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 61,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 61,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 61,
+      "feature": "hsa-miR-1255a",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 61,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 61,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 61,
+      "feature": "hsa-miR-1303",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 61,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 61,
+      "feature": "hsa-miR-3149",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 61,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 62,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 62,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 62,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 62,
+      "feature": "hsa-miR-1255a",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 62,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 62,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 62,
+      "feature": "hsa-miR-1303",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 62,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 62,
+      "feature": "hsa-miR-3149",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 62,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 63,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 63,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 63,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 63,
+      "feature": "hsa-miR-1255a",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 63,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 63,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 63,
+      "feature": "hsa-miR-1303",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 63,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 63,
+      "feature": "hsa-miR-3149",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 63,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 64,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 64,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 64,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 64,
+      "feature": "hsa-miR-1255a",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 64,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 64,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 64,
+      "feature": "hsa-miR-1303",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 64,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 64,
+      "feature": "hsa-miR-3149",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 64,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 65,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 65,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 65,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 65,
+      "feature": "hsa-miR-1255a",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 65,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 65,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 65,
+      "feature": "hsa-miR-1303",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 65,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 65,
+      "feature": "hsa-miR-3149",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 65,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 66,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 66,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 66,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 66,
+      "feature": "hsa-miR-1255a",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 66,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 66,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 66,
+      "feature": "hsa-miR-1303",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 66,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 66,
+      "feature": "hsa-miR-3149",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 66,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 67,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 67,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 67,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 67,
+      "feature": "hsa-miR-1255a",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 67,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 67,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 67,
+      "feature": "hsa-miR-1303",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 67,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 67,
+      "feature": "hsa-miR-3149",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 67,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 68,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 68,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 68,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 68,
+      "feature": "hsa-miR-1255a",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 68,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 68,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 68,
+      "feature": "hsa-miR-1303",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 68,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 68,
+      "feature": "hsa-miR-3149",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 68,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 69,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 69,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 69,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 69,
+      "feature": "hsa-miR-1255a",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 69,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 69,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 69,
+      "feature": "hsa-miR-1303",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 69,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 69,
+      "feature": "hsa-miR-3149",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 69,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 70,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 70,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 70,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 70,
+      "feature": "hsa-miR-1255a",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 70,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 70,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 70,
+      "feature": "hsa-miR-1303",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 70,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 70,
+      "feature": "hsa-miR-3149",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 70,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 71,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 71,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 71,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 71,
+      "feature": "hsa-miR-1255a",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 71,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 71,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 71,
+      "feature": "hsa-miR-1303",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 71,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 71,
+      "feature": "hsa-miR-3149",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 71,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 72,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 72,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 72,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 72,
+      "feature": "hsa-miR-1255a",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 72,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 72,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 72,
+      "feature": "hsa-miR-1303",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 72,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 72,
+      "feature": "hsa-miR-3149",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "clinical_ablation_results",
+      "line": 72,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 52,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 52,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 52,
+      "feature": "hsa-miR-708-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 52,
+      "feature": "hsa-miR-1538",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 52,
+      "feature": "hsa-miR-1255a",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 52,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 52,
+      "feature": "hsa-miR-30d-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 52,
+      "feature": "hsa-miR-3150a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 52,
+      "feature": "hsa-miR-380-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 52,
+      "feature": "hsa-miR-4638-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 52,
+      "feature": "hsa-miR-495-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 52,
+      "feature": "hsa-miR-548ah-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 52,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 52,
+      "feature": "hsa-miR-6891-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 53,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 53,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 53,
+      "feature": "hsa-miR-1538",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 53,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 53,
+      "feature": "hsa-miR-380-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 53,
+      "feature": "hsa-miR-708-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 53,
+      "feature": "hsa-miR-933",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 53,
+      "feature": "hsa-miR-200a-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 53,
+      "feature": "hsa-miR-30d-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 53,
+      "feature": "hsa-miR-4638-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 53,
+      "feature": "hsa-miR-495-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 53,
+      "feature": "hsa-miR-10a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 53,
+      "feature": "hsa-miR-1255a",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 53,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 53,
+      "feature": "hsa-miR-1291",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 54,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 54,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 54,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 54,
+      "feature": "hsa-miR-1538",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 54,
+      "feature": "hsa-miR-380-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 54,
+      "feature": "hsa-miR-200a-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 54,
+      "feature": "hsa-miR-708-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 54,
+      "feature": "hsa-miR-933",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 54,
+      "feature": "hsa-miR-10a-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 54,
+      "feature": "hsa-miR-1291",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 54,
+      "feature": "hsa-miR-30d-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 54,
+      "feature": "hsa-miR-4638-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 54,
+      "feature": "hsa-miR-495-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 54,
+      "feature": "hsa-miR-1255a",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 54,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 55,
+      "feature": "hsa-miR-1538",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 55,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 55,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 55,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 55,
+      "feature": "hsa-miR-380-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 55,
+      "feature": "hsa-miR-10a-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 55,
+      "feature": "hsa-miR-200a-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 55,
+      "feature": "hsa-miR-3150a-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 55,
+      "feature": "hsa-miR-4638-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 55,
+      "feature": "hsa-miR-708-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 55,
+      "feature": "hsa-miR-933",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 55,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 55,
+      "feature": "hsa-miR-1291",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 55,
+      "feature": "hsa-miR-30d-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 55,
+      "feature": "hsa-miR-320c",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 56,
+      "feature": "hsa-miR-1538",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 56,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 56,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 56,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 56,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 56,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 56,
+      "feature": "hsa-let-7a-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 56,
+      "feature": "hsa-let-7b-3p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 56,
+      "feature": "hsa-let-7b-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 56,
+      "feature": "hsa-let-7c-3p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 56,
+      "feature": "hsa-miR-380-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 56,
+      "feature": "hsa-miR-708-3p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 56,
+      "feature": "hsa-miR-933",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 56,
+      "feature": "hsa-let-7c-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 56,
+      "feature": "hsa-let-7d-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 57,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 57,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 57,
+      "feature": "hsa-let-7a-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 57,
+      "feature": "hsa-let-7b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 57,
+      "feature": "hsa-let-7b-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 57,
+      "feature": "hsa-let-7c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 57,
+      "feature": "hsa-let-7c-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 57,
+      "feature": "hsa-let-7d-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 57,
+      "feature": "hsa-let-7d-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 57,
+      "feature": "hsa-let-7e-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 57,
+      "feature": "hsa-let-7e-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 57,
+      "feature": "hsa-let-7f-1-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 57,
+      "feature": "hsa-let-7f-2-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 57,
+      "feature": "hsa-let-7f-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 57,
+      "feature": "hsa-let-7g-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 61,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 61,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 61,
+      "feature": "hsa-miR-708-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 61,
+      "feature": "hsa-miR-4638-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 61,
+      "feature": "hsa-miR-933",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 61,
+      "feature": "hsa-miR-1255a",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 61,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 61,
+      "feature": "hsa-miR-1538",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 61,
+      "feature": "hsa-miR-4661-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 61,
+      "feature": "hsa-miR-4685-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 61,
+      "feature": "hsa-miR-4754",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 61,
+      "feature": "hsa-miR-548ah-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 61,
+      "feature": "hsa-miR-605-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 61,
+      "feature": "hsa-miR-6891-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 62,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 62,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 62,
+      "feature": "hsa-miR-1255a",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 62,
+      "feature": "hsa-miR-1538",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 62,
+      "feature": "hsa-miR-708-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 62,
+      "feature": "hsa-miR-4638-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 62,
+      "feature": "hsa-miR-4661-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 62,
+      "feature": "hsa-miR-4754",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 62,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 62,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 62,
+      "feature": "hsa-miR-933",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 62,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 62,
+      "feature": "hsa-miR-1291",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 62,
+      "feature": "hsa-miR-1307-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 62,
+      "feature": "hsa-miR-200a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 63,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 63,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 63,
+      "feature": "hsa-miR-1255a",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 63,
+      "feature": "hsa-miR-1538",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 63,
+      "feature": "hsa-miR-380-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 63,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 63,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 63,
+      "feature": "hsa-miR-708-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 63,
+      "feature": "hsa-miR-933",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 63,
+      "feature": "hsa-miR-1307-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 63,
+      "feature": "hsa-miR-200a-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 63,
+      "feature": "hsa-miR-4638-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 63,
+      "feature": "hsa-miR-4661-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 63,
+      "feature": "hsa-miR-4754",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 63,
+      "feature": "hsa-miR-495-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 64,
+      "feature": "hsa-miR-1255a",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 64,
+      "feature": "hsa-miR-1538",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 64,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 64,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 64,
+      "feature": "hsa-miR-380-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 64,
+      "feature": "hsa-miR-708-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 64,
+      "feature": "hsa-miR-933",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 64,
+      "feature": "hsa-miR-1307-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 64,
+      "feature": "hsa-miR-200a-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 64,
+      "feature": "hsa-miR-4638-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 64,
+      "feature": "hsa-miR-4754",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 64,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 64,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 64,
+      "feature": "hsa-miR-6853-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 64,
+      "feature": "hsa-miR-378i",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 65,
+      "feature": "hsa-miR-1255a",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 65,
+      "feature": "hsa-miR-1538",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 65,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 65,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 65,
+      "feature": "hsa-miR-380-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 65,
+      "feature": "hsa-miR-708-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 65,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 65,
+      "feature": "hsa-miR-933",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 65,
+      "feature": "hsa-miR-1307-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 65,
+      "feature": "hsa-miR-200a-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 65,
+      "feature": "hsa-miR-21-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 65,
+      "feature": "hsa-miR-378i",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 65,
+      "feature": "hsa-miR-4638-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 65,
+      "feature": "hsa-miR-4661-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 65,
+      "feature": "hsa-miR-4754",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 66,
+      "feature": "hsa-miR-1255a",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 66,
+      "feature": "hsa-miR-1538",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 66,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 66,
+      "feature": "hsa-miR-21-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 66,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 66,
+      "feature": "hsa-miR-380-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 66,
+      "feature": "hsa-miR-671-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 66,
+      "feature": "hsa-miR-708-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 66,
+      "feature": "hsa-miR-933",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 66,
+      "feature": "hsa-miR-200a-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 66,
+      "feature": "hsa-miR-378i",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 66,
+      "feature": "hsa-miR-495-3p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 66,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 66,
+      "feature": "hsa-let-7b-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 66,
+      "feature": "hsa-miR-10a-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 72,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 72,
+      "feature": "hsa-miR-1255a",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 72,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 72,
+      "feature": "hsa-miR-200a-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 72,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 72,
+      "feature": "hsa-miR-196a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 72,
+      "feature": "hsa-miR-200a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 72,
+      "feature": "hsa-miR-3149",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 72,
+      "feature": "hsa-miR-4668-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 72,
+      "feature": "hsa-miR-495-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 72,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 73,
+      "feature": "hsa-miR-1255a",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 73,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 73,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 73,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 73,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 73,
+      "feature": "hsa-miR-200a-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 73,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 73,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 73,
+      "feature": "hsa-let-7a-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 73,
+      "feature": "hsa-miR-1538",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 73,
+      "feature": "hsa-miR-92a-1-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 73,
+      "feature": "hsa-let-7b-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 73,
+      "feature": "hsa-let-7f-1-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 73,
+      "feature": "hsa-miR-1299",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 73,
+      "feature": "hsa-miR-196a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 74,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 74,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 74,
+      "feature": "hsa-let-7a-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 74,
+      "feature": "hsa-miR-1255a",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 74,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 74,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 74,
+      "feature": "hsa-let-7b-3p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 74,
+      "feature": "hsa-let-7b-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 74,
+      "feature": "hsa-let-7c-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 74,
+      "feature": "hsa-miR-200a-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 74,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 74,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 74,
+      "feature": "hsa-let-7c-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 74,
+      "feature": "hsa-miR-1538",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 74,
+      "feature": "hsa-miR-92a-1-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 75,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 75,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 75,
+      "feature": "hsa-let-7a-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 75,
+      "feature": "hsa-let-7b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 75,
+      "feature": "hsa-let-7b-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 75,
+      "feature": "hsa-let-7c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 75,
+      "feature": "hsa-let-7c-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 75,
+      "feature": "hsa-let-7d-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 75,
+      "feature": "hsa-let-7d-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 75,
+      "feature": "hsa-miR-1255a",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 75,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 75,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 75,
+      "feature": "hsa-let-7e-3p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 75,
+      "feature": "hsa-let-7e-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 75,
+      "feature": "hsa-let-7f-1-3p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 76,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 76,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 76,
+      "feature": "hsa-let-7a-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 76,
+      "feature": "hsa-let-7b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 76,
+      "feature": "hsa-let-7b-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 76,
+      "feature": "hsa-let-7c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 76,
+      "feature": "hsa-let-7c-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 76,
+      "feature": "hsa-let-7d-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 76,
+      "feature": "hsa-let-7d-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 76,
+      "feature": "hsa-let-7e-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 76,
+      "feature": "hsa-let-7e-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 76,
+      "feature": "hsa-let-7f-1-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 76,
+      "feature": "hsa-let-7f-2-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 76,
+      "feature": "hsa-let-7f-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 76,
+      "feature": "hsa-let-7g-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 77,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 77,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 77,
+      "feature": "hsa-let-7a-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 77,
+      "feature": "hsa-let-7b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 77,
+      "feature": "hsa-let-7b-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 77,
+      "feature": "hsa-let-7c-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 77,
+      "feature": "hsa-let-7c-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 77,
+      "feature": "hsa-let-7d-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 77,
+      "feature": "hsa-let-7d-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 77,
+      "feature": "hsa-let-7e-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 77,
+      "feature": "hsa-let-7e-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 77,
+      "feature": "hsa-let-7f-1-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 77,
+      "feature": "hsa-let-7f-2-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 77,
+      "feature": "hsa-let-7f-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 77,
+      "feature": "hsa-let-7g-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 81,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 81,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 81,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 81,
+      "feature": "hsa-miR-1255a",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 81,
+      "feature": "hsa-miR-1538",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 81,
+      "feature": "hsa-miR-1291",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 81,
+      "feature": "hsa-miR-1299",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 81,
+      "feature": "hsa-miR-1303",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 81,
+      "feature": "hsa-miR-196a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 81,
+      "feature": "hsa-miR-200a-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 81,
+      "feature": "hsa-miR-200a-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 81,
+      "feature": "hsa-miR-3149",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 81,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 81,
+      "feature": "hsa-miR-4742-5p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 81,
+      "feature": "hsa-miR-708-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 82,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 82,
+      "feature": "hsa-miR-1255a",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 82,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 82,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 82,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 82,
+      "feature": "hsa-miR-1538",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 82,
+      "feature": "hsa-miR-200a-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 82,
+      "feature": "hsa-miR-7847-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 82,
+      "feature": "hsa-miR-4742-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 82,
+      "feature": "hsa-miR-92a-1-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 82,
+      "feature": "hsa-let-7f-1-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 82,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 82,
+      "feature": "hsa-miR-1291",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 82,
+      "feature": "hsa-miR-1299",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 82,
+      "feature": "hsa-miR-1303",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 83,
+      "feature": "hsa-miR-1255a",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 83,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 83,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 83,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 83,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 83,
+      "feature": "hsa-miR-1538",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 83,
+      "feature": "hsa-miR-200a-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 83,
+      "feature": "hsa-miR-4742-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 83,
+      "feature": "hsa-miR-7847-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 83,
+      "feature": "hsa-miR-708-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 83,
+      "feature": "hsa-miR-92a-1-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 83,
+      "feature": "hsa-let-7f-1-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 83,
+      "feature": "hsa-miR-1288-3p",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 83,
+      "feature": "hsa-miR-1291",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 83,
+      "feature": "hsa-miR-1299",
+      "claimed": 1,
+      "stored": 1,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 84,
+      "feature": "hsa-miR-1255a",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 84,
+      "feature": "hsa-miR-1538",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 84,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 84,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 84,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 84,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 84,
+      "feature": "hsa-miR-200a-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 84,
+      "feature": "hsa-miR-4742-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 84,
+      "feature": "hsa-miR-4999-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 84,
+      "feature": "hsa-miR-6503-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 84,
+      "feature": "hsa-miR-7847-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 84,
+      "feature": "hsa-miR-92a-1-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 84,
+      "feature": "hsa-miR-3149",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 84,
+      "feature": "hsa-miR-380-5p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 84,
+      "feature": "hsa-miR-548ah-3p",
+      "claimed": 2,
+      "stored": 2,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 85,
+      "feature": "hsa-miR-1255a",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 85,
+      "feature": "hsa-miR-1538",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 85,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 85,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 85,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 85,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 85,
+      "feature": "hsa-miR-4742-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 85,
+      "feature": "hsa-miR-4999-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 85,
+      "feature": "hsa-miR-200a-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 85,
+      "feature": "hsa-miR-200a-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 85,
+      "feature": "hsa-miR-200c-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 85,
+      "feature": "hsa-miR-3149",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 85,
+      "feature": "hsa-miR-4754",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 85,
+      "feature": "hsa-miR-491-5p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 85,
+      "feature": "hsa-miR-6503-3p",
+      "claimed": 3,
+      "stored": 3,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 86,
+      "feature": "hsa-let-7a-2-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 86,
+      "feature": "hsa-let-7a-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 86,
+      "feature": "hsa-miR-1255a",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 86,
+      "feature": "hsa-miR-1538",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 86,
+      "feature": "hsa-miR-196a-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 86,
+      "feature": "hsa-miR-200b-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 86,
+      "feature": "hsa-miR-296-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 86,
+      "feature": "hsa-miR-3149",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 86,
+      "feature": "hsa-miR-32-3p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 86,
+      "feature": "hsa-miR-6826-5p",
+      "claimed": 5,
+      "stored": 5,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 86,
+      "feature": "hsa-let-7a-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 86,
+      "feature": "hsa-miR-200a-3p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 86,
+      "feature": "hsa-miR-200a-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 86,
+      "feature": "hsa-miR-3135a",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    },
+    {
+      "report": "feature_selection_stability",
+      "line": 86,
+      "feature": "hsa-miR-4742-5p",
+      "claimed": 4,
+      "stored": 4,
+      "match": true
+    }
+  ]
+}

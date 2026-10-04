@@ -1,0 +1,13 @@
+path,bytes,lines,sha256,read_status,method
+scripts/audit_original_pmml_model.py,27741,1275,2080768097c032464e3e5d79df6dbec9ed1b5a1bceedf96c077cb30fc5cfe3fb,complete,read tool entire source; static only
+scripts/compare_pmml_to_published_table2.py,12561,536,a4b95eb499bf85e553bf24fd233ef82a82b72e05d29ee0c5bf3fff9e626cd38a,complete,read tool entire source; static only
+scripts/extract_original_14mirna_model.py,12409,595,cecc20fac8e64aa19799ec79162b6c4aaa7d3daafb6a21e3162b80a52429ec8c,complete,read tool entire source; static only
+scripts/inspect_original_elife_dataset.py,13187,569,9d3d256597e20e6c2d83fcd1f36beacd54c1344f8fc4490edcaa12c2e48e0f7d,complete,read tool entire source; static only
+scripts/map_historical_mirnas_to_mimat.py,3233,166,80a4484b71a726bb01173da2600b83cef262564eac05d7c039bfb8ae30f85b9e,complete,read tool entire source; static only
+scripts/search_original_44_patient_split.py,6782,333,ea258ab93156c9acc563e18426e6397bd4313712d96cc9a40241d298f0a8d9a4,complete,read tool entire source; static only
+scripts/search_original_split_evidence.py,4147,203,2b2a1ec6ac3064e60994b303b45950b49a3dcfcca1d209b8c0c255693a4d1b78,complete,read tool entire source; static only
+scripts/search_possible_historical_test_splits.py,11997,532,11cd43e0bf567b093a8e30d0aef2d2fc1dbd91840dae6b0d9688bed95ad6c461,complete,read tool entire source; static only
+scripts/search_split_evidence_clean.py,4567,224,9550d4d8e431bc0421b83a21ace1136e4a1637d9858de910093d3cb8a41b8b54,complete,read tool entire source; static only
+scripts/validate_historical_reproduction.py,20453,826,ce6c5fef17d5356afcc9b31cd8deaa9290a2346718ed807944637f9b64ab9b5d,complete,read tool entire source; static only
+scripts/validate_pmml_against_table2_by_id.py,12217,597,f24f7c14c8c418c607cbe37e1035109b3ab1b943eaa355ed2513b4fd868cfab6,complete,read tool entire source; static only
+audit/2026-02-08/pdf/extracted-pages.txt,54758,886,2a6c0fc7adce7b8f28dcba63cab2ec3a7fa38a0d6087382fc3e22785c510f156,complete extracted text,read tool in two bounded blocks; PDF visuals not reviewed

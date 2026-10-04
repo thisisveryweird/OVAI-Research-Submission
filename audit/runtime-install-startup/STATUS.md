@@ -1,0 +1,2 @@
+# Runtime installation/startup
+In progress. Authorized scope: Python 3.11 streamlit/openpyxl installation, synthetic containment tests, non-interactive actual-app initialization, and loopback-only detached startup. No inference or training authorized. All project evidence confined to this directory. Initial discovery command: pwd; ls OneDrive/Documents/GitHub/OVAI/scripts (exit 0; repository script listing).

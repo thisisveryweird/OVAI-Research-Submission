@@ -1,0 +1,849 @@
+[
+  {
+    "path": "reports\\2024_adnexal_mass_compatibility.csv",
+    "bytes": 1071,
+    "sha256": "7557162c5a4c9700243c1387a8ebaeeb157eea1d84aebea8c64b873502905da2",
+    "status": "entire text read",
+    "lines": 2
+  },
+  {
+    "path": "reports\\2024_adnexal_mass_data_audit.md",
+    "bytes": 3119,
+    "sha256": "eaae858e5bf6f439ef1cc3b19bdb2d07df043be9a0b59904eaca7872f685ebde",
+    "status": "entire text read",
+    "lines": 77
+  },
+  {
+    "path": "reports\\2024_adnexal_mass_feature_map.csv",
+    "bytes": 6863,
+    "sha256": "e3dc70736550b8e90a79a79e26d722c49888651c31ded433e9eb1d85dc792b68",
+    "status": "entire text read",
+    "lines": 20
+  },
+  {
+    "path": "reports\\bulk_external_test_results.md",
+    "bytes": 2116,
+    "sha256": "5392290075098e761dea4538188a31e0fda04ed90a3df60a1f812c7754b6d4c4",
+    "status": "entire text read",
+    "lines": 20
+  },
+  {
+    "path": "reports\\clinical_ablation_results.csv",
+    "bytes": 4499,
+    "sha256": "45f315b1cab24002d8bdd6f00981db88ab41e2bb02d92f80589f07c0810c0cda",
+    "status": "entire text read",
+    "lines": 25
+  },
+  {
+    "path": "reports\\clinical_ablation_results.md",
+    "bytes": 10827,
+    "sha256": "9cd6ba528bf8e251f014d5117949e53bd498ddfcfdb78ea801aebd2afb8b39f7",
+    "status": "entire text read",
+    "lines": 82
+  },
+  {
+    "path": "reports\\clinical_ablation_stability.csv",
+    "bytes": 5394807,
+    "sha256": "59e18cb07ff13e0af1b5b70074bb1345d23f63406c3e6f39cc6257b21776843f",
+    "status": "entire text read",
+    "lines": 61873
+  },
+  {
+    "path": "reports\\cptac_acquisition_audit.md",
+    "bytes": 2770,
+    "sha256": "71f72331da7b0b6c2964aea7317bd67d761881cc25a0600279fd6c663bbce530",
+    "status": "entire text read",
+    "lines": 40
+  },
+  {
+    "path": "reports\\current_pipeline_audit.md",
+    "bytes": 19463,
+    "sha256": "4e6701aa2e2a59dda099cfcf265ed7290be99f0ce655856190aea1becc9b85bc",
+    "status": "entire text read",
+    "lines": 171
+  },
+  {
+    "path": "reports\\data_augmentation_predictions.csv",
+    "bytes": 56030,
+    "sha256": "de2307516f08d299adfe1f9d10b64f035b4badf7959c3f853c9d9d0367e74d39",
+    "status": "entire text read",
+    "lines": 1018
+  },
+  {
+    "path": "reports\\data_augmentation_results.csv",
+    "bytes": 1774,
+    "sha256": "8a3a3b5546ae880e61b363a1d8e4c3c65d6cdeef99dd59b0b6600d0bd7e0e2ad",
+    "status": "entire text read",
+    "lines": 10
+  },
+  {
+    "path": "reports\\data_augmentation_results.md",
+    "bytes": 2408,
+    "sha256": "458e334fef5e8bef3a30d8e0464c6634650f21335826cf857137bccb44d550fa",
+    "status": "entire text read",
+    "lines": 33
+  },
+  {
+    "path": "reports\\dataset_compatibility.csv",
+    "bytes": 9731,
+    "sha256": "5fca65d761ab27bb6d3bd583c05c2dbce178b312f0803dd0216eb2f58f7fb85a",
+    "status": "entire text read",
+    "lines": 20
+  },
+  {
+    "path": "reports\\error_analysis.md",
+    "bytes": 19695,
+    "sha256": "87e03601642e36b8ef16655a5de5b07adc4e81cc689981214a5fdfea37c6f71c",
+    "status": "entire text read",
+    "lines": 163
+  },
+  {
+    "path": "reports\\error_analysis_predictions.csv",
+    "bytes": 366669,
+    "sha256": "ad93f5b3f914a4d1f722937c8c7216bf0855119b198f9a80bbfe7829bd1ead63",
+    "status": "entire text read",
+    "lines": 1254
+  },
+  {
+    "path": "reports\\error_analysis_subgroups.csv",
+    "bytes": 28541,
+    "sha256": "bf36f6c1585d1a1d9149157ecc559a3e24a38755ace80d4fc495dfbe17cad37e",
+    "status": "entire text read",
+    "lines": 155
+  },
+  {
+    "path": "reports\\external_feature_firewall_diagnostic.md",
+    "bytes": 10011,
+    "sha256": "4a6d94a6a088180ff338744a3b21394aa0de15bba7ce970352052a9e6b6104c2",
+    "status": "entire text read",
+    "lines": 71
+  },
+  {
+    "path": "reports\\feature_selection_results.csv",
+    "bytes": 3854,
+    "sha256": "a8a87a894a84cdbcc0ec83fc32412b026cef33b0d9c9d4389e5275553b6d8a58",
+    "status": "entire text read",
+    "lines": 25
+  },
+  {
+    "path": "reports\\feature_selection_stability.csv",
+    "bytes": 3760163,
+    "sha256": "321ee47044ca72e41d3ab3a9b4206d7dcb5f953a20005da3b73f44dbf3467a5a",
+    "status": "entire text read",
+    "lines": 61873
+  },
+  {
+    "path": "reports\\feature_selection_stability.md",
+    "bytes": 12307,
+    "sha256": "8b4ad00f884566810846682f91923f046df69a8ae2f75c0b6dba214de3119282",
+    "status": "entire text read",
+    "lines": 96
+  },
+  {
+    "path": "reports\\gse106817_phase5.md",
+    "bytes": 2815,
+    "sha256": "ee701d50035bdead8980291c18c238bd9614f6740c139ea792ab054847ddb9b4",
+    "status": "entire text read",
+    "lines": 33
+  },
+  {
+    "path": "reports\\gse106817_phase5_distribution.csv",
+    "bytes": 1604,
+    "sha256": "99df8cfec6c55e3bca2088ba608238bb325e7edeb4fc85501f983525ae4aa742",
+    "status": "entire text read",
+    "lines": 15
+  },
+  {
+    "path": "reports\\gse106817_phase5_predictions.csv",
+    "bytes": 1493988,
+    "sha256": "bc6b9dd010293160a0b5c4faa4911ce3a00610a9b8d14a04bfe460b8778bacd6",
+    "status": "entire text read",
+    "lines": 19723
+  },
+  {
+    "path": "reports\\gse106817_phase5_results.json",
+    "bytes": 9492,
+    "sha256": "ef0e1bd6a24a3c3a31d8ba2fb8b696cc4c3d16417c37e7bbb8fb6a1cc1b35776",
+    "status": "entire text read",
+    "lines": 336
+  },
+  {
+    "path": "reports\\gse106817_platform_shift_audit.json",
+    "bytes": 10471,
+    "sha256": "4c0721169d5d1203eb33e1ecd5369daa02bd2e9700115f864aa88a471cdf1a6c",
+    "status": "entire text read",
+    "lines": 279
+  },
+  {
+    "path": "reports\\gse106817_platform_shift_audit.md",
+    "bytes": 2156,
+    "sha256": "aed1d17e85dece758b59268207a1a3b1327fb49fb677d34bef83a16d20ede717",
+    "status": "entire text read",
+    "lines": 27
+  },
+  {
+    "path": "reports\\high_capacity_model_results.md",
+    "bytes": 594,
+    "sha256": "f3799fe60d66ad16f3fe7339f6d18c424582b6bfe4861f828fe3809cd4af08e5",
+    "status": "entire text read",
+    "lines": 10
+  },
+  {
+    "path": "reports\\model_ensemble_comparison.md",
+    "bytes": 1432,
+    "sha256": "7321af8ac3250a33d9dcc128d388906276b4f327df90cbe056639616185a5fae",
+    "status": "entire text read",
+    "lines": 24
+  },
+  {
+    "path": "reports\\model_ensemble_predictions.csv",
+    "bytes": 30248,
+    "sha256": "1e1be3f8ae4cdcfca4af6415e94c7a1a8f75d9fd7eba76c54b93165d74492ab0",
+    "status": "entire text read",
+    "lines": 679
+  },
+  {
+    "path": "reports\\model_ensemble_results.csv",
+    "bytes": 1028,
+    "sha256": "931f04231b6db2bef9ee3b3d3cb75c7b2d707c0b22409551a4d25639ada66070",
+    "status": "entire text read",
+    "lines": 7
+  },
+  {
+    "path": "reports\\pairwise_ratio_experiment.md",
+    "bytes": 773,
+    "sha256": "8be1f34dda6b1a7c0334433f8b62cec5627a02e160a485a976afec686dbc4874",
+    "status": "entire text read",
+    "lines": 12
+  },
+  {
+    "path": "reports\\potential_external_datasets.md",
+    "bytes": 27776,
+    "sha256": "945049cdbcf7aac7e89b78663b9ee15bf12a2f677c3bcba1f383ad36ae88674a",
+    "status": "entire text read",
+    "lines": 82
+  },
+  {
+    "path": "reports\\rank_transform_experiment.md",
+    "bytes": 1032,
+    "sha256": "d445ad5a1636782c0c5ca9fd50bdd67ea2bc3f096d58d4b7777fad595b280e28",
+    "status": "entire text read",
+    "lines": 16
+  },
+  {
+    "path": "reports\\remaining_queue_screen.md",
+    "bytes": 15711,
+    "sha256": "cd7905070beb383dd0431de370d273edac31bc444b10ec5eedacda2dde5dff59",
+    "status": "entire text read",
+    "lines": 66
+  },
+  {
+    "path": "research\\cohort_expansion\\audit_2022_gockley_published_reproduction.py",
+    "bytes": 22323,
+    "sha256": "72f69ca27b4b902ecce996d0698256f34f90a3b0b100823613269b0996c534fb",
+    "status": "entire text read",
+    "lines": 355
+  },
+  {
+    "path": "research\\cohort_expansion\\audit_2022_gockley_score_semantics.py",
+    "bytes": 23224,
+    "sha256": "333f3d740f2424c9a0308f413abba2b7bb6bce4e883e1badd21aa4d81354df81",
+    "status": "entire text read",
+    "lines": 352
+  },
+  {
+    "path": "research\\cohort_expansion\\audit_2022_gockley_workbook.py",
+    "bytes": 35947,
+    "sha256": "7aaaaba1d7931f084530f38bc7536a8927d25ecbbaa10eb5ae2309fdef406773",
+    "status": "entire text read",
+    "lines": 603
+  },
+  {
+    "path": "research\\cohort_expansion\\audit_2024_adnexal_mass.py",
+    "bytes": 9471,
+    "sha256": "40824ab9f81aa6d133a2fb11fdf873d7949da941f55484aafe500a82b9b95184",
+    "status": "entire text read",
+    "lines": 232
+  },
+  {
+    "path": "research\\cohort_expansion\\audit_2024_adnexal_mass_workbook.py",
+    "bytes": 51933,
+    "sha256": "d93873e1cfa87327255d4cf7f452fffe88059279157db3aaa9c97c0700dc4e01",
+    "status": "entire text read",
+    "lines": 993
+  },
+  {
+    "path": "research\\cohort_expansion\\audit_cross_platform_replication.py",
+    "bytes": 35454,
+    "sha256": "31ac7d834aa3aabcc4ae21c3e4b9ba03a1b4df9e45c74d89a62a80fcb644cd8c",
+    "status": "entire text read",
+    "lines": 479
+  },
+  {
+    "path": "research\\cohort_expansion\\audit_gse211692.py",
+    "bytes": 35593,
+    "sha256": "8ec2e7bf6a2bec0aa4828a45e72eee1777c90c26e8f20749a24db314dbc5160e",
+    "status": "entire text read",
+    "lines": 538
+  },
+  {
+    "path": "research\\cohort_expansion\\data\\raw\\2024_adnexal_mass\\DataSheet_2.xlsx",
+    "bytes": 488924,
+    "sha256": "29529a5e2b2f17f11f0748df3c0a9270e82e445053bf8bbb13ba8b5fcc11b74a",
+    "status": "all worksheet cells decoded (formula caches only; no formula execution)"
+  },
+  {
+    "path": "research\\cohort_expansion\\data\\raw\\2024_adnexal_mass\\DataSheet_3.zip",
+    "bytes": 8695,
+    "sha256": "e61793d923ced1d245498a074b5e441a587a3a35aae1d08de22daf4799218e33",
+    "status": "all ZIP members read; see binary_inventory.json"
+  },
+  {
+    "path": "research\\cohort_expansion\\data\\raw\\2024_adnexal_mass\\NIHMS2021079-supplement-1.xlsx",
+    "bytes": 1744787,
+    "sha256": "e98f5a60fe3117fc69cd9243bc60f146979b831b20dbb6dee4d8e7ce6affc748",
+    "status": "all worksheet cells decoded (formula caches only; no formula execution)"
+  },
+  {
+    "path": "research\\cohort_expansion\\data\\raw\\2024_adnexal_mass\\README.md",
+    "bytes": 102,
+    "sha256": "3c34583e64ce402d73e47cbbfab5dd08142f287668a5b76c9f33541bdf498439",
+    "status": "entire text read",
+    "lines": 1
+  },
+  {
+    "path": "research\\cohort_expansion\\data\\raw\\GSE113486\\GSE113486_family.soft.gz",
+    "bytes": 13666987,
+    "sha256": "ad3e1522f0ce77ceb186b1f00e977c1abc5ce0f90832af32ddc57817d5dd526f",
+    "status": "entire gzip decompressed/read; all SOFT metadata retained; expression rows not evaluated"
+  },
+  {
+    "path": "research\\cohort_expansion\\data\\raw\\GSE211692\\GSE211692_family.soft.gz",
+    "bytes": 741790,
+    "sha256": "46ab13eaa51873e4a0a30ca8c46d9ea3b41c528eed5c2fe6fa99a4fdc926c1ff",
+    "status": "entire gzip decompressed/read; all SOFT metadata retained; expression rows not evaluated"
+  },
+  {
+    "path": "research\\cohort_expansion\\manifest.json",
+    "bytes": 1620,
+    "sha256": "646e809dc376129d50466c0ee1a2eeae40e1d0704d885d6f74db131c19719d36",
+    "status": "entire text read",
+    "lines": 41
+  },
+  {
+    "path": "research\\cohort_expansion\\README.md",
+    "bytes": 1850,
+    "sha256": "8cd66e8c276de20b06faf6299aa23ff6634ab5183c891d95535aeb35fb7a6d69",
+    "status": "entire text read",
+    "lines": 42
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2022_gockley_cohort_reconstruction.csv",
+    "bytes": 639430,
+    "sha256": "133c53ef62356831072d1bd17b109bdadde71f60d4c8be02b910d3ec6c0981db",
+    "status": "entire text read",
+    "lines": 276
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2022_gockley_feature_map.csv",
+    "bytes": 24990,
+    "sha256": "3a7be22b27d1e1d53765b78687c0fc24bb24f290a107169929474eec4ed91906",
+    "status": "entire text read",
+    "lines": 199
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2022_gockley_published_reproduction_audit.md",
+    "bytes": 9864,
+    "sha256": "9d25db09f2960763f7f643893630ffa6ce25e000995bb690fb7cb87871b94803",
+    "status": "entire text read",
+    "lines": 62
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2022_gockley_published_reproduction_metrics.csv",
+    "bytes": 2238,
+    "sha256": "0cdb3944085b8995995674318ddeab82f3bbc5359d1fd4dc03d015de9530a356",
+    "status": "entire text read",
+    "lines": 9
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2022_gockley_published_split_stage_counts.csv",
+    "bytes": 338,
+    "sha256": "9f90291d5011ef74a68d292f0e5c492ed51f131ce1560c5eca688be4bf7c6a44",
+    "status": "entire text read",
+    "lines": 5
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2022_gockley_score_semantics_audit.md",
+    "bytes": 10091,
+    "sha256": "7c6fe7063e7c3723dca415d02b6ae14e3115915ff5f881164b97f3ece2b38dee",
+    "status": "entire text read",
+    "lines": 62
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2022_gockley_score_transformations.csv",
+    "bytes": 4137,
+    "sha256": "4bf599e3a3df49eda01c77b21c6122200c8f0e826d3fd88c133b0a37646b3e79",
+    "status": "entire text read",
+    "lines": 9
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2022_gockley_signature_best_10_metrics.csv",
+    "bytes": 3279,
+    "sha256": "12fda5b23eaf5231da4fd4e212f59c0609395fe7bf99386812e4f9cd9d6d5016",
+    "status": "entire text read",
+    "lines": 17
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2022_gockley_signature_best_10_predictions.csv",
+    "bytes": 28731,
+    "sha256": "e8160381155a68e5f0e505479658e2529fa283d1541afdcf01f771baa340f0dc",
+    "status": "entire text read",
+    "lines": 276
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2022_gockley_workbook_audit.md",
+    "bytes": 11923,
+    "sha256": "b2dbfdd748119527fdee82f7aa2d23091aa8692a322e1782e58090f347d5f841",
+    "status": "entire text read",
+    "lines": 87
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_alias_audit.csv",
+    "bytes": 1919,
+    "sha256": "af8aceb9d55fd41d6b1f272aaaa07e31e72b118c2cbd555d66c49b9894405221",
+    "status": "entire text read",
+    "lines": 6
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_cohort_reconstruction.csv",
+    "bytes": 163142,
+    "sha256": "cb7531f4ec8dd314432c1c2e7335a2f227f9d39c79f24c289c08d5702e590032",
+    "status": "entire text read",
+    "lines": 679
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_compatibility.csv",
+    "bytes": 759,
+    "sha256": "c321b95e788747b418dc29bc4aae947e3075c73c2f9749c1de4e20ef8cd68eba",
+    "status": "entire text read",
+    "lines": 2
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_compatibility_decision.md",
+    "bytes": 3284,
+    "sha256": "499262a2855337cab46933ea6c114b6ec7dee8f0aa31b428f90092dccf7e0b81",
+    "status": "entire text read",
+    "lines": 25
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_DATA_NEEDED.md",
+    "bytes": 971,
+    "sha256": "454b5097c05d133e6cb7e7169fba8d24e84befdce3912a70d0402805b82d0f08",
+    "status": "entire text read",
+    "lines": 13
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_endpoint_counts.csv",
+    "bytes": 1009,
+    "sha256": "b32cdfc5d449f086c9e19ed1c0b59eab5667e485c197630b4a9228409eb72b13",
+    "status": "entire text read",
+    "lines": 7
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_feature_map.csv",
+    "bytes": 4467,
+    "sha256": "e911cfffb22ceff311a8f366bee1d721cf57f069861a98b0e12766462cfa0798",
+    "status": "entire text read",
+    "lines": 20
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_file_verification.md",
+    "bytes": 910,
+    "sha256": "33086b6a1f0200aec85117c952d607513cc647375f4d1796c39a4e28bf8691de",
+    "status": "entire text read",
+    "lines": 20
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_frozen_validation.md",
+    "bytes": 1914,
+    "sha256": "ee61fffe52bb9e7c903fd676e264a9b634ce0e8bfb6d0b8c4e0d10b8fc4e11fd",
+    "status": "entire text read",
+    "lines": 28
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_historical_replication.csv",
+    "bytes": 4544,
+    "sha256": "26506b0bfddf948d8dee28f43b81b2d0b08e216f4dc58710f89e9728a1aac6b0",
+    "status": "entire text read",
+    "lines": 9
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_mirna_panel_inventory.csv",
+    "bytes": 25767,
+    "sha256": "9537f28646d1fcba3d7c4c18396b1f4fe456f9f44bfaf19ca4162ba36a19d549",
+    "status": "entire text read",
+    "lines": 181
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_overlap_analysis.csv",
+    "bytes": 3980,
+    "sha256": "ec301a670d9ce7d9ec5463f7c09b2ee54cd99b455dd8faf8678608653a812fa2",
+    "status": "entire text read",
+    "lines": 28
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_partial_signature_replication.md",
+    "bytes": 2629,
+    "sha256": "a96f5b0fb2d5f4d0e5311065de38f337c753c90e5c79e04a4e7a281e8af1f2f4",
+    "status": "entire text read",
+    "lines": 24
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_published_model_feature_map.csv",
+    "bytes": 1032,
+    "sha256": "56ec79e69b72a9176346c116a9ef941a4f81cbe1583efd7336055ecf8e8a4508",
+    "status": "entire text read",
+    "lines": 11
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_published_model_reproduction.md",
+    "bytes": 2938,
+    "sha256": "3ebe9afa7ad188f9bc321eafdf55fa9e2cb5cac31d3a4fccf326a2f1ee5f2374",
+    "status": "entire text read",
+    "lines": 37
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_stage_counts.csv",
+    "bytes": 4210,
+    "sha256": "d162eab708cb1ed380a9f1a444c79c1cdf5faa0845a84951f9069b9a37df2a83",
+    "status": "entire text read",
+    "lines": 33
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_workbook_audit.md",
+    "bytes": 110400,
+    "sha256": "4585884ed128e49f27338d0b8b6d5e2dea6187257c3efdc3fdb3acd6dbaf40f6",
+    "status": "entire text read",
+    "lines": 531
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_workbook_inventory.csv",
+    "bytes": 103168,
+    "sha256": "aa40fe0d7c250e823c105512461e5d02f2ff05fa4db296bc3daaaa6dfcea8175",
+    "status": "entire text read",
+    "lines": 4
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\380_pelvic_mass_48_assay_inventory.csv",
+    "bytes": 3184,
+    "sha256": "62343f5488c46ba493bb5c2f7112effd5bf387f25ef573b37b559f192cb952c9",
+    "status": "entire text read",
+    "lines": 49
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\380_pelvic_mass_data_access_audit.md",
+    "bytes": 4707,
+    "sha256": "9c445b4cfda95852d30b2f2ea55c19bc0c6ddadf646440fab31eb4800715bf0a",
+    "status": "entire text read",
+    "lines": 33
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\380_pelvic_mass_feature_compatibility.csv",
+    "bytes": 5781,
+    "sha256": "9f0b28d093673a55e9e6abebcb05ffa6b69450cdc18c0dc5c63b4783aef590a3",
+    "status": "entire text read",
+    "lines": 28
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\candidate_cohort_recommendation.md",
+    "bytes": 7159,
+    "sha256": "9e3baf96318fa214b687e5e9d86c40c21d9100fdc754b0f80d39d095c7f05162",
+    "status": "entire text read",
+    "lines": 134
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\candidate_cohort_scorecard.csv",
+    "bytes": 2879,
+    "sha256": "5fe06f4fd2faa21155f97595265e165eada42ae1418d51ee9ba560724ca850e7",
+    "status": "entire text read",
+    "lines": 6
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\GSE211692_external_validation_audit.md",
+    "bytes": 16296,
+    "sha256": "8d2ad84381821def7a83c6542505a2e8c629915f24bdec1d93faebfa1189078a",
+    "status": "entire text read",
+    "lines": 120
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\GSE211692_feature_compatibility.csv",
+    "bytes": 2080,
+    "sha256": "c7fe9f19305f9e41a46a77d208c35c905c1fcd16fa100043121475f538469535",
+    "status": "entire text read",
+    "lines": 20
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\GSE211692_identifier_overlap.csv",
+    "bytes": 1050,
+    "sha256": "f91f8448161913aa938a580eff78fa44d0d7b78ff7f2e9475a8ce292d46fbddc",
+    "status": "entire text read",
+    "lines": 6
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\GSE211692_label_counts.csv",
+    "bytes": 1374,
+    "sha256": "32f20511257f4b88a4acf2d0e83e32496d7936685135d63b88eaaf073227dcb4",
+    "status": "entire text read",
+    "lines": 20
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\GSE211692_ovarian_stage_counts.csv",
+    "bytes": 265,
+    "sha256": "21372933dfb60df9804ae165014e08b9efc0ff34bbe8908356da10a875dd6ecf",
+    "status": "entire text read",
+    "lines": 8
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\ideal_dataset_search_decision.md",
+    "bytes": 5649,
+    "sha256": "4a30a695de9a4ff29fe111998d406114ef52cffd73d5fddb6fca443770f7c7cb",
+    "status": "entire text read",
+    "lines": 35
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\janusrna_prediagnostic_access_audit.md",
+    "bytes": 1898,
+    "sha256": "3e1d4ba1f32bfa6f5c763d4926cfdb1e4288eeff1d412c4d24c99902556243a1",
+    "status": "entire text read",
+    "lines": 11
+  },
+  {
+    "path": "research\\transportability_analysis\\distribution_shift.png",
+    "bytes": 78536,
+    "sha256": "f96bcbbbc8f985ae2df49cc7191dd1abe3c07d64ebd84b9826c91319935fd9d8",
+    "status": "image read, metadata only"
+  },
+  {
+    "path": "research\\transportability_analysis\\run_transportability_analysis.py",
+    "bytes": 9284,
+    "sha256": "9770b2900ac84802e6ae8571ea8a0d84d65b680df4259f2cf98acf10c69182c8",
+    "status": "entire text read",
+    "lines": 204
+  },
+  {
+    "path": "research\\transportability_analysis\\threshold_analysis.png",
+    "bytes": 124469,
+    "sha256": "29cd07e2cb8248081e63271494b8796d25ba77628ee0bb5a87e756ab39bfa26e",
+    "status": "image read, metadata only"
+  },
+  {
+    "path": "research\\transportability_analysis\\transportability_manifest.json",
+    "bytes": 788,
+    "sha256": "c65a6f8b7a593f9011d0f1cc24cf3e7e50d458a8524441e8b81ca7501b5e6a0a",
+    "status": "entire text read",
+    "lines": 21
+  },
+  {
+    "path": "research\\transportability_analysis\\transportability_report.md",
+    "bytes": 3319,
+    "sha256": "6d4b049625c55b6501f3ccd3f8fc87ebcb1e7b51f2a06db4a4074c6e0c4e8f7c",
+    "status": "entire text read",
+    "lines": 61
+  },
+  {
+    "path": "research\\transportability_analysis\\transportability_summary.csv",
+    "bytes": 1173,
+    "sha256": "db37be5aef2d9f99ae6f475bcd659533b3f3673dc1c1de23d879ed236f2f4355",
+    "status": "entire text read",
+    "lines": 7
+  },
+  {
+    "path": "scripts\\audit_gse106817.py",
+    "bytes": 4879,
+    "sha256": "10077a8ad64f448f4863a53ad702222343bcfbf2df7e13888fd06eef20e4a415",
+    "status": "entire text read",
+    "lines": 256
+  },
+  {
+    "path": "scripts\\audit_gse106817_platform_shift.py",
+    "bytes": 8997,
+    "sha256": "1f9fa86a5da210a721d5936944f4a8b4ec9c6e043abb47383be4a7d5bf671606",
+    "status": "entire text read",
+    "lines": 179
+  },
+  {
+    "path": "scripts\\audit_methylbert_external_targets.py",
+    "bytes": 2206,
+    "sha256": "0deaf6dba03018cb09297922b90edfc40b0479277b77783a19beeca45dcb1629",
+    "status": "entire text read",
+    "lines": 54
+  },
+  {
+    "path": "scripts\\audit_original_pmml_model.py",
+    "bytes": 27741,
+    "sha256": "2080768097c032464e3e5d79df6dbec9ed1b5a1bceedf96c077cb30fc5cfe3fb",
+    "status": "entire text read",
+    "lines": 1275
+  },
+  {
+    "path": "scripts\\build_fair_historical_14mirna_baseline.py",
+    "bytes": 12444,
+    "sha256": "9cd3fada685555fa31b12742c9790f87f4491566a24fea533ee2393812e76d06",
+    "status": "entire text read",
+    "lines": 613
+  },
+  {
+    "path": "scripts\\build_full_historical_mirna_baseline.py",
+    "bytes": 16557,
+    "sha256": "999581bdf2bbc1add9869a49b8e492644727e451e4693addc8cb4d9b0c23ef2c",
+    "status": "entire text read",
+    "lines": 806
+  },
+  {
+    "path": "scripts\\build_gse106817_170mirna_baseline.py",
+    "bytes": 5938,
+    "sha256": "09fb795d1bd983536aca372db03cdaa4323be623f2c5bd13f32f54280b52cf53",
+    "status": "entire text read",
+    "lines": 327
+  },
+  {
+    "path": "scripts\\build_gse106817_allmirna_borderline_discovery.py",
+    "bytes": 7071,
+    "sha256": "a48ba1c540b28aac59ac9935847bf29f370ede1970bb6f648e205611cea3bea4",
+    "status": "entire text read",
+    "lines": 353
+  },
+  {
+    "path": "scripts\\bulk_test_external_datasets.py",
+    "bytes": 21645,
+    "sha256": "205abdce1b2f90585115c4ef8663e5240425d62d7d6737721180ac072d6c19f8",
+    "status": "entire text read",
+    "lines": 451
+  },
+  {
+    "path": "scripts\\compare_pmml_to_published_table2.py",
+    "bytes": 12561,
+    "sha256": "a4b95eb499bf85e553bf24fd233ef82a82b72e05d29ee0c5bf3fff9e626cd38a",
+    "status": "entire text read",
+    "lines": 536
+  },
+  {
+    "path": "scripts\\diagnose_external_feature_firewall.py",
+    "bytes": 7812,
+    "sha256": "d707b238daf35b6667b45a2f07dab7155bb48a7f04113f956f1e5c319d885dc3",
+    "status": "entire text read",
+    "lines": 185
+  },
+  {
+    "path": "scripts\\evaluate_gse106817_external.py",
+    "bytes": 8036,
+    "sha256": "86fbf0166e6b836e2dbb73bfd6a461b00991f3fe481731fcb0885dfee8be40f6",
+    "status": "entire text read",
+    "lines": 195
+  },
+  {
+    "path": "scripts\\evaluate_gse106817_phase5.py",
+    "bytes": 14143,
+    "sha256": "2701db0f2388454e62da4d30def46b72554c7798d22a8fb8bd59d0f47c86f548",
+    "status": "entire text read",
+    "lines": 283
+  },
+  {
+    "path": "scripts\\extract_gse106817_validation_cohort.py",
+    "bytes": 8657,
+    "sha256": "f5b497eb00a8065ef8f57dd792e176f2bfd5c2bf6a9efa98c695f69f6d3e21ff",
+    "status": "entire text read",
+    "lines": 494
+  },
+  {
+    "path": "scripts\\extract_original_14mirna_model.py",
+    "bytes": 12409,
+    "sha256": "cecc20fac8e64aa19799ec79162b6c4aaa7d3daafb6a21e3162b80a52429ec8c",
+    "status": "entire text read",
+    "lines": 595
+  },
+  {
+    "path": "scripts\\inspect_original_elife_dataset.py",
+    "bytes": 13187,
+    "sha256": "9d3d256597e20e6c2d83fcd1f36beacd54c1344f8fc4490edcaa12c2e48e0f7d",
+    "status": "entire text read",
+    "lines": 569
+  },
+  {
+    "path": "scripts\\map_historical_mirnas_to_mimat.py",
+    "bytes": 3233,
+    "sha256": "80a4484b71a726bb01173da2600b83cef262564eac05d7c039bfb8ae30f85b9e",
+    "status": "entire text read",
+    "lines": 166
+  },
+  {
+    "path": "scripts\\reproduce_original_historical_clean.py",
+    "bytes": 43575,
+    "sha256": "b2a1b5c3cc2527ebb4e4bb0b932edab73f593d2569af87cefedd256204131a93",
+    "status": "entire text read",
+    "lines": 1867
+  },
+  {
+    "path": "scripts\\reproduce_original_historical_standalone.py",
+    "bytes": 41764,
+    "sha256": "0e88ef970a04444c11863fabd628031c20dd2a778fc471e53566d5aa333c97f1",
+    "status": "entire text read",
+    "lines": 1887
+  },
+  {
+    "path": "scripts\\reproduce_original_pmml.py",
+    "bytes": 28515,
+    "sha256": "22dddb76c6ad415e95cfe338a2768178ec72d228783170aaa52ddf8458f69f72",
+    "status": "entire text read",
+    "lines": 1374
+  },
+  {
+    "path": "scripts\\reproduce_original_pmml_historical_data.py",
+    "bytes": 45621,
+    "sha256": "cdebaffa0a2e520e5151b062c9fe2cce035bc5b838b4b90f0be5fa24e0e87cab",
+    "status": "entire text read",
+    "lines": 2082
+  },
+  {
+    "path": "scripts\\search_original_44_patient_split.py",
+    "bytes": 6782,
+    "sha256": "ea258ab93156c9acc563e18426e6397bd4313712d96cc9a40241d298f0a8d9a4",
+    "status": "entire text read",
+    "lines": 333
+  },
+  {
+    "path": "scripts\\search_original_split_evidence.py",
+    "bytes": 4147,
+    "sha256": "2b2a1ec6ac3064e60994b303b45950b49a3dcfcca1d209b8c0c255693a4d1b78",
+    "status": "entire text read",
+    "lines": 203
+  },
+  {
+    "path": "scripts\\search_possible_historical_test_splits.py",
+    "bytes": 11997,
+    "sha256": "11cd43e0bf567b093a8e30d0aef2d2fc1dbd91840dae6b0d9688bed95ad6c461",
+    "status": "entire text read",
+    "lines": 532
+  },
+  {
+    "path": "scripts\\search_split_evidence_clean.py",
+    "bytes": 4567,
+    "sha256": "9550d4d8e431bc0421b83a21ace1136e4a1637d9858de910093d3cb8a41b8b54",
+    "status": "entire text read",
+    "lines": 224
+  },
+  {
+    "path": "scripts\\validate_historical_reproduction.py",
+    "bytes": 20453,
+    "sha256": "ce6c5fef17d5356afcc9b31cd8deaa9290a2346718ed807944637f9b64ab9b5d",
+    "status": "entire text read",
+    "lines": 826
+  },
+  {
+    "path": "scripts\\validate_pmml_against_table2_by_id.py",
+    "bytes": 12217,
+    "sha256": "f24f7c14c8c418c607cbe37e1035109b3ab1b943eaa355ed2513b4fd868cfab6",
+    "status": "entire text read",
+    "lines": 597
+  }
+]

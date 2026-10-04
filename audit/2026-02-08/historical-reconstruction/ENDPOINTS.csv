@@ -1,0 +1,10 @@
+source,endpoint,reported_or_expected_count,evidence,status,input_data_boundary
+scripts/reproduce_original_historical_clean.py,Cancer vs Benign Borderline Control,179 total;119 numeric Cohort2;60 explicit Cohort1,recover_historical_sample_order:470-671;load_labels:939-1117,conditional primary-header recovery;not reproduced,primary workbook and metadata not ingested
+scripts/reproduce_original_historical_clean.py,obsolete exported cohort provenance,120 Cohort2;59 Cohort1;E1056 excluded,main:1689-1694,contradicts recovery logic;not authoritative,input membership unknown
+scripts/reproduce_original_historical_standalone.py,Cancer vs Benign Borderline Control,179 total;120 positional;59 explicit,load_dataset2:260-707;main:1399-1887,superseded header assumption;not reproduced,primary workbook and metadata not ingested
+scripts/reproduce_original_pmml_historical_data.py,stored binary_label,179 total;120 numeric;59 E samples after E1056 removal,get_processed_sample_order:171-293;main:1590-2082,assumed membership;not reproduced,current metadata and workbook unknown
+scripts/reproduce_original_pmml.py,stored binary_label,179 claimed;actual len(df) unconstrained,load_dataset:160-194;main:907-1374,derivative table trust;no primary recovery,benchmark data not ingested
+scripts/reproduce_original_pmml_historical_data.py,previous raw representation comparison,AUC .451682;sensitivity 0;specificity 1,docstring:10-14,quoted prior result only;not validation,prior predictions unknown
+PDF page 4,historical reconstruction/reference,179,extracted-pages.txt:118-158,same-patient reference;no new patient rows,not independent cohort
+PDF page 15,Stage I/II vs benign/control,113;52 positive;61 negative,extracted-pages.txt:539-575,PDF claim;modern evaluator outside scope,not interchangeable with full179 endpoint
+PDF page 18,historical train/test assignment,135/44;20000 exploratory candidate splits,extracted-pages.txt:656-663,original assignment unrecovered;matches not proof,no new inferred patient linkage

@@ -1,0 +1,6 @@
+path,bytes,sha256,lines,reviewed_ranges,status,method
+scripts/reproduce_original_historical_clean.py,43575,b2a1b5c3cc2527ebb4e4bb0b932edab73f593d2569af87cefedd256204131a93,1867,1-550;551-1200;1201-1867,complete substantive static read,bounded read tool; no source execution
+scripts/reproduce_original_historical_standalone.py,41764,0e88ef970a04444c11863fabd628031c20dd2a778fc471e53566d5aa333c97f1,1887,1-650;651-1300;1301-1887,complete substantive static read,bounded read tool; no source execution
+scripts/reproduce_original_pmml.py,28515,22dddb76c6ad415e95cfe338a2768178ec72d228783170aaa52ddf8458f69f72,1374,1-650;651-1374,complete substantive static read,bounded read tool; no source execution
+scripts/reproduce_original_pmml_historical_data.py,45621,cdebaffa0a2e520e5151b062c9fe2cce035bc5b838b4b90f0be5fa24e0e87cab,2082,1-650;651-1350;1351-2082,complete substantive static read,bounded read tool; no source execution
+audit/2026-02-08/pdf/extracted-pages.txt,54758,2a6c0fc7adce7b8f28dcba63cab2ec3a7fa38a0d6087382fc3e22785c510f156,886,118-158;539-575;656-735,"selected pages 4,15,18-19 only",existing extracted text; no rendered PDF review

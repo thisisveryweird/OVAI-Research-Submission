@@ -1,0 +1,14 @@
+# Research-demo scorecard — not clinical validation (draft)
+
+**Problem/intended use:** earlier workup is a hypothesis; tier, population and comparator not selected. Not average-risk screening or diagnosis. **Evidence:** current GSE94533 source reports full179 (96/83) versus early113 (52/61) endpoints; high-capacity archived engineered pooled OOF AUC .8997, sensitivity .8269, specificity .9016, balanced accuracy .8643. No matching saved OOF rows/artifact lineage or unbiased discovery estimate; not nine-feature external validation. Full14-miRNA+clinical reported AUC .813 is a different population/model. Methylation and tumor-stage results are independent endpoint benchmarks, not fused improvements.
+
+**External failures:** bulk5-feature tables all-positive; historical14/phase5 raw all-negative; AUC ranking does not establish usable threshold/calibration or causal platform explanation. Report model/transform/threshold/N per group. **Gates:** missing primary inputs, donor overlap and visit linkage, imputation-order parity, original split, assay equivalence, calibration, prospective comparator and institutional approvals.
+
+**Honest demo guide (proposed, not launched):** display archived scorecard and exact pipeline identity; label synthetic/example or stored OOF patients explicitly. Do not install via launchers. If later authorized, expose endpoint/N, research-only warning, measured/default flags, effective inputs, artifact hash and input snapshot; clear stale result on change/error. No individual medical advice or validated cancer-risk claim.
+
+**PROPOSED workflow (not built integration):**
+Symptomatic/adnexal workup → existing blood draw/order → reference-lab serum logistics (specimen unresolved until certified) → validated assay → versioned research pipeline → structured HL7/FHIR DiagnosticReport/Observation → clinician workup/referral under verified guidance. FHIR/CDS Hooks are design options, not deployed interfaces. Software/reference-lab path is a candidate; qRT-PCR point-of-care hardware is a longer-horizon analytical-validation/capital project, not a prototype proven here.
+
+**Primary-source verification plan:** counsel/lab leads must date and authenticate current FDA IVD/LDT/PCCP/Q-Sub applicability, CMS CLIA, relevant court decisions and payer coverage/coding; clinical lead verifies SGO/ACOG referral guidance. IRB/privacy authority determines public/controlled/prospective status. No current legal, reimbursement or exemption assertion made.
+
+**Funding milestones, no invented budget/partners:** (1) approval and primary provenance/access; (2) assay/data linkage and parity/guardrail validation; (3) prespecified single-platform replication with HE4/CA125 comparators; (4) untouched multisite prospective and calibration/utility evidence; (5) regulatory/lab feasibility review. Seek actual quotes and signed partner commitments before costs or names. Milestone completion is not asserted.

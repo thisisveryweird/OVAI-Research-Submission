@@ -1,0 +1,483 @@
+{
+  "command": "python audit/2026-02-08/external-final/grouped_metrics.py reports/gse106817_phase5_predictions.csv reports/error_analysis_predictions.csv reports/data_augmentation_predictions.csv reports/model_ensemble_predictions.csv",
+  "positive_class": 1,
+  "audits": [
+    {
+      "path": "reports\\gse106817_phase5_predictions.csv",
+      "sha256": "bc6b9dd010293160a0b5c4faa4911ce3a00610a9b8d14a04bfe460b8778bacd6",
+      "group_keys": [
+        "experiment",
+        "train_dataset",
+        "test_dataset",
+        "normalization",
+        "threshold"
+      ],
+      "groups": [
+        {
+          "group": {
+            "experiment": "A",
+            "train_dataset": "GSE94533",
+            "test_dataset": "GSE106817",
+            "normalization": "raw_values",
+            "threshold": "0.69"
+          },
+          "n": 3108,
+          "tn": 2788,
+          "fp": 0,
+          "fn": 320,
+          "tp": 0,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "prediction"
+        },
+        {
+          "group": {
+            "experiment": "A",
+            "train_dataset": "GSE94533",
+            "test_dataset": "GSE106817",
+            "normalization": "log1p_values",
+            "threshold": "0.64"
+          },
+          "n": 3108,
+          "tn": 1659,
+          "fp": 1129,
+          "fn": 82,
+          "tp": 238,
+          "sensitivity": 0.74375,
+          "specificity": 0.5950502152080345,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "prediction"
+        },
+        {
+          "group": {
+            "experiment": "A",
+            "train_dataset": "GSE94533",
+            "test_dataset": "GSE106817",
+            "normalization": "within_dataset_standard",
+            "threshold": "0.56"
+          },
+          "n": 3108,
+          "tn": 1595,
+          "fp": 1193,
+          "fn": 76,
+          "tp": 244,
+          "sensitivity": 0.7625,
+          "specificity": 0.5720946915351507,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "prediction"
+        },
+        {
+          "group": {
+            "experiment": "A",
+            "train_dataset": "GSE94533",
+            "test_dataset": "GSE106817",
+            "normalization": "training_derived_standard",
+            "threshold": "0.6"
+          },
+          "n": 3108,
+          "tn": 2787,
+          "fp": 1,
+          "fn": 320,
+          "tp": 0,
+          "sensitivity": 0.0,
+          "specificity": 0.9996413199426112,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "prediction"
+        },
+        {
+          "group": {
+            "experiment": "A",
+            "train_dataset": "GSE94533",
+            "test_dataset": "GSE106817",
+            "normalization": "within_dataset_quantile",
+            "threshold": "0.53"
+          },
+          "n": 3108,
+          "tn": 1939,
+          "fp": 849,
+          "fn": 120,
+          "tp": 200,
+          "sensitivity": 0.625,
+          "specificity": 0.695480631276901,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "prediction"
+        },
+        {
+          "group": {
+            "experiment": "A",
+            "train_dataset": "GSE94533",
+            "test_dataset": "GSE106817",
+            "normalization": "training_derived_quantile",
+            "threshold": "0.48"
+          },
+          "n": 3108,
+          "tn": 2788,
+          "fp": 0,
+          "fn": 320,
+          "tp": 0,
+          "sensitivity": 0.0,
+          "specificity": 1.0,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "prediction"
+        },
+        {
+          "group": {
+            "experiment": "B",
+            "train_dataset": "GSE106817",
+            "test_dataset": "GSE94533",
+            "normalization": "raw_values",
+            "threshold": "0.45000000000000007"
+          },
+          "n": 179,
+          "tn": 83,
+          "fp": 0,
+          "fn": 95,
+          "tp": 1,
+          "sensitivity": 0.010416666666666666,
+          "specificity": 1.0,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "prediction"
+        },
+        {
+          "group": {
+            "experiment": "B",
+            "train_dataset": "GSE106817",
+            "test_dataset": "GSE94533",
+            "normalization": "log1p_values",
+            "threshold": "0.48"
+          },
+          "n": 179,
+          "tn": 68,
+          "fp": 15,
+          "fn": 60,
+          "tp": 36,
+          "sensitivity": 0.375,
+          "specificity": 0.8192771084337349,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "prediction"
+        },
+        {
+          "group": {
+            "experiment": "B",
+            "train_dataset": "GSE106817",
+            "test_dataset": "GSE94533",
+            "normalization": "within_dataset_standard",
+            "threshold": "0.58"
+          },
+          "n": 179,
+          "tn": 74,
+          "fp": 9,
+          "fn": 67,
+          "tp": 29,
+          "sensitivity": 0.3020833333333333,
+          "specificity": 0.891566265060241,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "prediction"
+        },
+        {
+          "group": {
+            "experiment": "B",
+            "train_dataset": "GSE106817",
+            "test_dataset": "GSE94533",
+            "normalization": "training_derived_standard",
+            "threshold": "0.56"
+          },
+          "n": 179,
+          "tn": 57,
+          "fp": 26,
+          "fn": 48,
+          "tp": 48,
+          "sensitivity": 0.5,
+          "specificity": 0.6867469879518072,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "prediction"
+        },
+        {
+          "group": {
+            "experiment": "B",
+            "train_dataset": "GSE106817",
+            "test_dataset": "GSE94533",
+            "normalization": "within_dataset_quantile",
+            "threshold": "0.49"
+          },
+          "n": 179,
+          "tn": 58,
+          "fp": 25,
+          "fn": 38,
+          "tp": 58,
+          "sensitivity": 0.6041666666666666,
+          "specificity": 0.6987951807228916,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "prediction"
+        },
+        {
+          "group": {
+            "experiment": "B",
+            "train_dataset": "GSE106817",
+            "test_dataset": "GSE94533",
+            "normalization": "training_derived_quantile",
+            "threshold": "0.48"
+          },
+          "n": 179,
+          "tn": 0,
+          "fp": 83,
+          "fn": 0,
+          "tp": 96,
+          "sensitivity": 1.0,
+          "specificity": 0.0,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "prediction"
+        }
+      ]
+    },
+    {
+      "path": "reports\\error_analysis_predictions.csv",
+      "sha256": "ad93f5b3f914a4d1f722937c8c7216bf0855119b198f9a80bbfe7829bd1ead63",
+      "group_keys": [
+        "dataset",
+        "model"
+      ],
+      "groups": [
+        {
+          "group": {
+            "dataset": "GSE94533",
+            "model": "median_logistic"
+          },
+          "n": 179,
+          "tn": 66,
+          "fp": 17,
+          "fn": 28,
+          "tp": 68,
+          "sensitivity": 0.7083333333333334,
+          "specificity": 0.7951807228915663,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "predicted_class"
+        },
+        {
+          "group": {
+            "dataset": "GSE94533",
+            "model": "knn_logistic"
+          },
+          "n": 179,
+          "tn": 62,
+          "fp": 21,
+          "fn": 27,
+          "tp": 69,
+          "sensitivity": 0.71875,
+          "specificity": 0.7469879518072289,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "predicted_class"
+        },
+        {
+          "group": {
+            "dataset": "GSE94533",
+            "model": "calibrated_svm"
+          },
+          "n": 179,
+          "tn": 59,
+          "fp": 24,
+          "fn": 20,
+          "tp": 76,
+          "sensitivity": 0.7916666666666666,
+          "specificity": 0.7108433734939759,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "predicted_class"
+        },
+        {
+          "group": {
+            "dataset": "GSE94533",
+            "model": "random_forest"
+          },
+          "n": 179,
+          "tn": 62,
+          "fp": 21,
+          "fn": 26,
+          "tp": 70,
+          "sensitivity": 0.7291666666666666,
+          "specificity": 0.7469879518072289,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "predicted_class"
+        },
+        {
+          "group": {
+            "dataset": "GSE94533",
+            "model": "xgboost"
+          },
+          "n": 179,
+          "tn": 60,
+          "fp": 23,
+          "fn": 25,
+          "tp": 71,
+          "sensitivity": 0.7395833333333334,
+          "specificity": 0.7228915662650602,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "predicted_class"
+        },
+        {
+          "group": {
+            "dataset": "GSE94533",
+            "model": "ratio_logistic"
+          },
+          "n": 179,
+          "tn": 69,
+          "fp": 14,
+          "fn": 33,
+          "tp": 63,
+          "sensitivity": 0.65625,
+          "specificity": 0.8313253012048193,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "predicted_class"
+        },
+        {
+          "group": {
+            "dataset": "GSE94533",
+            "model": "stacked_ensemble"
+          },
+          "n": 179,
+          "tn": 61,
+          "fp": 22,
+          "fn": 26,
+          "tp": 70,
+          "sensitivity": 0.7291666666666666,
+          "specificity": 0.7349397590361446,
+          "threshold_decision_mismatches": 0,
+          "decision_column": "predicted_class"
+        }
+      ]
+    },
+    {
+      "path": "reports\\data_augmentation_predictions.csv",
+      "sha256": "de2307516f08d299adfe1f9d10b64f035b4badf7959c3f853c9d9d0367e74d39",
+      "group_keys": [
+        "model",
+        "augmentation"
+      ],
+      "groups": [
+        {
+          "group": {
+            "model": "regularized_logistic",
+            "augmentation": "none"
+          },
+          "n": 113,
+          "status": "No saved decision or row threshold; operating metrics unknown. No OOF threshold borrowed."
+        },
+        {
+          "group": {
+            "model": "random_forest",
+            "augmentation": "none"
+          },
+          "n": 113,
+          "status": "No saved decision or row threshold; operating metrics unknown. No OOF threshold borrowed."
+        },
+        {
+          "group": {
+            "model": "soft_voting",
+            "augmentation": "none"
+          },
+          "n": 113,
+          "status": "No saved decision or row threshold; operating metrics unknown. No OOF threshold borrowed."
+        },
+        {
+          "group": {
+            "model": "regularized_logistic",
+            "augmentation": "smote"
+          },
+          "n": 113,
+          "status": "No saved decision or row threshold; operating metrics unknown. No OOF threshold borrowed."
+        },
+        {
+          "group": {
+            "model": "random_forest",
+            "augmentation": "smote"
+          },
+          "n": 113,
+          "status": "No saved decision or row threshold; operating metrics unknown. No OOF threshold borrowed."
+        },
+        {
+          "group": {
+            "model": "soft_voting",
+            "augmentation": "smote"
+          },
+          "n": 113,
+          "status": "No saved decision or row threshold; operating metrics unknown. No OOF threshold borrowed."
+        },
+        {
+          "group": {
+            "model": "regularized_logistic",
+            "augmentation": "borderline_smote"
+          },
+          "n": 113,
+          "status": "No saved decision or row threshold; operating metrics unknown. No OOF threshold borrowed."
+        },
+        {
+          "group": {
+            "model": "random_forest",
+            "augmentation": "borderline_smote"
+          },
+          "n": 113,
+          "status": "No saved decision or row threshold; operating metrics unknown. No OOF threshold borrowed."
+        },
+        {
+          "group": {
+            "model": "soft_voting",
+            "augmentation": "borderline_smote"
+          },
+          "n": 113,
+          "status": "No saved decision or row threshold; operating metrics unknown. No OOF threshold borrowed."
+        }
+      ]
+    },
+    {
+      "path": "reports\\model_ensemble_predictions.csv",
+      "sha256": "1e1be3f8ae4cdcfca4af6415e94c7a1a8f75d9fd7eba76c54b93165d74492ab0",
+      "group_keys": [
+        "model"
+      ],
+      "groups": [
+        {
+          "group": {
+            "model": "regularized_logistic"
+          },
+          "n": 113,
+          "status": "No saved decision or row threshold; operating metrics unknown. No OOF threshold borrowed."
+        },
+        {
+          "group": {
+            "model": "calibrated_svm"
+          },
+          "n": 113,
+          "status": "No saved decision or row threshold; operating metrics unknown. No OOF threshold borrowed."
+        },
+        {
+          "group": {
+            "model": "random_forest"
+          },
+          "n": 113,
+          "status": "No saved decision or row threshold; operating metrics unknown. No OOF threshold borrowed."
+        },
+        {
+          "group": {
+            "model": "xgboost"
+          },
+          "n": 113,
+          "status": "No saved decision or row threshold; operating metrics unknown. No OOF threshold borrowed."
+        },
+        {
+          "group": {
+            "model": "soft_voting"
+          },
+          "n": 113,
+          "status": "No saved decision or row threshold; operating metrics unknown. No OOF threshold borrowed."
+        },
+        {
+          "group": {
+            "model": "stacked_logistic"
+          },
+          "n": 113,
+          "status": "No saved decision or row threshold; operating metrics unknown. No OOF threshold borrowed."
+        }
+      ]
+    }
+  ]
+}

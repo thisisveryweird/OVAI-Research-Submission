@@ -1,0 +1,12 @@
+coverage_file,schema
+audit/2026-02-08/builders-review/COVERAGE.csv,"path,bytes,lines,sha256,read_status,role,gaps"
+audit/2026-02-08/core-evaluation/COVERAGE.csv,"path,read_complete,bytes,lines,sha256"
+audit/2026-02-08/core-final/COVERAGE.csv,"path,sha256,bytes,lines,reviewed_ranges,status"
+audit/2026-02-08/discovery-final/COVERAGE.csv,"path,sha256,bytes,lines,coverage,kind"
+audit/2026-02-08/external-final/COVERAGE.csv,"path,sha256,bytes,prior_ingestion_status,final_substantive_read,gap"
+audit/2026-02-08/governance-final/COVERAGE.csv,"path,scope,lines,sha256,execution"
+audit/2026-02-08/historical-identity/COVERAGE.csv,"path,bytes,lines,sha256,read_status,method"
+audit/2026-02-08/historical-reconstruction/COVERAGE.csv,"path,bytes,sha256,lines,reviewed_ranges,status,method"
+audit/2026-02-08/inference-final/COVERAGE.csv,"path,prior_extraction_mode,extracted_source_line_count,actual_review,direct_source_read,current_sha256,matches_prior_hash,materialized_deep_spans"
+audit/2026-02-08/inference-review/COVERAGE.csv,"path,bytes,sha256,coverage,execution"
+audit/2026-02-08/transfer-stage-review/COVERAGE.csv,"path,bytes,lines,sha256,read_coverage,gaps"

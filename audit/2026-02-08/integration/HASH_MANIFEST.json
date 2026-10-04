@@ -1,0 +1,91 @@
+{
+  "algorithm": "SHA-256",
+  "self_reference_excluded": "HASH_MANIFEST.json",
+  "files": [
+    {
+      "path": "audit/2026-02-08/integration/AUDIT.md",
+      "sha256": "a6b4b48c772a2678a2ff718f12503375df5decca1a471fc38c2364c66fd99a82",
+      "bytes": 5107
+    },
+    {
+      "path": "audit/2026-02-08/integration/BLOCKED_RESEARCH_AND_DECISIONS.md",
+      "sha256": "b51695583231a82c8fe15d7493be2db4fa2a516a5c40a2f8e114cf5ef002017f",
+      "bytes": 3944
+    },
+    {
+      "path": "audit/2026-02-08/integration/CITATION_CHECKS.json",
+      "sha256": "7be4f5db2b34c178a326c5672148c7b4b07c7f146d59c37a0a6bea65ae23cc11",
+      "bytes": 18200
+    },
+    {
+      "path": "audit/2026-02-08/integration/consolidate.py",
+      "sha256": "067e3b18a4f88ae015dfc64a61e8d47923d59f0a81461d87397bac4999bcc116",
+      "bytes": 35252
+    },
+    {
+      "path": "audit/2026-02-08/integration/DATA_SOURCES_DRAFT.md",
+      "sha256": "62a56419dd538a02e93130326392aae10c33ea841f16a26951073ba30bd10b61",
+      "bytes": 7717
+    },
+    {
+      "path": "audit/2026-02-08/integration/DRAFT_PRESENTATION.md",
+      "sha256": "68692ee4e0716aca61d6b3e0f26ecb170db14b68186a96248689481b962f53eb",
+      "bytes": 2962
+    },
+    {
+      "path": "audit/2026-02-08/integration/ENDPOINT_REGISTRY.csv",
+      "sha256": "fc020454489fe28886b2530623eee13b445abb9e2fab7a65e9aac7a6f31f30ff",
+      "bytes": 299219
+    },
+    {
+      "path": "audit/2026-02-08/integration/EVIDENCE_REPORTS.md",
+      "sha256": "902e6d9e8568392d529adcb7f859dd9ed33f9ee2a9016b512880b34dc3818629",
+      "bytes": 153265
+    },
+    {
+      "path": "audit/2026-02-08/integration/FILES_CHANGED.md",
+      "sha256": "c8d96d4453326379bdfe5f7a9526b4c7399843f6311becddb11ecfccbeda91b5",
+      "bytes": 16107
+    },
+    {
+      "path": "audit/2026-02-08/integration/PATCH_APPROVAL_REQUEST.md",
+      "sha256": "6142d17a5ee0d2e7d9f19958f26be47c8a088596c676728c682ad2a468c07bd1",
+      "bytes": 4532
+    },
+    {
+      "path": "audit/2026-02-08/integration/PDF_TO_REPOSITORY_CHECKLIST.csv",
+      "sha256": "aa665f5bcab97ea915e61b8c86375c969442439e4790cea964b97fab20af81a7",
+      "bytes": 43565
+    },
+    {
+      "path": "audit/2026-02-08/integration/PRESERVATION_CHECKS.json",
+      "sha256": "25d547b279cf0e10df320caeae80cd4a62c4bf897fd37cb2860a2d2ebca730f2",
+      "bytes": 59196
+    },
+    {
+      "path": "audit/2026-02-08/integration/READ_COVERAGE.csv",
+      "sha256": "d87beb8823bbe1cf3287bc3b29ac07028199cfed6c10b5f4679452aa0e38a62f",
+      "bytes": 143322
+    },
+    {
+      "path": "audit/2026-02-08/integration/RESULTS_INDEX_DRAFT.md",
+      "sha256": "969eb0e541b437ad435d151bcf1b61535e64ae3119f643effa5bc1cb7c1c77de",
+      "bytes": 160898
+    },
+    {
+      "path": "audit/2026-02-08/integration/ROW_CLASS_GROUP_CHECKS.json",
+      "sha256": "976b2237947851f5842a01a0346589bcfc7302447f801e44db2dde5c49dd82c0",
+      "bytes": 24737
+    },
+    {
+      "path": "audit/2026-02-08/integration/VERIFICATION.json",
+      "sha256": "5880b45f9ac2cd4d77a6db9a9281518a96ee23634f4153fcbec431b6d9b8a14f",
+      "bytes": 2479
+    },
+    {
+      "path": "audit/2026-02-08/integration/verify_checklist.py",
+      "sha256": "e1b0c5f6d2d0342eb49203437de503a92e3ca528d153e30c9f8e8aaa5d874591",
+      "bytes": 1638
+    }
+  ]
+}

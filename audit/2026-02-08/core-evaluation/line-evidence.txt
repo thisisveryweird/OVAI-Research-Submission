@@ -1,0 +1,55 @@
+scripts/evaluate_gse94533_diagnostic_model.py:50:         "select__k": ks,
+scripts/evaluate_gse94533_diagnostic_model.py:65:         if frame[column].notna().any() and frame[column].nunique(dropna=True) > 1
+scripts/evaluate_gse94533_diagnostic_model.py:133:         "majority_class_accuracy": float(y.mean()),
+scripts/evaluate_gse94533_enhancements.py:114:                 {"select__k": k_values, "model__C": [0.03, 0.1, 0.3, 1.0], "model__class_weight": [None, "balanced"]},
+scripts/evaluate_gse94533_enhancements.py:118:                 {"select__k": k_values, "model__C": [0.03, 0.1, 0.3, 1.0], "model__class_weight": [None, "balanced"]},
+scripts/evaluate_gse94533_enhancements.py:124:                     ("model", CalibratedClassifierCV(
+scripts/evaluate_gse94533_enhancements.py:152:             "select__k": [k for k in [5, 10, 14, 16, 20] if k <= len(feature_names)] + ["all"],
+scripts/evaluate_gse94533_enhancements.py:183:                 train_probability = cross_val_predict(
+scripts/evaluate_gse94533_enhancements.py:188:                 threshold = max(
+scripts/evaluate_gse94533_enhancements.py:219:         selected = [name for name, weight in zip(feature_names, lasso.named_steps["model"].coef_[0]) if abs(weight) > 1e-10]
+scripts/evaluate_gse94533_enhancements.py:230:             report_threshold = float(np.median(selected_thresholds[name]))
+scripts/evaluate_gse94533_enhancements.py:231:             results[name]["threshold_tuned_metrics"] = metrics(
+scripts/evaluate_gse94533_enhancements.py:236:             results[name]["threshold_tuned_metrics"].update({
+scripts/evaluate_methylbert_methylation.py:46:         if frame[column].notna().any() and frame[column].nunique(dropna=True) > 1
+scripts/evaluate_methylbert_methylation.py:73:             {"select__k": k_values, "model__alpha": [0.01, 0.1, 1.0, 10.0, 100.0]},
+scripts/freeze_methylbert_pipeline.py:40:         and subset[column].notna().any()
+scripts/freeze_methylbert_pipeline.py:41:         and subset[column].nunique(dropna=True) > 1
+scripts/freeze_methylbert_pipeline.py:59:             "select__k": [25, 50, 100, 250, 493, "all"],
+scripts/evaluate_frozen_signature_threshold.py:323: best_threshold = None
+scripts/evaluate_frozen_signature_threshold.py:340:         best_threshold = threshold
+scripts/evaluate_frozen_signature_threshold.py:496: available_test = [
+scripts/evaluate_frozen_signature_threshold.py:503:     if g not in available_test
+scripts/evaluate_frozen_signature_threshold.py:509:     len(available_test)
+scripts/evaluate_frozen_signature_threshold.py:517: if len(available_test) < 10:
+scripts/evaluate_frozen_signature_threshold.py:525:         for g in available_test
+scripts/evaluate_frozen_signature_threshold.py:534:     disc_X[available_test]
+scripts/evaluate_frozen_signature_threshold.py:538:     test_X[available_test]
+scripts/train_mirna_baseline.py:133:             nunique = df[col].nunique(dropna=True)
+scripts/train_mirna_baseline.py:294:     X = X.loc[:, X.isna().mean() <= 0.50]
+scripts/train_mirna_baseline.py:298:     X = X.loc[:, [c for c in X.columns if X[c].nunique(dropna=True) >= 3]]
+scripts/train_mirna_baseline.py:302:     pid = patient_id_column(data)
+scripts/train_mirna_baseline.py:305:         unique_groups = groups.nunique()
+scripts/train_mirna_baseline.py:348:     threshold = calibrate_threshold(y_test, p, 0.90)
+scripts/train_mirna_baseline.py:375:     selected_names = list(X_train.columns[selected_mask])
+scripts/train_mirna_baseline.py:376:     pd.DataFrame({"feature": selected_names}).to_csv(REPORTS / "tables" / "mirna_selected_features.csv", index=False)
+scripts/train_tcga_ov_stage_model.py:131:             frame[column].notna().mean() >= 0.80
+scripts/train_tcga_ov_stage_model.py:132:             and frame[column].nunique(dropna=True) > 1
+scripts/train_tcga_ov_stage_model.py:150:         "select__k": candidates,
+scripts/train_tcga_ov_stage_model.py:235:         "majority_class_accuracy": float(frame["stage_label"].mean()),
+scripts/run_reproducible_baseline.py:124:         CalibratedClassifierCV(
+scripts/run_reproducible_baseline.py:133:         CalibratedClassifierCV(
+scripts/run_reproducible_baseline.py:170:                 "select__k": [5, 14, "all"],
+scripts/run_reproducible_baseline.py:180:                 "select__k": [5, 14, "all"],
+scripts/run_reproducible_baseline.py:190:                 "select__k": [5, 14, "all"],
+scripts/run_reproducible_baseline.py:199:                 "select__k": [5, 14, "all"],
+scripts/run_reproducible_baseline.py:208:                 "select__k": [5, 14, "all"],
+scripts/run_reproducible_baseline.py:219:                 "select__k": [5, 14, "all"],
+scripts/run_reproducible_baseline.py:229:                 "select__k": [5, 14, "all"],
+scripts/run_reproducible_baseline.py:318: def bootstrap_intervals(y_true: np.ndarray, probability: np.ndarray, threshold: float, seed: int) -> dict[str, tuple[float, float]]:
+scripts/run_reproducible_baseline.py:339:     oof_threshold = np.full(len(X), np.nan)
+scripts/run_reproducible_baseline.py:355:         threshold_probability = cross_val_predict(
+scripts/run_reproducible_baseline.py:363:         threshold = choose_threshold(y[train_idx], threshold_probability)
+scripts/run_reproducible_baseline.py:376:     threshold = float(np.median(oof_threshold))
+scripts/run_reproducible_baseline.py:380:     intervals = bootstrap_intervals(y, oof_probability, threshold, SEED + len(spec.name))
+audit/2026-02-08/pdf/extracted-pages.txt:644:           filter out non-informative feature columns (notna().any(), nunique() > 1) computed on the full

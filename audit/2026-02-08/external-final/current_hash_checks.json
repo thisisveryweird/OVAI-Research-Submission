@@ -1,0 +1,352 @@
+[
+  {
+    "path": "reports\\2024_adnexal_mass_data_audit.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "reports\\bulk_external_test_results.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "reports\\clinical_ablation_results.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "reports\\cptac_acquisition_audit.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "reports\\current_pipeline_audit.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "reports\\data_augmentation_results.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "reports\\error_analysis.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "reports\\external_feature_firewall_diagnostic.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "reports\\feature_selection_stability.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "reports\\gse106817_phase5.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "reports\\gse106817_platform_shift_audit.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "reports\\high_capacity_model_results.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "reports\\model_ensemble_comparison.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "reports\\pairwise_ratio_experiment.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "reports\\potential_external_datasets.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "reports\\rank_transform_experiment.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "reports\\remaining_queue_screen.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\audit_2022_gockley_published_reproduction.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\audit_2022_gockley_score_semantics.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\audit_2022_gockley_workbook.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\audit_2024_adnexal_mass.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\audit_2024_adnexal_mass_workbook.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\audit_cross_platform_replication.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\audit_gse211692.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\data\\raw\\2024_adnexal_mass\\README.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\README.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2022_gockley_published_reproduction_audit.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2022_gockley_score_semantics_audit.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2022_gockley_workbook_audit.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_compatibility_decision.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_DATA_NEEDED.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_file_verification.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_frozen_validation.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_partial_signature_replication.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_published_model_reproduction.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\2024_adnexal_mass_workbook_audit.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\380_pelvic_mass_data_access_audit.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\candidate_cohort_recommendation.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\GSE211692_external_validation_audit.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\ideal_dataset_search_decision.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\cohort_expansion\\reports\\janusrna_prediagnostic_access_audit.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\transportability_analysis\\run_transportability_analysis.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "research\\transportability_analysis\\transportability_report.md",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\audit_gse106817.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\audit_gse106817_platform_shift.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\audit_methylbert_external_targets.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\audit_original_pmml_model.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\build_fair_historical_14mirna_baseline.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\build_full_historical_mirna_baseline.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\build_gse106817_170mirna_baseline.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\build_gse106817_allmirna_borderline_discovery.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\bulk_test_external_datasets.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\compare_pmml_to_published_table2.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\diagnose_external_feature_firewall.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\evaluate_gse106817_external.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\evaluate_gse106817_phase5.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\extract_gse106817_validation_cohort.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\extract_original_14mirna_model.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\inspect_original_elife_dataset.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\map_historical_mirnas_to_mimat.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\reproduce_original_historical_clean.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\reproduce_original_historical_standalone.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\reproduce_original_pmml.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\reproduce_original_pmml_historical_data.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\search_original_44_patient_split.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\search_original_split_evidence.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\search_possible_historical_test_splits.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\search_split_evidence_clean.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\validate_historical_reproduction.py",
+    "exists": true,
+    "hash_matches": true
+  },
+  {
+    "path": "scripts\\validate_pmml_against_table2_by_id.py",
+    "exists": true,
+    "hash_matches": true
+  }
+]

@@ -14,6 +14,21 @@ OOF = (
 )
 
 
+def build_case_lookup(df) -> dict:
+    if "sample_id" not in df.columns:
+        raise ValueError("Missing sample_id column")
+    lookup = {}
+    for _, row in df.iterrows():
+        value = row["sample_id"]
+        if pd.isna(value) or not str(value).strip():
+            raise ValueError("Missing or blank sample_id")
+        key = str(value).strip()
+        if key in lookup:
+            raise ValueError(f"Duplicate sample_id: {key}")
+        lookup[key] = row.copy()
+    return lookup
+
+
 def main():
 
     print("=" * 80)
@@ -30,6 +45,7 @@ def main():
         )
 
     df = pd.read_csv(OOF)
+    build_case_lookup(df)
 
     required = {
         "sample_id",
@@ -152,10 +168,7 @@ def main():
     # Interactive case lookup
     # ---------------------------------------------------------------
 
-    by_id = {
-        str(x): row
-        for _, row in df.iterrows()
-    }
+    by_id = build_case_lookup(df)
 
     print()
     print("=" * 80)

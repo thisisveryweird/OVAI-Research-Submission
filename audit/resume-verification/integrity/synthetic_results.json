@@ -1,0 +1,28 @@
+{
+  "cases": [
+    {
+      "path": "sample.txt",
+      "expected": "03f9cb0aca1cd7a762e965f4cb9b328d3b6034b9c4de9e936ad2defa41973e1d",
+      "actual": "03f9cb0aca1cd7a762e965f4cb9b328d3b6034b9c4de9e936ad2defa41973e1d",
+      "status": "match"
+    },
+    {
+      "path": "missing.txt",
+      "expected": "0000000000000000000000000000000000000000000000000000000000000000",
+      "actual": null,
+      "status": "missing"
+    },
+    {
+      "path": "../escape",
+      "expected": "0000000000000000000000000000000000000000000000000000000000000000",
+      "status": "unsafe_path"
+    },
+    {
+      "path": "sample.txt",
+      "expected": "0000000000000000000000000000000000000000000000000000000000000000",
+      "actual": "03f9cb0aca1cd7a762e965f4cb9b328d3b6034b9c4de9e936ad2defa41973e1d",
+      "status": "mismatch"
+    }
+  ],
+  "passed": 4
+}

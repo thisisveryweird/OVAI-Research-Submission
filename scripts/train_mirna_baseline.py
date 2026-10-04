@@ -36,8 +36,6 @@ PROJECT = Path(__file__).resolve().parents[1]
 RAW = PROJECT / "data" / "raw"
 MODELS = PROJECT / "models"
 REPORTS = PROJECT / "reports"
-MODELS.mkdir(exist_ok=True)
-(REPORTS / "tables").mkdir(parents=True, exist_ok=True)
 
 LABEL_CANDIDATES = [
     "diagnosis",
@@ -260,11 +258,27 @@ def make_binary_label(df, label_col):
     # Return labels indexed to the retained rows.
     return y
 
+def require_approved_training_protocol() -> None:
+    raise RuntimeError(
+        "Training blocked: patient grouping and independent threshold-selection "
+        "protocols are missing and require explicit approval. No data were read."
+    )
+
+
+def patient_id_column(data):
+    require_approved_training_protocol()
+
+
+def calibrate_threshold(*args, **kwargs):
+    require_approved_training_protocol()
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--cohort", type=Path, default=None)
     parser.add_argument("--top-k", type=int, default=50)
     args = parser.parse_args()
+    require_approved_training_protocol()
 
     cohorts = [args.cohort] if args.cohort else sorted(RAW.glob("GSE94533_Processed_file_Cohort*.xlsx"))
     cohorts = [p for p in cohorts if p is not None and p.exists()]

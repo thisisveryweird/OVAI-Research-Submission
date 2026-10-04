@@ -1,0 +1,793 @@
+[
+  {
+    "id": "PDF-P01-R01",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P02-R01",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P02-R02",
+    "path": "README.md",
+    "range": "101-113",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P03-R01",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P05-R01",
+    "path": "src/data/multimodal_table.py",
+    "range": "18-58",
+    "actual_lines": 58,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P05-R02",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P06-R01",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P06-R02",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P06-R03",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "293-305",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P06-R03",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "371-374",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P07-R01",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "293-305",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P07-R01",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "371-374",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P07-R02",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P07-R03",
+    "path": "scripts/train_tcga_ov_stage_model.py",
+    "range": "79-136",
+    "actual_lines": 242,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P07-R04",
+    "path": "src/data/multimodal_table.py",
+    "range": "18-58",
+    "actual_lines": 58,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P07-R05",
+    "path": "scripts/run_phase8_model_experiments.py",
+    "range": "275-338",
+    "actual_lines": 342,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P08-R01",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "293-305",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P08-R01",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "371-374",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P08-R02",
+    "path": "configs/project.yaml",
+    "range": "7-13",
+    "actual_lines": 53,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P08-R02",
+    "path": "configs/project.yaml",
+    "range": "39-53",
+    "actual_lines": 53,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P08-R03",
+    "path": "scripts/run_reproducible_baseline.py",
+    "range": "278-313",
+    "actual_lines": 469,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P08-R04",
+    "path": "scripts/run_reproducible_baseline.py",
+    "range": "278-313",
+    "actual_lines": 469,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P08-R05",
+    "path": "scripts/run_phase8_model_experiments.py",
+    "range": "275-338",
+    "actual_lines": 342,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P08-R06",
+    "path": "scripts/run_phase8_model_experiments.py",
+    "range": "275-338",
+    "actual_lines": 342,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P08-R07",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "293-305",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P08-R07",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "371-374",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P08-R08",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P09-R01",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P09-R02",
+    "path": "configs/project.yaml",
+    "range": "7-13",
+    "actual_lines": 53,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P09-R02",
+    "path": "configs/project.yaml",
+    "range": "39-53",
+    "actual_lines": 53,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P09-R03",
+    "path": "README.md",
+    "range": "101-113",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P09-R04",
+    "path": "README.md",
+    "range": "101-113",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P09-R05",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "293-305",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P09-R05",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "371-374",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P09-R06",
+    "path": "src/data/multimodal_table.py",
+    "range": "18-58",
+    "actual_lines": 58,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P09-R07",
+    "path": "README.md",
+    "range": "101-113",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P09-R08",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "293-305",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P09-R08",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "371-374",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P10-R01",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P10-R02",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P10-R03",
+    "path": "README.md",
+    "range": "101-113",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P11-R01",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P11-R02",
+    "path": "scripts/ovarian_diagnostic_portal.py",
+    "range": "157-178",
+    "actual_lines": 256,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P11-R02",
+    "path": "scripts/ovarian_diagnostic_portal.py",
+    "range": "222-252",
+    "actual_lines": 256,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P11-R03",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P11-R04",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P11-R05",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P11-R06",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "293-305",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P11-R06",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "371-374",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P12-R01",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "293-305",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P12-R01",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "371-374",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P12-R02",
+    "path": "scripts/ovarian_diagnostic_portal.py",
+    "range": "157-178",
+    "actual_lines": 256,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P12-R02",
+    "path": "scripts/ovarian_diagnostic_portal.py",
+    "range": "222-252",
+    "actual_lines": 256,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P12-R03",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P12-R04",
+    "path": "README.md",
+    "range": "101-113",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P12-R05",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "293-305",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P12-R05",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "371-374",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P13-R01",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P13-R02",
+    "path": "scripts/run_reproducible_baseline.py",
+    "range": "278-313",
+    "actual_lines": 469,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P14-R01",
+    "path": "scripts/ovarian_diagnostic_portal.py",
+    "range": "157-178",
+    "actual_lines": 256,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P14-R01",
+    "path": "scripts/ovarian_diagnostic_portal.py",
+    "range": "222-252",
+    "actual_lines": 256,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P14-R02",
+    "path": "src/data/multimodal_table.py",
+    "range": "18-58",
+    "actual_lines": 58,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P14-R03",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P14-R04",
+    "path": "README.md",
+    "range": "101-113",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P14-R05",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P15-R01",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P16-R01",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P16-R02",
+    "path": "scripts/run_phase8_model_experiments.py",
+    "range": "275-338",
+    "actual_lines": 342,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P17-R01",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P17-R02",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P17-R03",
+    "path": "scripts/run_phase8_model_experiments.py",
+    "range": "275-338",
+    "actual_lines": 342,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P17-R04",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "293-305",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P17-R04",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "371-374",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P18-R01",
+    "path": "scripts/search_possible_historical_test_splits.py",
+    "range": "401-466",
+    "actual_lines": 532,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P18-R02",
+    "path": "scripts/train_tcga_ov_stage_model.py",
+    "range": "79-136",
+    "actual_lines": 242,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P18-R03",
+    "path": ".git/HEAD",
+    "range": "1",
+    "actual_lines": 1,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P18-R04",
+    "path": "configs/project.yaml",
+    "range": "7-13",
+    "actual_lines": 53,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P18-R04",
+    "path": "configs/project.yaml",
+    "range": "39-53",
+    "actual_lines": 53,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P18-R05",
+    "path": "configs/project.yaml",
+    "range": "7-13",
+    "actual_lines": 53,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P18-R05",
+    "path": "configs/project.yaml",
+    "range": "39-53",
+    "actual_lines": 53,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P19-R01",
+    "path": "scripts/run_phase8_model_experiments.py",
+    "range": "275-338",
+    "actual_lines": 342,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P19-R02",
+    "path": "configs/project.yaml",
+    "range": "7-13",
+    "actual_lines": 53,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P19-R02",
+    "path": "configs/project.yaml",
+    "range": "39-53",
+    "actual_lines": 53,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P19-R03",
+    "path": "configs/project.yaml",
+    "range": "7-13",
+    "actual_lines": 53,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P19-R03",
+    "path": "configs/project.yaml",
+    "range": "39-53",
+    "actual_lines": 53,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P19-R04",
+    "path": "configs/project.yaml",
+    "range": "7-13",
+    "actual_lines": 53,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P19-R04",
+    "path": "configs/project.yaml",
+    "range": "39-53",
+    "actual_lines": 53,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P20-R01",
+    "path": "README.md",
+    "range": "101-113",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P20-R02",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P20-R03",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P20-R04",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P20-R05",
+    "path": "src/data/multimodal_table.py",
+    "range": "18-58",
+    "actual_lines": 58,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P21-R01",
+    "path": "src/data/multimodal_table.py",
+    "range": "18-58",
+    "actual_lines": 58,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P21-R02",
+    "path": "scripts/ovarian_diagnostic_portal.py",
+    "range": "157-178",
+    "actual_lines": 256,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P21-R02",
+    "path": "scripts/ovarian_diagnostic_portal.py",
+    "range": "222-252",
+    "actual_lines": 256,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P21-R03",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P21-R04",
+    "path": "scripts/ovarian_diagnostic_portal.py",
+    "range": "157-178",
+    "actual_lines": 256,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P21-R04",
+    "path": "scripts/ovarian_diagnostic_portal.py",
+    "range": "222-252",
+    "actual_lines": 256,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P21-R05",
+    "path": "scripts/ovarian_diagnostic_portal.py",
+    "range": "157-178",
+    "actual_lines": 256,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P21-R05",
+    "path": "scripts/ovarian_diagnostic_portal.py",
+    "range": "222-252",
+    "actual_lines": 256,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P21-R06",
+    "path": "scripts/ovarian_diagnostic_portal.py",
+    "range": "157-178",
+    "actual_lines": 256,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P21-R06",
+    "path": "scripts/ovarian_diagnostic_portal.py",
+    "range": "222-252",
+    "actual_lines": 256,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P21-R07",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P22-R01",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P22-R02",
+    "path": "README.md",
+    "range": "9-25",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P22-R03",
+    "path": "configs/project.yaml",
+    "range": "7-13",
+    "actual_lines": 53,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P22-R03",
+    "path": "configs/project.yaml",
+    "range": "39-53",
+    "actual_lines": 53,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P22-R04",
+    "path": "scripts/run_phase8_model_experiments.py",
+    "range": "275-338",
+    "actual_lines": 342,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P23-R01",
+    "path": "scripts/search_possible_historical_test_splits.py",
+    "range": "401-466",
+    "actual_lines": 532,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P23-R02",
+    "path": "scripts/run_reproducible_baseline.py",
+    "range": "278-313",
+    "actual_lines": 469,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P23-R03",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "293-305",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P23-R03",
+    "path": "scripts/bulk_test_external_datasets.py",
+    "range": "371-374",
+    "actual_lines": 451,
+    "exists_and_in_range": true
+  },
+  {
+    "id": "PDF-P23-R04",
+    "path": "README.md",
+    "range": "101-113",
+    "actual_lines": 183,
+    "exists_and_in_range": true
+  }
+]

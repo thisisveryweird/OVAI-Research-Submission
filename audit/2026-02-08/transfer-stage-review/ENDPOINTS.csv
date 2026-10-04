@@ -1,0 +1,19 @@
+cohort,source,endpoint,positive_code,negative_code,source_expected_counts,observed_source_data_counts,status
+GSE12172,test_gse8841_signature_on_gse12172.py,all malignant vs LMP,malignant=1,LMP=0,60 malignant;30 LMP,unknown,source assertions only;source-trained Stage I does not constrain target stage
+GSE12172,test_gse8841_signature_on_gse12172_clean.py,all malignant vs LMP,malignant=1,LMP=0,60 malignant;30 LMP,unknown,source assertions only;13 requested genes including IFI30
+GSE12172,test_gse8841_signature_on_gse12172_final.py,all malignant vs LMP,malignant=1,LMP=0,90 total;at least 10 transferable genes,unknown,no stage filter;IFI30 exclusion claimed
+GSE12172,test_frozen_signature_stage1_gse12172.py,intended Stage I vs LMP,malignant=1,LMP=0,16 Stage I;30 LMP,unknown,undefined labels and impossible I-only stage membership
+GSE12172,test_frozen_signature_stage1_gse12172_final.py,IA/IB/IC malignant vs LMP,malignant=1,LMP=0,16 Stage I;30 LMP;12 genes,unknown,source-only LR/scaling;stage row index 3 assumed
+GSE9899,test_frozen_signature_gse9899.py,all malignant and Stage I malignant vs LMP,LMP=1,malignant=0,12 genes claimed;actual available subset dynamic,unknown,target-global z-score mean;not source-frozen LR
+GSE9899,gse9899_gene_diagnostics.py,individual genes and mean score all malignant/Stage I vs LMP,LMP=1,malignant=0,12 requested genes,unknown,target-global statistics and target-label best direction exploratory
+GSE106817,test_balanced_cancer_borderline.py,cancer vs borderline,cancer=1,borderline=0,20 repeats;equal classes after complete cases,unknown,target development not external validation
+GSE106817,extract_gse106817_validation_cohort.py,cancer vs benign/borderline/control,cancer=1,other included groups=0,172 mapping described;actual intersection dynamic,unknown,title prefixes;last characteristics row age only
+GSE106817,audit_gse106817_platform_shift.py,cancer vs benign/control selection,cancer title selected,benign/control selected,borderline excluded;14 miRNAs,unknown,distribution audit;hardcoded AUC .8232/.6893 and zero sensitivity prose not recomputed
+TCGA-OV,extract_tcga_172mirna_audit.py,tumor miRNA plus clinical age,not applicable,not applicable,172 matched mapping rows asserted,unknown,exact sample-key one-to-one join;actual feature intersection unknown
+TCGA-OV,build_tcga_304_paired_molecular_dataset.py,paired tumor miRNA/RNA/age,not applicable,not applicable,approximately 304 paired;10 RNA genes,unknown,304 mismatch warning only;patient barcodes not grouped
+TCGA-OV,build_tcga_clean_multimodal_dataset.py,tumor molecular preparation,not applicable,not applicable,304 filename;missingness <=20%,unknown,global filtering and median imputation
+TCGA-OV,build_tcga_multimodal_stage_model.py,tumor III/IV vs I/II,III/IV=1,I/II=0,223 input claimed;151 miRNA layer name;9 methylation overlaps claimed,unknown,unknown stages excluded;not diagnosis
+TCGA-OV,build_tcga_survival_ablation.py,overall survival,OS event assumed 1,OS censor assumed 0,223 input filename;usable count dynamic,unknown,OS.time >0;inner scaling contamination;not diagnosis
+TCGA-OV,PDF pp4/7/18,tumor III/IV vs I/II,III/IV,I/II,299 total;22 early;277 advanced,unknown,document claims not validated by this chunk or equated to 223 cohort
+External cache,diagnose_external_feature_firewall.py,structural feature presence,not applicable,not applicable,5 frozen names;100-row broad-panel cutoff,unknown,substring union test not exact row mapping
+Methylation,audit_methylbert_external_targets.py,proposed compatibility not prediction,not applicable,not applicable,no HRA011451 frozen prediction;counts dynamic,unknown,no network requests performed;target identity unresolved

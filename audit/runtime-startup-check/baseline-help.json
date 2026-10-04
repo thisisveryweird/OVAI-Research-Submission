@@ -1,0 +1,12 @@
+{
+  "command": [
+    "py",
+    "-3.11",
+    "-B",
+    "scripts/train_mirna_baseline.py",
+    "--help"
+  ],
+  "stdout": "usage: train_mirna_baseline.py [-h] [--cohort COHORT] [--top-k TOP_K]\n\noptions:\n  -h, --help       show this help message and exit\n  --cohort COHORT\n  --top-k TOP_K\n",
+  "stderr": "",
+  "exit_code": 0
+}

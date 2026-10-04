@@ -1,0 +1,61 @@
+{
+  "audit_only": true,
+  "authorization": false,
+  "project_execution": false,
+  "clinical_tests_passed_claim": false,
+  "commands": [
+    {
+      "command": "git --no-optional-locks status --short",
+      "exit_code": 0,
+      "stdout": "?? \"Claude Methodology and Errors for Ovarian Cancer Project.pdf\"\n?? audit/\n",
+      "stderr": ""
+    },
+    {
+      "command": "git --no-optional-locks diff --stat",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "git --no-optional-locks diff --name-only",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": "python -X utf8 audit/2026-02-08/integration/verify_checklist.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"expected\": 87,\n  \"mapped\": 87,\n  \"errors\": [],\n  \"passed\": true,\n  \"clinical_test\": false\n}\n",
+      "stderr": ""
+    }
+  ],
+  "integration_command": "python -X utf8 audit/2026-02-08/integration/consolidate.py",
+  "verifier_command": "python -X utf8 audit/2026-02-08/integration/verify_checklist.py",
+  "verifier_outcome": "87 expected/mapped; no errors; clinical_test=false",
+  "corrected_errors": "First checklist range check exposed nonexistent run_phase8_model_ensemble.py alias; corrected to actual run_phase8_model_experiments.py. Final source range checks have no failures (count recorded below). Phase7/9 command paths corrected to actual source names.",
+  "earlier_command_error": "Initial stdout cp1252 UnicodeEncodeError while printing reports; repeated with -X utf8. Full report log then read in bounded chunks. No project execution.",
+  "recommendations": {
+    "inventory_count": 87,
+    "mapped_count": 87,
+    "unique_ids": 87,
+    "each_once": true
+  },
+  "citation_checks": {
+    "count": 113,
+    "failed": []
+  },
+  "product_hash_preservation": {
+    "checked": 212,
+    "mismatches": []
+  },
+  "endpoint_rows": 527,
+  "coverage_evidence_rows": 486,
+  "grouped_saved_row_files": 4,
+  "metric_evidence": "external-final/grouped_metrics.json; reports-review/TABLE_CHECKS.json and DISPLAY_CHECKS.json; research-reports/TABLE_CHECKS.json: inherited archived arithmetic, no fits; no pooled multi-experiment metric",
+  "limits": [
+    "Original input/fit metadata unknown",
+    "PDF and PNG rendered visual inspection unavailable",
+    "No clinical tests executed/passed",
+    "Static binary metadata only, no model deserialization"
+  ]
+}

@@ -1,0 +1,886 @@
+===== PDF PAGE 01 =====
+ OVAI — Methodology, Downstream Analysis, and Competition
+
+                                Presentation Plan
+
+Prepared from a review of the OVAI-main codebase (100 scripts, reports/, configs/, production_artifacts/) and
+the project outline supplied by the team. Companion document: OVAI_Errors_Suggestions_and_Notes.md,
+which contains the detailed QA findings referenced throughout this plan.
+
+1. The Problem, Stated Precisely
+
+Ovarian cancer is the deadliest gynecologic malignancy in the United States. The American Cancer
+Society projects roughly 21,000 new diagnoses and 12,450 deaths in the U.S. in 2026, against a
+lifetime risk of about 1 in 91. The reason it is so lethal is almost entirely a detection-timing problem,
+not a treatment problem: five-year survival is roughly 92% when the disease is caught while still
+confined to the ovary, but the large majority of cases are still found after the cancer has already
+spread, where survival falls to the 30–40% range. This is the single fact that justifies the entire
+project — a screening or triage tool only matters if it moves diagnosis earlier in the disease course.
+It is important to be precise about why earlier detection hasn't already been solved, because that is
+where the real "friction" the competition is asking about lives:
+
+     ●​ Single-analyte CA-125 is not sensitive or specific enough on its own, especially in
+          premenopausal women and in non-serous histologies (mucinous, clear-cell, endometrioid),
+          and it rises with many benign conditions (endometriosis, fibroids, pregnancy).
+
+     ●​ Large randomized screening trials have already failed to show a mortality benefit from
+          annual CA-125 and transvaginal ultrasound in the general population (UKCTOCS and
+          PLCO). This is why no medical body currently recommends population-wide ovarian cancer
+          screening for average-risk women.
+
+     ●​ The three FDA-cleared multi-marker blood tests that exist today — OVA1 (2009), ROMA
+          (2011), and Overa (2016) — were deliberately not cleared as screening tests. They carry an
+          FDA-mandated black-box warning restricting their intended use to risk-stratifying a mass a
+          physician has already found on imaging, before referral to a gynecologic oncologist.
+          Marketing any of them for population screening is off-label.
+
+     ●​ The workflow gap is not "no test exists," it is "no test exists at the point in care where it
+          would change a decision that isn't already being made." A test that duplicates what CA-125 +
+          ultrasound already does at the adnexal-mass-workup stage adds little. A test that could
+          plausibly change practice would need to either (a) beat the existing adnexal-mass triage tests
+
+===== PDF PAGE 02 =====
+          head-to-head, or (b) create a new decision point earlier in the pathway — e.g., in symptomatic
+          but not-yet-imaged women in primary care — that doesn't exist today.
+This reframing matters for how OVAI should be positioned. The prompt asks for "genuine
+understanding of the scope of the problem," and the strongest, most defensible answer is: the
+bottleneck is not a missing algorithm, it is a missing low-friction entry point into an already-crowded,
+well-regulated diagnostic pathway. Sections 7–8 below lay out a concrete plan for that entry point;
+Section 4 shows exactly what the current model can and cannot yet claim.
+
+2. Recommended Clinical Positioning
+
+Given the above, the team should explicitly choose (and say out loud, to judges) which claim OVAI is
+making. There are three tiers, in increasing order of ambition, evidence requirement, and regulatory
+difficulty:
+
+Tier            Claim             Comparable          Evidence
+
+                                  precedent           needed
+
+1.              "For a mass       OVA1 / ROMA /       Head-to-head
+Adnexal-mass    already found on  Overa (all cleared  or
+triage adjunct  imaging, this     on exactly this     non-inferiority
+                molecular panel   claim)              data vs.
+                helps decide                          CA-125/HE4-ba
+                low-risk vs.                          sed
+                refer-to-gyn-onc                      comparators, in
+                "                                     the
+                                                      adnexal-mass
+                                                      population
+
+2.              "For a woman      No FDA-cleared      Prospective
+Symptomatic-p   with persistent   precedent exists    symptomatic-c
+opulation       GI/pelvic         here — genuine      ohort study,
+triage          symptoms in       white space, but    calibrated
+                primary care,     also genuinely      against a
+                before any        harder to validate  validated
+                imaging has                           symptom index
+                been ordered,
+
+===== PDF PAGE 03 =====
+                 this flags who
+                 should be
+                 worked up
+                 sooner"
+
+3. Average-risk  "This screens       UKCTOCS/PLCO         Would require
+population       asymptomatic        already tested this  a large
+screening        women the way       idea with CA-125     prospective
+                 mammography         + ultrasound and     mortality-endp
+                 screens for         found no             oint trial; not
+                 breast cancer"      mortality benefit    realistic on the
+                                                          project's
+                                                          current
+                                                          timeline or
+                                                          evidence base
+
+Recommendation: lead with Tier 1 now, and frame Tier 2 as the funded next step. Tier 1 is the claim
+the current GSE94533 cohort actually supports (it is a mix of women with a diagnosed adnexal mass
+undergoing workup), it has direct FDA and reimbursement precedent to point to, and it gives
+judges/investors a believable near-term commercial path (compete with or complement
+OVA1/ROMA/Overa) rather than an open-ended "we will screen the whole population" claim that
+the field's own largest trials have already shown doesn't work as a mortality-reduction strategy. Tier
+3 should not appear in competition materials as a near-term claim.
+
+3. What Data OVAI Actually Has
+
+Source           Role                N (current build) Modality             Patient-linked to
+                                                                            GSE94533?
+
+GSE94533 (GEO)   Canonical           179 (96 cancer, 83    Serum            — (this is the base
+                 training/evaluatio     non-cancer: 46     miRNA-seq        cohort)
+                 n cohort                     benign, 22   (2,582
+                                         borderline, 15    miRNAs) +
+                                                 control)  GEO
+                                                           metadata
+
+===== PDF PAGE 04 =====
+eLife            Historical         179 Batch-adjust Same patients, not
+Supplementary    reconstruction of
+Dataset 2        the same patients                              ed log10      an independent
+
+                                                                miRNA         cohort
+
+                                                                (192-miRNA
+
+                                                                subset)
+
+eLife PMML /     Original           179 (reference only)        Model         Same patients
+Table 2          published                                      artifact, no
+                 14→7→2 tanh                                    new patient
+                 neural-network                                 rows
+                 model + its
+                 predictions
+
+GSE106817 /      External           3,108 / 972 / 1,817         3D-Gene       Independent
+GSE113486 /      serum-miRNA                                    GPL21263      cohorts; no
+GSE113740 (GEO)  stress tests                                   miRNA         verified patient
+                                                                array         overlap with
+                                                                              GSE94533
+
+MethylBERT /     Independent        1,872 (cancer vs.           Blood/cfDN    Independent
+HRA011451        methylation          healthy); 1,323           A             cohort; not
+supplement       benchmark           (early-stage vs.           methylation,  patient-linked to
+                                              healthy)          genomic-co    GSE94533
+                                                                ordinate
+                                                                features
+
+TCGA-OV          Tumor-tissue                            299    Tissue        Not linked to
+                 reference cohort   (RNA/miRNA/clinic           RNA-seq,      GSE94533; tissue,
+                                                                miRNA-seq,    not serum
+                                                           al)  CNV,
+                                                                clinical
+                                                                (patient-bar
+                                                                code linked
+                                                                within
+                                                                TCGA)
+
+===== PDF PAGE 05 =====
+dbGaP phs000897        Controlled-acces  Not yet obtained  Unknown       Would be a
+                       s early-stage                       pending       genuinely
+                       serum cohort                        authorizatio  independent
+                                                           n             early-stage
+                                                                         validation cohort
+                                                                         if access is secured
+
+The project has already committed to a rule worth keeping and stating explicitly to judges: never
+concatenate rows from different studies to fabricate a "multimodal" patient. This is good scientific
+hygiene and is exactly the kind of discipline a healthcare-focused judging panel should be shown,
+not just told about — see Section 9.
+
+4. Current Model Results — Reported Honestly, Side
+
+by Side
+
+This is the most important section for how the project should talk about its own results. Several
+different pipelines in the repository target the same underlying question (does the frozen
+Top-5-miRNA + Age + CA-125 signature separate early cancer from non-cancer?) but on different
+patient subsets, and they produce meaningfully different headline numbers. Judges and technical
+reviewers will ask "compared to what population?" — the team should already have the answer
+ready.
+
+Endpoint definition           N Model              ROC-    Balanced  Sensitivity  Specificity
+                                                    AUC    accuracy
+
+Full cohort: all 96 invasive cancers 179 14 miRNA + 0.813  74.0%         —                         —
+
+vs. all 83 non-cancer                    Age +
+
+(benign+borderline+control)              CA-125,
+
+                                         logistic
+
+Full cohort, calibrated SVM,  179 Calibrated       0.808   77.1%         —                         —
+
+inner-fold-tuned threshold               SVM               (acc.
+
+                                                           76.5%)
+
+===== PDF PAGE 06 =====
+Narrower endpoint: Stage I/II       113 Top-5 fixed            0.899  86.6%           84.6%  88.5%
+cancer only vs. benign/control      (52 miRNA
+only (borderline and Stage III/IV  pos signature +
+excluded)                           / 61 Age +
+                                   neg) CA-125,
+
+                                            logistic (no
+                                            interactions)
+
+Same 113-patient endpoint,         113 Engineered          0.900      86.4%           82.7%  90.2%
+with 2 interaction terms (this is          logistic
+the model shipped in                       (production
+production_artifacts/ and the              model)
+Streamlit portal)
+
+Read this table carefully before it goes in a pitch deck. The 0.90 AUC / 86%/83%/90% headline number
+is real and is a legitimate nested cross-validated estimate — but it is measured on an easier
+113-patient subset that excludes both borderline tumors (the diagnostically hardest category) and
+Stage III/IV cancers. The 179-patient number (0.81 AUC) is the one that answers "does this work
+across the whole clinical spectrum this cohort represents." Present both, labeled clearly, rather than
+leading only with the larger number — see OVAI_Errors_Suggestions_and_Notes.md §1 for why the gap
+between these two numbers is bigger than typical CV noise and what it implies about the
+feature-selection process, and §1 also flags that the two interaction terms contribute essentially
+nothing to AUC (+0.0003) while trading sensitivity for specificity versus the simpler model — worth
+knowing before deciding which model to actually put into the demo.
+
+External validation — the current bottleneck, stated plainly
+
+External   N     Ranking                 Sensitivity at               Specificity at
+cohort
+                 ROC-AUC frozen threshold frozen threshold
+
+GSE106817 3,108                    0.82                    0%         100%
+
+GSE113486  972                     0.83                    0%         100%
+
+GSE113740 1,817                    0.77                    0%         100%
+
+The model trained on GSE94533, applied unchanged to three independent serum-miRNA cohorts,
+ranks cases reasonably well (AUC 0.77–0.83) but classifies literally every external sample as
+non-cancer at the threshold learned from the training cohort. This is a textbook
+cross-platform/cross-lab measurement-scale shift, not a failure of the underlying biology — the
+
+===== PDF PAGE 07 =====
+ranking signal survives, the absolute scale does not. This is the single most important open scientific
+problem in the project, and it should be presented to judges as exactly that: a named, understood,
+and fundable problem, not something to omit. A diligence-savvy panel will be more impressed by a
+team that found and explained this than by one that didn't look.
+
+Independent-modality benchmarks (not yet fused with the serum model)
+
+     ●​ Methylation (HRA011451/MethylBERT supplement, blood/cfDNA): cancer vs. healthy —
+          88.1% accuracy, 86.9% balanced accuracy, 0.941 AUC (N=1,872). Early-stage vs. healthy —
+          84.1% accuracy, 77.3% balanced accuracy, 0.861 AUC (N=1,323). Strong signal, but this is a
+          separate cohort and not patient-linked to GSE94533 — it demonstrates that circulating
+          methylation carries independent diagnostic information, not that it improves the miRNA
+          model.
+
+     ●​ TCGA-OV tumor stage (Stage I/II vs. III/IV, N=299, 22 vs. 277): 78.9% accuracy is below the
+          92.6% majority-class baseline (balanced accuracy 53%, AUC 0.49). This is not a
+          cancer-detection result and should never be cited as one — it is a separate,
+          currently-unsuccessful research question (tumor staging from molecular data) that happens
+          to share a data source with the main project.
+
+     ●​ The gated multimodal fusion network (src/models/gated_fusion.py) is an engineering scaffold,
+          exercised only against random synthetic tensors in a unit test (scripts/smoke_test.py). It has
+          never seen a real patient. It should be described in competition materials as "architecture
+          built and unit-tested, awaiting a patient-linked multimodal cohort to train on" — not as a
+          working multimodal model.
+
+5. Rigor Already In Place (worth highlighting to
+
+judges)
+
+Not everything here is a gap. Several choices reflect real methodological maturity and are worth
+stating explicitly rather than assuming judges will notice them in the code:
+
+     ●​ Canonical evaluators use nested cross-validation (outer 5-fold for the reported metric, inner
+          3-fold for hyperparameter selection) with fixed seeds, rather than a single train/test split.
+
+     ●​ A hard rule against fabricating multimodal patient rows across unrelated studies is written
+          into the README and enforced by validation checks in the data-loading code.
+
+     ●​ CPTAC proteomics was investigated and explicitly declined as a fusion source because no
+          verified patient-level, blood-specimen link to GSE94533 exists — a disciplined "no" that
+
+===== PDF PAGE 08 =====
+          many teams under deadline pressure would not have made (see
+          reports/cptac_acquisition_audit.md).
+     ●​ 58 candidate external GEO cohorts were systematically screened against platform, specimen,
+          and phenotype criteria, with the screening logic and rejection reasons saved
+          (reports/potential_external_datasets.md, reports/remaining_queue_screen.md).
+     ●​ Borderline tumors are kept as their own category rather than being folded into either
+          "cancer" or "non-cancer" for convenience — clinically correct, since borderline ovarian
+          tumors are a genuinely distinct, non-invasive entity.
+
+6. Downstream Analysis Plan — Phased Roadmap
+
+Phase 0 — Before the submission deadline (days)
+
+     1.​ Pick one canonical headline result and present the full endpoint table from Section 4 next to
+          it, not just the best number.
+
+     2.​ Add a calibration plot (predicted probability vs. observed frequency) for the production
+          model — currently no calibration check exists anywhere in the repo.
+
+     3.​ Run a decision curve analysis (net benefit vs. threshold probability) for the production model
+          against "treat/refer all" and "refer none" baselines. This is the standard way clinicians and
+          clinical judges evaluate whether a risk score is actually useful at plausible decision
+          thresholds, and it is a much stronger artifact for a healthcare-focused competition than
+          ROC-AUC alone.
+
+     4.​ Re-run the frozen 113-patient evaluation with the feature-selection step performed inside
+          each outer fold (see OVAI_Errors_Suggestions_and_Notes.md §1) and report that number
+          alongside the current one, so the team can honestly say what the signature's performance
+          looks like under a stricter protocol.
+
+Phase 1 — 0–3 months: rigor hardening
+
+     ●​ Move the remaining global (pre-split) feature-availability filters inside the training fold in
+          the canonical GSE94533 and methylation evaluators.
+
+     ●​ Add an explicit sample/patient-ID overlap audit between GSE94533 and every external cohort
+          (GSE106817/113486/113740) — currently assumed, not verified.
+
+     ●​ Formalize the subgroup analysis already started in reports/error_analysis.md (by stage,
+          histology, missingness) into a standing report that is regenerated with every model change,
+
+===== PDF PAGE 09 =====
+          and add histology-stratified sensitivity as a first-class reported metric (see Section 4's note on
+          clear-cell/endometrioid histology below).
+     ●​ Build the single canonical run manifest recommended in the team's own
+          reports/current_pipeline_audit.md (one script, one command, one seed, one output file per
+          reported number).
+
+Phase 2 — 3–6 months: closing the external-validation gap
+
+     ●​ Apply for dbGaP phs000897 access now — this is the only currently-identified early-stage
+          serum cohort that could serve as genuine independent validation, and controlled-access
+          approvals commonly take 4–8+ weeks, so the application timeline should start well before it
+          is needed.
+
+     ●​ Source or prospectively collect an HE4-linked cohort. HE4 is a component of both ROMA
+          and Overa; without it, OVAI cannot run a head-to-head comparison against the two most
+          relevant FDA-cleared competitors, which will be one of the first questions a knowledgeable
+          judge or investor asks.
+
+     ●​ Investigate platform harmonization (e.g., ComBat, removeBatchEffect) only once a serum
+          cohort with real batch/run metadata is available — the audit already correctly notes that
+          applying such corrections without batch labels amounts to fitting noise. If reaching out to
+          the GSE94533 authors for original run-batch metadata is possible, that is the most useful
+          single request the team could make.
+
+Phase 3 — 6–12 months: real multimodal fusion and longitudinal modeling
+
+     ●​ Only build patient-linked multimodal training rows once a cohort exists where the same
+          patient has both serum miRNA and a second modality (methylation, HE4, imaging) drawn at
+          the same visit. Until then, keep methylation and TCGA as independent-cohort benchmarks,
+          exactly as the project already does.
+
+     ●​ Consider a longitudinal/trend model in the style of the Risk of Ovarian Cancer Algorithm
+          (ROCA) used in UKCTOCS — modeling the rate of change of CA-125 (and potentially the
+          miRNA signature) over repeated draws in the same patient, rather than a single time point.
+          This is a well-precedented idea in this exact disease area and is a natural extension once a
+          cohort with repeat draws exists.
+
+Phase 4 — 12+ months: prospective clinical validation
+
+     ●​ Design a prospective single-platform cohort study in the Tier-1 population (women with an
+          adnexal mass headed to workup), matching the evidence design that supported
+          OVA1/ROMA/Overa, so the resulting data can support a comparable regulatory claim.
+
+===== PDF PAGE 10 =====
+7. Regulatory and Reimbursement Pathway (the
+
+"friction" section)
+
+This is where the competition's stated focus — "the friction of getting innovation into the healthcare
+system" — is most directly addressed, and it is the section most pitch decks in this space skip
+entirely.
+Two realistic pathways exist, and they are not mutually exclusive over time:
+
+     1.​ Laboratory-Developed Test (LDT) via a single CLIA-certified reference laboratory. As of the
+          FDA's formal rule vacatur on September 19, 2025 (following the March 2025 federal court
+          ruling that FDA lacks statutory authority to regulate LDTs as devices), LDTs are regulated
+          under CLIA (administered by CMS), not the FDA device framework. This is currently the
+          lower-friction, faster path to a real-world clinical offering: OVAI could be validated and
+          offered as a send-out LDT from one reference lab without a 510(k)/PMA/De Novo
+          submission. The tradeoff is narrower distribution (one lab performs the test) and no FDA
+          clearance to point to with payers.
+
+     2.​ FDA in vitro diagnostic clearance (510(k) or De Novo). This is the path OVA1 (2009), ROMA
+          (2011), and Overa (2016) all took, and it is the path to broad multi-lab distribution and the
+          strongest payer credibility. For an AI/ML-based test specifically, the FDA finalized guidance
+          on Predetermined Change Control Plans (PCCPs) in August 2025: a PCCP lets a
+          manufacturer pre-specify how the model will be updated after clearance (e.g., periodic
+          retraining on new data) so that in-scope updates don't require a brand-new submission each
+          time. This directly reduces the "friction" of maintaining an AI-based diagnostic over time
+          and should be built into the regulatory strategy from the start rather than retrofitted later.
+
+Reimbursement note: existing payer medical policies for OVA1/ROMA/Overa explicitly restrict
+coverage to adnexal-mass workup and explicitly exclude screening asymptomatic women or
+monitoring treatment — this is direct, current evidence for why Tier 1 positioning (Section 2) is the
+commercially realistic starting claim, and why claiming a screening indication before the evidence
+exists would likely be denied coverage even if a lab offered it as an LDT.
+Recommended near-term regulatory move: an early, informal engagement with a regulatory
+consultant or an FDA pre-submission ("Q-Sub") meeting, even before a full clinical dataset exists, is
+standard practice for exactly this reason — it lets the team learn what evidence FDA would want for
+a Tier-1 claim before designing the Phase 4 prospective study, rather than after.
+
+===== PDF PAGE 11 =====
+8. Workflow and Systems Integration Plan
+
+A model with good statistics that doesn't fit into how a clinic actually works will not reduce
+time-to-diagnosis. Concretely:
+
+     ●​ Where it sits: a patient presents with an adnexal mass on imaging (or persistent symptoms
+          matching a validated symptom index) → today's order set already includes CA-125 ± HE4 →
+          OVAI would run as a reflex or parallel add-on order at that same blood draw, not a new visit
+          or a new specimen type.
+
+     ●​ Result delivery: result returned as a structured, discrete value through the existing
+          lab-interface pathway (HL7/FHIR order and result messages) so it appears in the EHR the
+          same way any other send-out lab result does, rather than requiring a separate portal login for
+          the ordering clinician. The standalone Streamlit portal already built is an excellent demo and
+          validation tool, but production delivery should target the clinician's existing EHR, not a side
+          application.
+
+     ●​ Decision support: rather than a bare "CRITICAL / LOW RISK" label, the result should map
+          onto existing SGO/ACOG referral guidance for suspected ovarian cancer, ideally as a CDS
+          Hooks-style alert at the point the result lands, so the tool augments a referral decision the
+          clinician is already trained to make rather than introducing a new decision framework.
+
+     ●​ Specimen logistics: standard serum tube via the existing phlebotomy workflow, batchable to
+          a central or regional reference lab exactly like any other send-out molecular test — no new
+          collection device required for the near-term Tier-1 claim.
+
+     ●​ Hardware track (optional, longer horizon): the prompt explicitly allows hardware solutions. A
+          point-of-care qRT-PCR cartridge for the 5-miRNA signature is a plausible longer-term
+          product but requires materially more capital, its own analytical-validation program, and
+          (likely) a full FDA IVD pathway rather than the LDT route. Recommendation: lead the pitch
+          with the software/reference-lab track, where the data readiness actually is today, and name
+          the point-of-care hardware version as a stated future direction rather than the near-term ask.
+
+9. How to Present This to the Competition
+
+A concrete package, in priority order:
+     1.​ A one-page results scorecard built directly from the Section 4 table — every number labeled
+          with its N and endpoint, the external-validation result shown honestly (ranking AUC good,
+
+===== PDF PAGE 12 =====
+          threshold transfer currently failing), and one sentence on the funded plan to close that gap
+          (Section 6, Phase 2).
+     2.​ A live demo of the existing Streamlit diagnostic portal (single-patient and bulk-upload
+          modes) — this is a real, working, clinician-facing artifact already built, which is rarer at this
+          stage than most competing teams will have. Before demoing it, apply the UI fixes in
+          OVAI_Errors_Suggestions_and_Notes.md §6 (surface the N/endpoint and an "imputed value"
+          flag directly in the interface) so the honesty of the written materials is matched by the
+          honesty of the live tool.
+     3.​ A one-page regulatory/reimbursement pathway diagram (Section 7) — this is the single
+          highest-leverage addition relative to what a typical early-stage health-AI pitch shows,
+          because it demonstrates the "genuine understanding of the scope of the problem" the
+          prompt explicitly asks for, beyond model metrics.
+     4.​ A one-page workflow diagram (Section 8) showing exactly where in today's clinical pathway
+          the test would be ordered and where its result would surface.
+     5.​ An "ask" slide: funding target tied to three concrete, fundable milestones — dbGaP access +
+          HE4 cohort acquisition (Phase 2), a prospective single-platform replication cohort (Phase
+          2–3), and a CLIA reference-lab partnership to stand up the near-term LDT offering (Section
+          7).
+On Q&A: the team should anticipate "why does your test do worse on the external cohorts?" and
+have the platform-shift explanation (Section 4, external validation) ready as a rehearsed, confident
+answer, not a defensive one. In a genuine healthcare-diligence context, a team that has already
+found, quantified, and explained its own model's biggest weakness — and has a specific, funded plan
+to fix it — reads as more credible than a team presenting only a single high accuracy number, not
+less.
+
+10. Metrics Glossary (for non-technical reviewers)
+
+Term     Plain-language meaning
+ROC-AUC
+         How well the model ranks cancer patients above
+         non-cancer patients, from 0.5 (no better than chance) to
+         1.0 (perfect). Doesn't depend on a specific cutoff.
+
+===== PDF PAGE 13 =====
+Sensitivity       Of the women who actually have cancer, what fraction
+                  the test correctly flags. The number that matters most
+                  for not missing a cancer.
+
+Specificity       Of the women who don't have cancer, what fraction the
+                  test correctly clears. The number that matters most for
+                  avoiding unnecessary referrals/surgery.
+
+Balanced          Average of sensitivity and specificity — a fairer single
+accuracy          number than plain accuracy when the two groups
+                  (cancer/non-cancer) aren't the same size.
+
+Out-of-fold       The model is trained on most of the patients and tested
+(OOF) /           only on the ones it never saw during that training
+cross-validation  round, repeated several times so every patient is tested
+                  exactly once.
+
+External          Testing the exact frozen model on patients from a
+validation        completely different study/cohort it never touched
+                  during development — the strongest available evidence
+                  of real-world generalization.
+
+Calibration       Whether a "70% risk" prediction actually corresponds
+                  to about 70% of those patients having cancer, not just
+                  whether the ranking is good.
+
+Decision curve /  Whether using the test to make referral decisions does
+net benefit       more good than harm across a realistic range of
+                  decision thresholds — the clinical-utility question, as
+                  opposed to a pure statistics question.
+
+11. Immediate To-Do List Before Submission
+
+     1.​ Decide which of the Section 4 numbers is "the" headline number and present the full table
+          regardless.
+
+     2.​ Add the calibration plot and decision-curve analysis (Section 6, Phase 0).
+
+===== PDF PAGE 14 =====
+     3.​ Fix the Streamlit portal's transparency gaps (endpoint/N visible next to the benchmark
+          numbers; imputed-value flag on bulk results).
+
+     4.​ Reword every mention of the "gated multimodal neural network" in pitch materials to state
+          plainly that it is untrained architecture, not a working multimodal model.
+
+     5.​ Prepare the one-page regulatory/reimbursement and workflow diagrams (Sections 7–8).
+     6.​ Start the dbGaP phs000897 access application now, even though results won't land before the
+
+          deadline — being able to say "in progress, submitted [date]" is itself evidence of a credible
+          plan.
+For the full list of underlying technical findings that this plan is built on — leakage risks, reproducibility gaps,
+and detailed data/model notes — see the companion document, OVAI_Errors_Suggestions_and_Notes.md.
+
+===== PDF PAGE 15 =====
+ OVAI — Errors, Suggestions, and Additional Notes
+
+Independent QA pass over the OVAI-main codebase, cross-referenced against the team's own
+reports/current_pipeline_audit.md (dated 2026-09-19). Findings below extend that audit rather than repeating
+it — items already fully covered there are only summarized, with new findings given full detail. Severity
+follows the same scale the team already uses: Critical / High / Moderate / Low.
+
+1. Reporting and Framing Findings (new — not in the
+
+internal audit)
+
+1.1 [High] The headline outline number and the canonical benchmark number are
+not the same claim
+
+The outline text — "An engineered logistic regression model... achieved a mean out-of-fold ROC-AUC of
+0.8997, with 86.43% balanced accuracy, 82.70% sensitivity, and 90.20% specificity for the evaluated Stage I/II
+endpoint" — traces to scripts/test_high_capacity_models.py (→ reports/high_capacity_model_results.md),
+which evaluates 113 patients: 52 Stage I/II cancers vs. 61 benign/control, with borderline tumors and
+Stage III/IV cancers excluded. The project's own canonical evaluator
+(scripts/evaluate_gse94533_diagnostic_model.py) reports 0.813 AUC on the full 179-patient cohort. Both
+numbers are legitimate, correctly-computed nested-CV estimates — they simply answer different
+questions, and the gap between them (0.90 vs. 0.81) is mostly explained by which patients are in the
+denominator, not by a better model. Action: always state N and the exact endpoint next to any
+percentage in pitch materials; report both numbers side by side (done in the companion
+methodology document, Section 4).
+
+1.2 [High] The frozen production signature was likely selected using the same 113
+patients it is "validated" on
+
+production_artifacts/manifest.json freezes a specific 5-miRNA signature (hsa-miR-200b-3p,
+hsa-miR-296-3p, hsa-miR-6826-5p, hsa-miR-32-3p, hsa-miR-1255a). That exact set closely matches the
+miRNAs most frequently selected by the fold-wise L1/elastic-net stability analysis run earlier in the
+project on the same 113-patient early-stage-vs-benign/control endpoint
+(reports/feature_selection_stability.md, reports/clinical_ablation_results.md). Across the project's own
+iterations on this fixed cohort, the reported AUC for this endpoint climbs over successive phases:
+
+===== PDF PAGE 16 =====
+Phase / script                                         ROC-AUC
+                                                  (early-stage vs.
+                                                  benign/control)
+
+Phase 6 stability analysis, L1, top-5             0.749
+
+Phase 7 clinical ablation, combined, median       0.827
+imputation
+
+Phase 8 model/ensemble comparison, regularized    0.823
+logistic
+
+Phase 9 data augmentation, regularized logistic,  0.827
+no augmentation
+
+Phase 10 (test_high_capacity_models.py), fixed    0.899
+signature, no interactions ("frozen_logistic")
+
+Phase 10, fixed signature + 2 interaction terms   0.900
+("engineered_logistic", shipped model)
+
+This pattern is consistent with a well-known pitfall in biomarker discovery sometimes called
+feature-selection leakage or "double-dipping": if the specific 5 miRNAs used in the final frozen
+model were chosen (even indirectly, across several earlier scripts) using label information from this
+same 113-patient cohort, then re-running cross-validation on that same cohort with that now-fixed
+signature will tend to look better than the signature's true out-of-sample performance, because the
+signature was implicitly tuned to this cohort's idiosyncrasies before the "final" evaluation ever ran.
+This is distinct from — and additional to — the transductive feature-filtering leakage the team's own
+audit already flags.
+This is not a claim of misconduct — it is a normal, easy-to-fall-into consequence of running many
+exploratory scripts against one small, fixed cohort, and every individual script's internal CV is
+implemented correctly. But it means the 0.8997 AUC should not be treated as an unbiased estimate
+of how this exact signature will perform on new patients.
+Remediation, either of:
+
+     ●​ Re-run feature selection inside every outer fold (as Phases 6–9 already correctly do) using the
+          interaction-term feature space, and report that number as canonical instead of the
+          fixed-signature version — this gives an honest nested estimate.
+
+===== PDF PAGE 17 =====
+     ●​ If the fixed signature is being kept for deployment/interpretability reasons, validate it on a
+          cohort that played no role in choosing it. No such cohort currently exists — this is the same
+          conclusion as the external-validation gap and reinforces why it is the top scientific priority
+          (see methodology document, Section 6).
+
+1.3 [Moderate] The two interaction terms in the production model add ~0.0003
+AUC and trade sensitivity for specificity
+
+From the same reports/high_capacity_model_results.md table: the simpler model without interaction
+terms ("frozen_logistic": Top-5 signature + Age + CA-125 only) scores ROC-AUC 0.8994, balanced
+accuracy 86.6%, sensitivity 84.6%, specificity 88.5%, versus the shipped model with two interaction
+terms at ROC-AUC 0.8997, balanced accuracy 86.4%, sensitivity 82.7%, specificity 90.2%. The
+interaction terms buy essentially no discrimination and cost ~2 points of sensitivity for ~2 points of
+specificity. For a cancer-detection use case, a missed cancer (false negative) is a materially worse
+error than an unnecessary referral (false positive), so the simpler, higher-sensitivity model is arguably
+the clinically preferable choice, not the one currently in production_artifacts/. Recommend revisiting
+which of the two gets deployed, and stating the sensitivity/specificity tradeoff explicitly rather than
+only the AUC when justifying the choice.
+
+2. Leakage / Validity Findings (confirmed by direct
+
+code review, summarized from the internal audit)
+
+These were independently re-verified by reading the relevant scripts rather than only trusting the
+audit's prose — all confirmed accurate:
+
+     ●​ [Moderate, confirmed] evaluate_gse94533_diagnostic_model.py and the methylation evaluator
+          filter out non-informative feature columns (notna().any(), nunique() > 1) computed on the full
+          frame before the outer CV split. This uses unlabeled information from held-out rows. It is a
+          small leak (unsupervised, doesn't touch labels) but is real and easy to fix by moving the filter
+          inside each fold.
+
+     ●​ [Critical, confirmed] GSE106817/GSE113486/GSE113740 all show 0% sensitivity at the frozen
+          decision threshold, with high apparent "accuracy" driven entirely by class imbalance (each
+          cohort is 85–90%+ non-cancer). Ranking ability (AUC 0.77–0.83) is real; classification at the
+          frozen threshold is not currently usable. Confirmed directly in
+          reports/bulk_external_test_results.md, reports/gse106817_platform_shift_audit.md, and
+          reports/gse106817_phase5.md.
+
+===== PDF PAGE 18 =====
+     ●​ [High, confirmed] No committed evidence recovers the original historical eLife 135/44
+          patient train/test split; search_possible_historical_test_splits.py samples 20,000 candidate
+          44-patient splits and explicitly documents that matching the published AUC does not prove a
+          candidate is the real split. The historical ">80% independent-test" claim should not appear in
+          competition materials as a validated result.
+
+     ●​ [Confirmed] TCGA-OV stage endpoint (Stage I/II vs III/IV) scores below its own
+          majority-class baseline (78.9% vs. 92.6%) with balanced accuracy 53% and AUC 0.49 —
+          essentially uninformative. This must never be cited as evidence the project can detect cancer;
+          it's a different, currently-unsuccessful question (staging, not detection) that happens to reuse
+          a related data source.
+
+3. Software Engineering and Reproducibility (new
+
+findings)
+
+3.1 [High] No version control in the delivered project
+
+git log on the delivered codebase returns "not a git repository." There is no commit history, so there
+is currently no way to show which exact version of the code produced any given number in a pitch deck,
+no diff history, and no way to recover an earlier state if something regresses. Recommend initializing
+git immediately, committing the current state, and tagging the exact commit used to generate every
+number that goes into competition materials. This is a five-minute fix with outsized credibility value
+if a judge or investor asks "can I see how this evolved?"
+
+3.2 [Moderate] No LICENSE file
+
+There is no LICENSE anywhere in the repository. Whether this should be permissive open-source, a
+restrictive/proprietary license, or something in between is a business decision for the team (tied to
+whether they want to show code publicly on the investor track), but the current state (no license at
+all) defaults to "all rights reserved" with no clarity for collaborators or judges who may want to
+inspect the code.
+
+3.3 [Moderate] No automated tests beyond one manual smoke script
+
+scripts/smoke_test.py is the only test in the repository, and it only checks that the untrained
+multimodal architecture runs and its masking behaves on random tensors — there is no tests/
+directory and no pytest usage anywhere. For a project whose core claims rest on "no leakage, no
+fabricated multimodal rows," a small suite of automated guardrail tests would materially strengthen
+
+===== PDF PAGE 19 =====
+the story: e.g., a test asserting zero patient-ID overlap between GSE94533 and every external cohort,
+a test asserting every reported metric's script uses fold-contained preprocessing, a test asserting the
+production manifest's feature list matches the model's actual coef_ dimensionality. These are cheap
+to write and directly demonstrate the rigor claimed in the reports.
+
+3.4 [Moderate, confirmed and extended] Portability: hardcoded paths
+
+45 of the repository's 100 scripts reference Path.home()/ovarian-ai or similar hardcoded locations rather
+than the configs/project.yaml paths block that already exists for exactly this purpose. A judge or
+reviewer trying to actually run the delivered zip will hit this on the first legacy script they try.
+Recommend routing every script through the existing config paths before the deadline, at minimum
+for whichever scripts are named in competition materials as reproducing a specific number.
+
+3.5 [Moderate] Frozen model artifacts have no recorded library versions
+
+production_artifacts/manifest.json records the feature list, transform, and hyperparameters, but not the
+scikit-learn / numpy / joblib versions used to fit and serialize frozen_model.joblib. Joblib-pickled
+scikit-learn estimators are not guaranteed to load correctly across scikit-learn major-version
+boundaries — this is a real, silent-failure risk if the artifact is loaded in a different environment than
+it was produced in (e.g., a judge's machine, or a future teammate's laptop). Recommend adding a pip
+freeze > requirements-lock.txt alongside every frozen artifact, and recording the exact library versions
+inside manifest.json itself.
+
+3.6 [Low] Extensive near-duplicate script variants
+
+There are multiple clean / standalone / final / _by_id variants of the same historical-reproduction and
+frozen-signature-transfer experiments (e.g., four separate test_gse8841_signature_on_gse12172*.py
+scripts, four reproduce_original_historical/pmml*.py scripts). This is technical debt rather than a
+correctness problem, but it makes the delivered zip hard to navigate for anyone outside the team.
+Recommend: pick one canonical script per reported result now, move the rest to scripts/legacy/, and
+add a short RESULTS_INDEX.md that maps every number appearing in competition materials to
+(script, exact command, output file, N, endpoint) — a very fast, very high-value document to write
+given how much is already in reports/.
+
+4. Data and Biological Notes
+
+4.1 [Moderate] No HE4 anywhere in current data assets
+
+===== PDF PAGE 20 =====
+HE4 is a component of both ROMA and Overa, the two most relevant FDA-cleared comparators. Its
+absence means the project currently cannot run a direct, apples-to-apples comparison against either.
+This is the single most valuable near-term data-acquisition target — recommend actively sourcing
+an HE4-linked serum cohort, or prioritizing HE4 collection in any prospective data-collection effort.
+
+4.2 [Notable, biologically grounded] False negatives cluster in
+
+clear-cell/endometrioid histology, with lower miR-200 family expression
+
+reports/error_analysis.md shows false negatives across every model variant are disproportionately
+Endo/Clear Cell histology, and the largest expression contrasts between false negatives and
+correctly-classified cancers are consistently in hsa-miR-200c-3p, hsa-miR-200a-3p, and
+hsa-miR-29a-3p — all lower in the missed cases. This is not a data artifact; it tracks with published
+biology: the miR-200 family is tied to epithelial-mesenchymal-transition signaling that is most active
+in high-grade serous carcinoma, and clear-cell/mucinous histologies are already independently
+known in the literature to be less well served by CA-125. Recommendation: report performance
+stratified by histologic subtype as a standing, first-class metric (not just an appendix analysis), and
+name "does this generalize across histologic subtype" as its own explicit open question in
+competition materials rather than letting it be smoothed over by the aggregate cancer-vs-non-cancer
+number. This is a genuine, well-supported scientific insight worth foregrounding — it will read well
+to a judge with clinical background.
+
+4.3 [Low] Stage I cannot currently be evaluated separately from Stage II
+
+The current GSE94533 metadata group Stage I and Stage II together; every attempt to isolate Stage I
+alone reports "insufficient class variation." Since Stage I is the highest-value detection target
+clinically (the point at which 5-year survival is ~90%+), this is worth flagging as a specific
+data-acquisition or metadata-refinement goal rather than leaving it implicit.
+
+4.4 [Low] CA-125 missingness
+
+CA-125 is missing in roughly 60 of 179 patients (~34%); Age is missing in 1 of 179. Imputation is
+handled correctly (fold-contained), but given CA-125 is a primary driver of the "combined" model's
+lift over miRNA-alone, this missingness rate is worth disclosing prominently rather than only in a
+data-quality appendix.
+
+4.5 [Confirmed, restated for emphasis] The multimodal neural network has never
+
+seen real data
+
+src/models/gated_fusion.py is a real, reasonably well-designed architecture (per-modality encoders,
+learned gates, explicit missing-modality masking), but it has only ever been run against torch.randn
+
+===== PDF PAGE 21 =====
+synthetic tensors in scripts/smoke_test.py. This is legitimate scaffold-testing practice, and the
+README is careful to call it a "scaffold" — but any bullet point or slide describing it should say
+"engineering scaffold, unit-tested, not yet trained" explicitly, since a reader skimming a feature list
+("gated multimodal neural network...") could easily infer real multimodal performance exists.
+
+5. Product / UX Notes (Streamlit diagnostic portal,
+
+scripts/ovarian_diagnostic_portal.py)
+
+     ●​ [Moderate] The benchmark numbers (86.43% / 82.70% / 90.20%) are shown prominently in the
+          UI with no N or endpoint definition next to them — only a small caption elsewhere on the
+          page names the feature set. Recommend surfacing "Trained and validated on N=113 (52
+          early-stage cancer, 61 benign/control); external validation pending" directly adjacent to the
+          benchmark numbers. A clinician-facing tool in a healthcare competition will be judged
+          partly on whether it is honest about its own evidence base in the interface itself, not just in a
+          technical appendix nobody in the room will read.
+
+     ●​ [Moderate] The risk output uses a fixed 0.50 probability cutoff with a binary "CRITICAL /
+          LOW RISK" label. The team's own enhancement benchmark found that a tuned (non-0.5)
+          threshold improves balanced accuracy meaningfully. Recommend exposing a "high
+          sensitivity" vs. "high specificity" operating-point toggle, with the sensitivity/specificity
+          tradeoff shown, rather than one hardcoded cut presented as if it were the only option.
+
+     ●​ [Low] No calibration or confidence indicator is shown alongside the point probability.
+     ●​ [Low] The bulk-upload path silently substitutes population-median defaults for missing
+
+          Age/CA-125 but does not flag, in the output results table, which rows used a default vs. a
+          measured value. Recommend adding an "imputed" flag column so a clinician reviewing a
+          batch of results can tell which predictions rest on population defaults.
+     ●​ [Low] No audit log of predictions made through the portal — worth adding both for internal
+          QA and because prediction logging is standard practice ahead of any future regulatory
+          documentation.
+
+6. Governance and Compliance Notes
+
+     ●​ [Low] No explicit statement anywhere in the repository about the IRB/human-subjects status
+          of using public GEO datasets. This is very likely fine as a legal matter (GEO series are
+
+===== PDF PAGE 22 =====
+          de-identified and public), but a one-line statement to that effect is standard practice and
+          something a healthcare-focused judging panel or investor will typically expect to see rather
+          than assume.
+     ●​ [Low] No DATA_SOURCES.md documenting the citation/reuse terms of each GEO series and
+          the eLife supplement individually — most allow reuse with citation, but this should be
+          confirmed and recorded per source rather than assumed.
+     ●​ [Low, see 3.2] No LICENSE file for the codebase itself.
+
+7. Prioritized Action List (ranked, before the
+
+competition deadline)
+
+     1.​ Present the full endpoint comparison table (Section 1.1 here / Section 4 of the methodology
+          document) rather than the single best number.
+
+     2.​ Fix the two Streamlit portal transparency gaps (endpoint/N visible in-UI; imputed-value flag
+          on bulk results) — cheap, high-credibility fixes.
+
+     3.​ Reword every "gated multimodal neural network" mention in pitch text to state plainly it is
+          untrained scaffold code.
+
+     4.​ Initialize git and commit now, so provenance can be shown for every reported number.
+     5.​ Write the one-page RESULTS_INDEX.md mapping headline claims to exact
+
+          scripts/commands/outputs.
+     6.​ Re-run the 113-patient endpoint with feature selection inside the fold (Section 1.2) and have
+
+          that number ready even if the current one is what's ultimately presented.
+     7.​ Add the calibration plot and decision-curve analysis (see methodology document, Section 6,
+
+          Phase 0).
+     8.​ Start the dbGaP phs000897 access application (methodology document, Section 6, Phase 2) —
+
+          timeline reasons alone justify starting now regardless of the deadline.
+     9.​ Decide, and be ready to explain, which of the interaction-term vs. no-interaction-term
+
+          production models is actually being shipped, given the sensitivity/specificity tradeoff in
+          Section 1.3.
+     10.​ Add a LICENSE file appropriate to whichever business/open-source posture the team
+          intends for the investor track.
+
+===== PDF PAGE 23 =====
+8. Longer-Horizon Suggestions (not urgent for the
+
+pitch, good research directions)
+
+     ●​ Benchmark against other published circulating-miRNA ovarian cancer panels in the
+          literature, not only the project's own historical signature, to contextualize where this
+          signature sits relative to the field.
+
+     ●​ Add probability calibration (Platt scaling or isotonic regression) on top of the existing
+          logistic pipeline before any clinical framing of the output probability as a literal risk
+          percentage.
+
+     ●​ Treat the platform-shift finding (Section 2) as the project's central scientific result, not a side
+          note: across three independent external cohorts, ranking ability survives (AUC 0.77–0.83) but
+          absolute-scale classification does not — this is a genuinely useful, generalizable finding
+          about circulating-miRNA biomarkers across sequencing/array platforms, and is arguably
+          more publishable and more interesting to sophisticated investors than the internal accuracy
+          number itself.
+
+     ●​ Given how consistently every purely statistical fix attempted so far (rank transforms,
+          pairwise ratios, quantile normalization) has failed to rescue external performance, the most
+          credible path forward is prospective, harmonized, multi-site data collection rather than
+          further post-hoc correction of already-collected, heterogeneous public data. This should be
+          the team's central "ask" for both funding and expert clinical collaborators.
+

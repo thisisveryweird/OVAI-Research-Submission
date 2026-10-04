@@ -1,0 +1,167 @@
+{
+  "source": "C:\\Users\\anlup\\OneDrive\\Documents\\GitHub\\OVAI\\Claude Methodology and Errors for Ovarian Cancer Project.pdf",
+  "source_sha256": "cfa82194dbb583cf0373863e186f482fd4dda0c23ab8ce3c28af295287e43de0",
+  "source_bytes": 337463,
+  "pdfinfo_pages": 23,
+  "extracted_pages": 23,
+  "raw_text_sha256": "bb9a6b8b5343a888e42b942998c1f318888f8f8c99673c655ca211ae62b663f8",
+  "commands": [
+    [
+      "pdfinfo",
+      "C:\\Users\\anlup\\OneDrive\\Documents\\GitHub\\OVAI\\Claude Methodology and Errors for Ovarian Cancer Project.pdf"
+    ],
+    [
+      "pdftotext",
+      "-layout",
+      "-enc",
+      "UTF-8",
+      "C:\\Users\\anlup\\OneDrive\\Documents\\GitHub\\OVAI\\Claude Methodology and Errors for Ovarian Cancer Project.pdf",
+      "-"
+    ]
+  ],
+  "tools": {
+    "pdfinfo": "C:\\Users\\anlup\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\pdfinfo.EXE",
+    "pdftotext": "C:\\Program Files\\Git\\mingw64\\bin\\pdftotext.EXE"
+  },
+  "pages": [
+    {
+      "page": 1,
+      "characters": 2811,
+      "replacement_characters": 0,
+      "sha256": "34cf9415a1bfd2dc9c2527f8007c4bd624ab25eff87628abeb558ef3ac928cf9"
+    },
+    {
+      "page": 2,
+      "characters": 2195,
+      "replacement_characters": 0,
+      "sha256": "95fb6dae69f76605f6d2146e9bf7640c589b1e67b8fb3f6a92d917c09e1b6a7e"
+    },
+    {
+      "page": 3,
+      "characters": 2150,
+      "replacement_characters": 0,
+      "sha256": "e14006eacba16c0beb6406a409df6faabae9114e90642606d482bc3d1b71d639"
+    },
+    {
+      "page": 4,
+      "characters": 2524,
+      "replacement_characters": 0,
+      "sha256": "285a519c30a0b3ce5d41e38c543712771d14c8607cfae7d1955161f5631e13bb"
+    },
+    {
+      "page": 5,
+      "characters": 2085,
+      "replacement_characters": 0,
+      "sha256": "35d1a2954f197892b6de574ccc330a3c5a9b06cef0896ca8d5af4839b13b4d73"
+    },
+    {
+      "page": 6,
+      "characters": 2474,
+      "replacement_characters": 0,
+      "sha256": "e57d8c75dff4fc0ec230c4142a637f56c9443c4d420c5c2f09b5f53607495280"
+    },
+    {
+      "page": 7,
+      "characters": 2678,
+      "replacement_characters": 0,
+      "sha256": "86c9a55d1254feeced18db66622f721007591d2da43efa34b2f73b4e6cf35d6e"
+    },
+    {
+      "page": 8,
+      "characters": 2448,
+      "replacement_characters": 0,
+      "sha256": "589e3ebc0d7a7499232fd7a9b0fb6a0c7454960e4bc46c4d58950a458749a460"
+    },
+    {
+      "page": 9,
+      "characters": 2739,
+      "replacement_characters": 0,
+      "sha256": "c9e39caece8b29152f45490776f6ed4d5c1a67739a97101d02bc6177a732fb8e"
+    },
+    {
+      "page": 10,
+      "characters": 2744,
+      "replacement_characters": 0,
+      "sha256": "9a49d8e8a85400d9d6b03a2daff72782c8e4c9b6ac0766e9370806053228d704"
+    },
+    {
+      "page": 11,
+      "characters": 2627,
+      "replacement_characters": 0,
+      "sha256": "660a48c314ba534d54133d6687f003b2b26184e454345f754eeb7ce739e35654"
+    },
+    {
+      "page": 12,
+      "characters": 2303,
+      "replacement_characters": 0,
+      "sha256": "b742da9d73d7c0f852ee3f65bedffba1a2c8b24360707167320e298151c532bd"
+    },
+    {
+      "page": 13,
+      "characters": 1854,
+      "replacement_characters": 0,
+      "sha256": "c7a6d53476bd3c66113ca844f51ed1655c0324113f6aea5dff897895e9ed1196"
+    },
+    {
+      "page": 14,
+      "characters": 881,
+      "replacement_characters": 0,
+      "sha256": "197d01e75fdca92d0f9123836cf5c6bd7b3466a8ea36266b9daca0b2dddadc40"
+    },
+    {
+      "page": 15,
+      "characters": 2319,
+      "replacement_characters": 0,
+      "sha256": "162ba94f6dff1a31a3f55ee8174ec63fe2cbac3da8aff667b7cebfe75f9ca052"
+    },
+    {
+      "page": 16,
+      "characters": 2062,
+      "replacement_characters": 0,
+      "sha256": "d9973839e1764ca792a7c9eb4ecccfd6e5775368de9d4c5ce577046513c4b299"
+    },
+    {
+      "page": 17,
+      "characters": 2661,
+      "replacement_characters": 0,
+      "sha256": "0dfd8d41cc50fbf780224a57c82201b8687f906dce5aa09f4f0b6984c089aa0d"
+    },
+    {
+      "page": 18,
+      "characters": 2513,
+      "replacement_characters": 0,
+      "sha256": "6eceb5fb3e48fdd44967dada97ac6193f4173af4da8f6aacaa634b3993610496"
+    },
+    {
+      "page": 19,
+      "characters": 2557,
+      "replacement_characters": 0,
+      "sha256": "ca778a28ac3914274132e3387f93634a8ebf9c284e7428824f91c0768bfb7f4a"
+    },
+    {
+      "page": 20,
+      "characters": 2771,
+      "replacement_characters": 0,
+      "sha256": "c4ec15cb4b5d78551d3929c6fe67f8db1b5aac0df0fea59470359fc71fc83a74"
+    },
+    {
+      "page": 21,
+      "characters": 2588,
+      "replacement_characters": 0,
+      "sha256": "1132ec1bead220f83c348cdcd3477e4ece9a55977f9960db59d13724df097f58"
+    },
+    {
+      "page": 22,
+      "characters": 2172,
+      "replacement_characters": 0,
+      "sha256": "bd861ce1809f8a85510ffd57d98d91eb6bc84dae891ac3269768dc67a3ba0309"
+    },
+    {
+      "page": 23,
+      "characters": 1590,
+      "replacement_characters": 0,
+      "sha256": "c895131773943256421c5706add560d02afba20b4850fc0d87b8950dd128fa16"
+    }
+  ],
+  "limitations": "Text layer only; images/visual semantics and OCR are not verified."
+}

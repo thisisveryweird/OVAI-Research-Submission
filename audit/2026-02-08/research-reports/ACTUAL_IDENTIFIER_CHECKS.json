@@ -1,0 +1,9 @@
+{
+  "GSE211692_vs_GSE113486": {
+    "exact_title_overlap": 0,
+    "normalized_title_overlap": 0,
+    "examples": [],
+    "donor_independence": "not proved; no donor crosswalk",
+    "method": "actual fresh title-set intersections; not hardcoded"
+  }
+}

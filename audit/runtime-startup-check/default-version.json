@@ -1,0 +1,9 @@
+{
+  "command": [
+    "python",
+    "--version"
+  ],
+  "stdout": "Python 3.14.2\n",
+  "stderr": "",
+  "exit_code": 0
+}

@@ -1,0 +1,13 @@
+path,prior_extraction_mode,extracted_source_line_count,actual_review,direct_source_read,current_sha256,matches_prior_hash,materialized_deep_spans
+scripts/ovarian_diagnostic_portal.py,full_text_read_unexecuted,256,all extracted source lines read,none; current bytes hashed only,5bf5617c1a83dfea6f189b58e57e875b980ea35b71ad5c09d34f58a5b1e174b4,True,67-93; 95-178; 180-219; 222-256
+scripts/export_production_pipeline.py,full_text_read_unexecuted,146,all extracted source lines read,none; current bytes hashed only,4206dd30a92a7a42c88fd025838ba1d321c30535016cbe08c2edbacdf737b10b,True,80-90; 110-155
+scripts/predict_ovarian_risk.py,full_text_read_unexecuted,72,all extracted source lines read,none; current bytes hashed only,da71b9de9e25fc8f6c1bda654ced9bc11110acb612e335dffdf09df9728014ae,True,26-69
+scripts/ovarian_research_demo.py,full_text_read_unexecuted,134,all extracted source lines read,none; current bytes hashed only,f77116679fe9868851c26e770af7e7485c56191e92a3c4995ce2aac0003aee31,True,4-36; 43-55; 82-85
+scripts/demo_ovarian_cases.py,full_text_read_unexecuted,235,all extracted source lines read,none; current bytes hashed only,e69aa076ee47e532e0a365999d0436dd629986a158f1dcd87bde699e5b3f1fba,True,7-46; 52-56; 154-158
+scripts/test_high_capacity_models.py,full_text_read_unexecuted,174,all extracted source lines read,none; current bytes hashed only,8d5f33d3add96e03a1bdf64c04a47bd5207465898a2950e91798cc2c41438a78,True,56-71; 85-98; 117-144
+Launch_Diagnostic_Portal.bat,full_text_read_unexecuted,6,all extracted source lines read,none; current bytes hashed only,3744217a60d0d323ab9ab67fdfe7082c12d8b923fcb0b2b6fbc1258550f13a01,True,1-6
+Launch_Diagnostic_Portal.command,full_text_read_unexecuted,5,all extracted source lines read,none; current bytes hashed only,5b8c39ef6bcc7ae13e9b1fc70da564a84ce8f1358d99da2c1238111bf060480f,True,1-5
+production_artifacts/imputation_defaults.json,full_text_read_unexecuted,9,all extracted source lines read,none; current bytes hashed only,ee2d67c92ebe224b1829d230234d16ff6decf117c76b11d85d16ffa083e287c6,True,1-9
+production_artifacts/manifest.json,full_text_read_unexecuted,27,all extracted source lines read,none; current bytes hashed only,fa411c200093dca0306faac4e54df60c049e7f07d7dca13f508aaf60bfa4c1e6,True,1-27
+production_artifacts/feature_scaler.joblib,static_binary_unexecuted,,prior binary string hits read only,none; current bytes hashed only,5a63f905e2744238cc376ac2aaa776de8d5bcac8574146f2322354d4267c623f,True,
+production_artifacts/frozen_model.joblib,static_binary_unexecuted,,prior binary string hits read only,none; current bytes hashed only,0a3698e97e083d723566127c44abddf671f6cd8722e9b2509ed926e76ddd1989,True,
