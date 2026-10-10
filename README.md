@@ -17,9 +17,9 @@ In a separate cancer vs. non-cancer analysis of the full 179-patient cohort, a r
 
 ### Figure 1. Early-stage model performance
 
-![Five-fold cross-validation performance for early-stage classification](docs/figures/early_stage_results.svg)
+![OVAI early-stage classification metrics from five-fold cross-validation](docs/figures/early_stage_model_performance.png)
 
-The early-stage analysis included 113 GSE94533 samples: 52 Stage I/II cancer cases and 61 benign/control cases. The five-fold cross-validation estimates reported in the abstract are shown above. These are internal estimates from one cohort, not independent validation.
+The early-stage analysis included 113 GSE94533 samples: 52 Stage I/II cancer cases and 61 benign/control cases. The chart shows the four metrics reported in the abstract: ROC-AUC 0.823, balanced accuracy 81.1%, sensitivity 77.1%, and specificity 85.1%. These are internal cross-validation estimates from one cohort, not independent validation. No error bars are shown because fold-level variation was not reported.
 
 ### Figure 2. Evaluation workflow and model structure
 
@@ -31,13 +31,13 @@ A five-miRNA logistic regression pipeline is evaluated with stratified five-fold
 
 ![Comparison of the full-cohort miRNA model and miRNA plus clinical-variable model](docs/figures/full_cohort_comparison.svg)
 
-In the separate cancer-versus-non-cancer analysis, adding age and CA-125 to the 14-miRNA panel increased cross-validated ROC-AUC from 0.779 to 0.813 and accuracy from 70.39% to 73.74%. This analysis uses a different cohort definition and model configuration from the early-stage experiment above.
+In the separate cancer-versus-non-cancer analysis, adding age and CA-125 to the 14-miRNA panel increased cross-validated ROC-AUC from 0.779 to 0.813. This analysis uses a different cohort definition and model configuration from the early-stage experiment above; its results should not be directly compared with Figure 1 as if they came from the same evaluation.
 
 ### Figure 4. External validation and transportability
 
 ![External cohort transportability stress test](docs/figures/external_transportability.svg)
 
-On the independent GSE106817 cohort, the saved evaluation reported ROC-AUC of approximately 0.823, but the frozen source-derived threshold classified every sample as non-cancer, giving 0% sensitivity and 50% balanced accuracy. This demonstrates why an ROC-AUC alone does not establish successful external classification.
+On the independent GSE106817 cohort, the saved evaluation reported ROC-AUC of approximately 0.823, but the frozen source-derived threshold classified every sample as non-cancer, giving 0% sensitivity and 50% balanced accuracy. This highlights why ROC-AUC alone does not establish successful external classification.
 
 ---
 
