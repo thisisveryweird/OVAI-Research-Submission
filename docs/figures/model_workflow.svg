@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="640" viewBox="0 0 1320 640" role="img" aria-labelledby="title desc">
+<title id="title">OVAI early-stage evaluation workflow</title>
+<desc id="desc">113 patient samples enter stratified five-fold cross-validation. For each fold, approximately 80 percent are used for training and 20 percent are held out; training-only preprocessing, feature selection, and logistic regression produce held-out predictions. Predictions across the five folds are used to calculate performance metrics. A separate interface accepts age, CA-125, five miRNA values, or Excel upload.</desc>
+<style>
+.title{font:700 29px Arial,sans-serif;fill:#183153}.sub{font:16px Arial,sans-serif;fill:#52667d}.head{font:700 17px Arial,sans-serif;fill:#183153}.body{font:15px Arial,sans-serif;fill:#2b425a}.small{font:13px Arial,sans-serif;fill:#52667d}.box{stroke:#d4e0ea;stroke-width:1.5}
+</style>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#647f98"/></marker></defs>
+<rect width="1320" height="640" fill="#fff"/>
+<text x="48" y="52" class="title">OVAI: model evaluation workflow</text>
+<text x="48" y="82" class="sub">Early-stage endpoint • circulating miRNA features • stratified five-fold cross-validation</text>
+<rect x="45" y="130" width="235" height="108" rx="13" fill="#edf4fb" class="box"/><text x="162" y="164" text-anchor="middle" class="head">Patient cohort</text><text x="162" y="192" text-anchor="middle" class="body">113 samples</text><text x="162" y="215" text-anchor="middle" class="small">52 cancer • 61 benign/control</text>
+<path d="M280 184 H330" stroke="#647f98" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+<rect x="340" y="130" width="230" height="108" rx="13" fill="#eef7f5" class="box"/><text x="455" y="164" text-anchor="middle" class="head">5-fold split</text><text x="455" y="192" text-anchor="middle" class="body">~80% train</text><text x="455" y="215" text-anchor="middle" class="body">~20% held out</text>
+<path d="M570 184 H620" stroke="#647f98" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+<rect x="630" y="112" width="310" height="145" rx="13" fill="#fff5e8" class="box"/><text x="785" y="145" text-anchor="middle" class="head">Training fold only</text><text x="785" y="176" text-anchor="middle" class="body">Preprocessing + imputation</text><text x="785" y="201" text-anchor="middle" class="body">Five-miRNA feature selection</text><text x="785" y="226" text-anchor="middle" class="body">Fit logistic regression</text>
+<path d="M940 184 H990" stroke="#647f98" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+<rect x="1000" y="130" width="275" height="108" rx="13" fill="#f1eefb" class="box"/><text x="1137" y="164" text-anchor="middle" class="head">Held-out fold</text><text x="1137" y="192" text-anchor="middle" class="body">Generate predictions</text><text x="1137" y="215" text-anchor="middle" class="small">No fitting on held-out data</text>
+<path d="M1137 238 V295 H785 V330" stroke="#647f98" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+<rect x="490" y="340" width="590" height="100" rx="13" fill="#edf7f0" class="box"/><text x="785" y="375" text-anchor="middle" class="head">Aggregate out-of-fold predictions</text><text x="785" y="406" text-anchor="middle" class="body">ROC-AUC • balanced accuracy • sensitivity • specificity</text>
+<rect x="45" y="492" width="1230" height="102" rx="13" fill="#f8fafc" stroke="#d4e0ea" stroke-width="1.5"/><text x="70" y="525" class="head">Separate user interface prototype</text><text x="70" y="554" class="body">Accepts patient age, CA-125, five circulating-miRNA values, or an Excel upload; returns an estimated malignancy probability.</text><text x="70" y="578" class="small">The interface is a research prototype, not a clinically validated diagnostic tool.</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="600" viewBox="0 0 1180 600" role="img" aria-labelledby="title desc">
+<title id="title">Early-stage ovarian cancer classification performance</title>
+<desc id="desc">Reported five-fold cross-validation metrics: ROC-AUC 0.823, balanced accuracy 81.1 percent, sensitivity 77.1 percent and specificity 85.1 percent. Cohort consists of 52 cancer and 61 benign or control samples.</desc>
+<style>
+.title{font:700 29px Arial,sans-serif;fill:#183153}.sub{font:16px Arial,sans-serif;fill:#52667d}.label{font:17px Arial,sans-serif;fill:#253e59}.tick{font:13px Arial,sans-serif;fill:#5b6b7b}.value{font:700 17px Arial,sans-serif;fill:#183153}.section{font:700 18px Arial,sans-serif;fill:#253e59}.note{font:14px Arial,sans-serif;fill:#52667d}
+</style>
+<rect width="1180" height="600" fill="#fff"/>
+<text x="50" y="52" class="title">Early-stage ovarian cancer classification</text>
+<text x="50" y="82" class="sub">GSE94533 • Stage I/II cancer vs. benign/control • five-fold cross-validation</text>
+<text x="50" y="137" class="section">Reported evaluation metrics</text>
+<g fill="none" stroke="#e5ebf1">
+<line x1="330" y1="160" x2="330" y2="390"/><line x1="442" y1="160" x2="442" y2="390"/><line x1="554" y1="160" x2="554" y2="390"/><line x1="666" y1="160" x2="666" y2="390"/><line x1="778" y1="160" x2="778" y2="390"/><line x1="890" y1="160" x2="890" y2="390"/>
+</g>
+<g class="tick" text-anchor="middle"><text x="330" y="412">0.0</text><text x="442" y="412">0.2</text><text x="554" y="412">0.4</text><text x="666" y="412">0.6</text><text x="778" y="412">0.8</text><text x="890" y="412">1.0</text></g>
+<text x="50" y="196" class="label">ROC-AUC</text><rect x="330" y="174" width="460.88" height="31" rx="5" fill="#315f91"/><text x="804" y="195" class="value">0.823</text>
+<text x="50" y="249" class="label">Balanced accuracy</text><rect x="330" y="227" width="454.16" height="31" rx="5" fill="#2a8588"/><text x="797" y="248" class="value">0.811</text>
+<text x="50" y="302" class="label">Sensitivity</text><rect x="330" y="280" width="431.76" height="31" rx="5" fill="#7199c2"/><text x="774" y="301" class="value">0.771</text>
+<text x="50" y="355" class="label">Specificity</text><rect x="330" y="333" width="476.56" height="31" rx="5" fill="#76a69b"/><text x="819" y="354" class="value">0.851</text>
+<line x1="50" y1="445" x2="1130" y2="445" stroke="#dce5ec"/>
+<text x="50" y="478" class="section">Cohort composition</text>
+<text x="50" y="516" class="label">Stage I/II cancer</text><rect x="260" y="494" width="299.12" height="28" rx="4" fill="#315f91"/><text x="570" y="514" class="value">52</text>
+<text x="50" y="557" class="label">Benign/control</text><rect x="260" y="535" width="350.88" height="28" rx="4" fill="#aab8c8"/><text x="622" y="555" class="value">61</text>
+<text x="930" y="520" class="note">n = 113 total</text><text x="930" y="545" class="note">Internal CV only</text>
+</svg>

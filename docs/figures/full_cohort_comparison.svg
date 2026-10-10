@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="560" viewBox="0 0 1180 560" role="img" aria-labelledby="title desc">
+<title id="title">Full cohort ovarian cancer classification comparison</title>
+<desc id="desc">In the 179-sample full cohort analysis, the 14 miRNA model achieved ROC-AUC 0.779 and accuracy 70.39 percent. The model adding age and CA-125 achieved ROC-AUC 0.813 and accuracy 73.74 percent.</desc>
+<style>
+.title{font:700 29px Arial,sans-serif;fill:#183153}.sub{font:16px Arial,sans-serif;fill:#52667d}.head{font:700 17px Arial,sans-serif;fill:#253e59}.label{font:16px Arial,sans-serif;fill:#253e59}.value{font:700 16px Arial,sans-serif;fill:#183153}.tick{font:13px Arial,sans-serif;fill:#5b6b7b}.note{font:14px Arial,sans-serif;fill:#52667d}
+</style>
+<rect width="1180" height="560" fill="#fff"/><text x="50" y="52" class="title">Full-cohort model comparison</text><text x="50" y="82" class="sub">Separate cancer-vs-non-cancer analysis • GSE94533 • 179 samples (96 cancer, 83 non-cancer)</text>
+<text x="50" y="140" class="head">ROC-AUC (bar axis begins at 0.50)</text>
+<g fill="none" stroke="#e5ebf1"><line x1="300" y1="160" x2="300" y2="350"/><line x1="445" y1="160" x2="445" y2="350"/><line x1="590" y1="160" x2="590" y2="350"/><line x1="735" y1="160" x2="735" y2="350"/><line x1="880" y1="160" x2="880" y2="350"/></g>
+<g class="tick" text-anchor="middle"><text x="300" y="372">0.5</text><text x="445" y="372">0.6</text><text x="590" y="372">0.7</text><text x="735" y="372">0.8</text><text x="880" y="372">0.9</text></g>
+<text x="50" y="208" class="label">14 miRNAs</text><rect x="300" y="185" width="404.55" height="36" rx="5" fill="#7894b6"/><text x="715" y="208" class="value">0.779</text><text x="930" y="208" class="value">Accuracy 70.39%</text>
+<text x="50" y="295" class="label">14 miRNAs + age + CA-125</text><rect x="300" y="272" width="453.98" height="36" rx="5" fill="#238984"/><text x="765" y="295" class="value">0.813</text><text x="930" y="295" class="value">Accuracy 73.74%</text>
+<line x1="50" y1="405" x2="1130" y2="405" stroke="#dce5ec"/><text x="50" y="442" class="head">Interpretation</text><text x="50" y="470" class="label">Adding age and CA-125 increased ROC-AUC by 0.034 and accuracy by 3.35 percentage points.</text><text x="50" y="506" class="note">This is a separate endpoint and analysis from Stage I/II vs. benign/control. It is not independent external validation.</text>
+</svg>
