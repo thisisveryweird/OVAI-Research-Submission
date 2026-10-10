@@ -1,5 +1,0 @@
-path,purpose
-audit/resume-verification/final-check/verify.py,Standalone stdlib bounded verifier with tiny fixtures
-audit/resume-verification/final-check/SUMMARY.json,Compact computed counts issues and attributed evidence
-audit/resume-verification/final-check/REPORT.md,Completed and pending scope with repair authorization false
-audit/resume-verification/final-check/FILES_CREATED.csv,Exact inventory of newly created artifacts

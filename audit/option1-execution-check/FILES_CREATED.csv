@@ -1,8 +1,0 @@
-path
-audit/option1-execution-check/REPORT.md
-audit/option1-execution-check/safe_capture.py
-audit/option1-execution-check/test_output.txt
-audit/option1-execution-check/git_evidence.txt
-audit/option1-execution-check/inputs_sha256.json
-audit/option1-execution-check/FINAL.md
-audit/option1-execution-check/FILES_CREATED.csv

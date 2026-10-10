@@ -1,8 +1,0 @@
-disease_state,GEO_stage_label,n_samples,stage_system_explicitly_FIGO
-ovarian cancer,0,0,False
-ovarian cancer,1,131,False
-ovarian cancer,2,37,False
-ovarian cancer,3,214,False
-ovarian cancer,4,0,False
-ovarian cancer,NA,18,False
-ovarian cancer,missing,0,False
