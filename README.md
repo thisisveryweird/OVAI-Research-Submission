@@ -33,6 +33,12 @@ A five-miRNA logistic regression pipeline is evaluated with stratified five-fold
 
 In the separate cancer-versus-non-cancer analysis, adding age and CA-125 to the 14-miRNA panel increased cross-validated ROC-AUC from 0.779 to 0.813 and accuracy from 70.39% to 73.74%. This analysis uses a different cohort definition and model configuration from the early-stage experiment above.
 
+### Figure 4. External validation and transportability
+
+![External cohort transportability stress test](docs/figures/external_transportability.svg)
+
+On the independent GSE106817 cohort, the saved evaluation reported ROC-AUC of approximately 0.823, but the frozen source-derived threshold classified every sample as non-cancer, giving 0% sensitivity and 50% balanced accuracy. This demonstrates why an ROC-AUC alone does not establish successful external classification.
+
 ---
 
 *OVAI is a research prototype. Results are preliminary and are not intended for clinical decision-making.*

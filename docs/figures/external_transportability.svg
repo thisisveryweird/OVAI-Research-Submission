@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="600" viewBox="0 0 1180 600" role="img" aria-labelledby="title desc">
+<title id="title">External validation and transportability stress test</title>
+<desc id="desc">A model trained on GSE94533 is applied to independent GSE106817. ROC-AUC is 0.823, but at the frozen training-derived threshold it predicts every sample as non-cancer, producing zero sensitivity, 100 percent specificity, and 50 percent balanced accuracy. This indicates a threshold and transportability failure rather than successful external classification.</desc>
+<style>
+.title{font:700 29px Arial,sans-serif;fill:#183153}.subtitle{font:16px Arial,sans-serif;fill:#52667d}.metric-label{font:15px Arial,sans-serif;fill:#52667d}.metric{font:700 30px Arial,sans-serif;fill:#183153}.section{font:700 18px Arial,sans-serif;fill:#253e59}.label{font:15px Arial,sans-serif;fill:#253e59}.small{font:13px Arial,sans-serif;fill:#52667d}.notehead{font:700 16px Arial,sans-serif;fill:#8b3d2e}.notetext{font:14px Arial,sans-serif;fill:#704536}
+</style>
+<rect width="1180" height="600" fill="#ffffff"/>
+<text x="48" y="49" class="title">External validation: ranking signal, threshold failure</text>
+<text x="48" y="79" class="subtitle">Train on GSE94533 → test on independent serum cohort GSE106817</text>
+<text x="48" y="104" class="subtitle">3,108 external samples: 320 cancer and 2,788 non-cancer</text>
+
+<g>
+  <rect x="48" y="130" width="250" height="108" rx="13" fill="#edf4fb" stroke="#d5e2ef"/>
+  <text x="68" y="161" class="metric-label">ROC-AUC</text>
+  <text x="68" y="207" class="metric">0.823</text>
+  <rect x="326" y="130" width="250" height="108" rx="13" fill="#fff0ed" stroke="#efd6d0"/>
+  <text x="346" y="161" class="metric-label">Sensitivity</text>
+  <text x="346" y="207" class="metric">0.0%</text>
+  <rect x="604" y="130" width="250" height="108" rx="13" fill="#edf7f0" stroke="#d5e7dc"/>
+  <text x="624" y="161" class="metric-label">Specificity</text>
+  <text x="624" y="207" class="metric">100.0%</text>
+  <rect x="882" y="130" width="250" height="108" rx="13" fill="#fff6e3" stroke="#eee0ba"/>
+  <text x="902" y="161" class="metric-label">Balanced accuracy</text>
+  <text x="902" y="207" class="metric">50.0%</text>
+</g>
+
+<text x="48" y="282" class="section">Actual cohort labels</text>
+<rect x="48" y="300" width="1084" height="35" rx="5" fill="#edf1f5"/>
+<rect x="48" y="300" width="111.7" height="35" rx="5" fill="#cb735f"/>
+<rect x="159.7" y="300" width="972.3" height="35" rx="2" fill="#8da0b4"/>
+<text x="48" y="359" class="label">Cancer: 320 (10.3%)</text>
+<text x="1132" y="359" text-anchor="end" class="label">Non-cancer: 2,788 (89.7%)</text>
+
+<text x="48" y="402" class="section">Predictions at the frozen source-derived threshold</text>
+<rect x="48" y="420" width="1084" height="35" rx="5" fill="#8da0b4"/>
+<text x="48" y="478" class="label">Cancer predicted: 0</text>
+<text x="1132" y="478" text-anchor="end" class="label">Non-cancer predicted: 3,108</text>
+
+<rect x="48" y="504" width="1084" height="68" rx="11" fill="#fff4ef" stroke="#ebc3b8"/>
+<text x="68" y="531" class="notehead">Interpretation</text>
+<text x="68" y="553" class="notetext">ROC-AUC measures ranking across thresholds; it does not guarantee a usable classification threshold.</text>
+<text x="48" y="591" class="small">This stress test documents limited transportability under cohort/platform shift. It is not evidence of successful external diagnostic validation.</text>
+</svg>
