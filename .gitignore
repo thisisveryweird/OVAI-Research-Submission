@@ -1,0 +1,34 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/raw/
+data/interim/
+data/processed/
+data/external/
+models/*.joblib
+models/*.pt
+models/*.pth
+reports/logs/
+reports/figures/
+
+# Generated research outputs
+reports/tables/
+
+# Temporary/backup scripts
+*.before_*
+*.broken_indent_backup
+
+# Local environment / OS files
+.env
+.env.*
+*.swp
+*.swo
+.DS_Store
+
+# Local experiment outputs
+models/
+
+# Large external raw datasets
+research/cohort_expansion/data/raw/GSE211692/GSE211692_processed_data_matrix.txt.gz
+research/cohort_expansion/data/raw/GSE113486/GSE113486_RAW.tar

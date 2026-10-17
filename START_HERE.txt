@@ -1,0 +1,20 @@
+OVAI — START HERE (GitHub Codespaces)
+
+RUN THE FROZEN PREDICTION APP
+1. Open this repository on GitHub and switch to the anthony branch.
+2. Click Code → Codespaces → Create codespace on anthony.
+3. In the Codespaces terminal, run:
+   python -m pip install --upgrade pip
+   python -m pip install -r requirements-portal.txt
+4. Start the app:
+   python -m streamlit run scripts/ovarian_diagnostic_portal.py --server.address 0.0.0.0 --server.port 8501 --browser.gatherUsageStats false
+5. Open forwarded port 8501 from the Codespaces Ports tab.
+
+Keep the terminal process running while using the app. Press Ctrl+C to stop it.
+See README.md for troubleshooting and project details.
+
+OPTIONAL: RUN THE RESEARCH BASELINE
+The broader data-ingestion/baseline pipeline is separate from the interactive frozen-model portal and may download public GEO data. Follow the relevant scripts' instructions before running it.
+
+SAFETY
+Use synthetic or properly de-identified test data. OVAI is a research prototype, not a clinical diagnostic tool. Do not use outputs as medical advice or to make clinical decisions.
