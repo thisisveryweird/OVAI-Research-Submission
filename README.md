@@ -25,9 +25,9 @@ In a separate cancer vs. non-cancer testing of the full 179-patient cohort, a re
 
 ### 1. Open the repository in Codespaces
 
-1. Open this repository on GitHub and select the `anthony` branch.
+1. Open this repository on GitHub and select the `main` branch.
 2. Click **Code → Codespaces**.
-3. Click **Create codespace on anthony**.
+3. Click **Create codespace on main**.
 
 ### 2. Install the app's dependencies
 
