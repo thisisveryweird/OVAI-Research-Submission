@@ -75,15 +75,6 @@ Each point represents one patient from the 113-sample early-stage cohort (52 Sta
 
 The best reported ROC-AUC rose from 0.749 in Phase 6 to 0.827 in Phase 9, while the best balanced accuracy rose from 72.29% to 80.94%. Differences in evaluation for each version may exist, potentially making this data better used as evidence of development history.
 
-
-## ROC-AUC comparison
-
-![Phase 8 reported ROC-AUC values for six candidate models](images/phase8_roc_auc_comparison.png)
-
-[PDF](images/phase8_roc_auc_comparison.pdf) · [SVG](images/phase8_roc_auc_comparison.svg)
-
-The six Phase 8 candidate models have reported ROC-AUC values between 0.812 and 0.825. At the moment, these small differences do not establish that one model is statistically superior than another.
-
 ## Sensitivity Specificity Trade-Offs
 
 ![Phase 8 sensitivity and specificity at the reported operating points](images/phase8_sensitivity_specificity_tradeoff.png)
