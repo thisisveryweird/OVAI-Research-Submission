@@ -43,7 +43,7 @@ python -m pip install -r requirements-portal.txt
 Run:
 
 ```bash
-python -m streamlit run scripts/ovarian_diagnostic_portal.py --server.address 0.0.0.0 --server.port 8501 --browser.gatherUsageStats false
+python -m streamlit run scripts/ovarian_diagnostic_portal_final.py --server.address 0.0.0.0 --server.port 8501 --browser.gatherUsageStats false
 ```
 
 Codespaces should detect port **8501** and show a notification to open the forwarded app. If it does not, open the **Ports** tab, find port `8501`, and click its browser/open icon. Do not delete the terminal process while running the app.
