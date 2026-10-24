@@ -60,6 +60,7 @@ Codespaces should detect port **8501** and show a notification to open the forwa
 Blue = Repeated nested selection (leakage-safe reimplementation)
 Grey = Abstract-reported estimate; protocol not fully reconciled
 Orange = Leakage-prone full-cohort feature selection
+
 The repeated nested-selection reimplementation yielded a mean ROC-AUC of 0.775 (SD 0.023 across 20 randomized splits), while the abstract reports 0.823. Results near 0.89 were obtained after selecting the miRNA panel using all 113 patients.
 
 ## miR-200 Biomarker Signal
@@ -79,6 +80,7 @@ Each point represents one patient from the 113-sample early-stage cohort (52 Sta
 Orange = Stacked logistic ensemble - highest sensitivity (82.91%)
 Blue = Regularized logistic regression - highest balanced accuracy (81.11%)
 Grey = Other Phase 8 candidates
+
 Each point represents one model at its reported decision threshold, not a full threshold curve. The stacked logistic ensemble had 82.91% sensitivity but 70.38% specificity, whereas regularized logistic regression had 77.09% sensitivity and 85.13% specificity.
 
 ## Repeated Split ROC
