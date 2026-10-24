@@ -67,14 +67,6 @@ The repeated nested-selection reimplementation yielded a mean ROC-AUC of 0.775 (
 
 Each point represents one patient from the 113-sample early-stage cohort (52 Stage I/II cancers and 61 benign/control samples), with measurements shown as log(1 + TPM) and median/IQR overlays. The right panel shows feature-selection frequency across the 100 training folds.
 
-## Model Development History
-
-![Best reported ROC-AUC and balanced accuracy by development phase](images/model_development_history.png)
-
-[PDF](images/model_development_history.pdf) · [SVG](images/model_development_history.svg)
-
-The best reported ROC-AUC rose from 0.749 in Phase 6 to 0.827 in Phase 9, while the best balanced accuracy rose from 72.29% to 80.94%. Differences in evaluation for each version may exist, potentially making this data better used as evidence of development history.
-
 ## Sensitivity Specificity Trade-Offs
 
 ![Phase 8 sensitivity and specificity at the reported operating points](images/phase8_sensitivity_specificity_tradeoff.png)
