@@ -21,6 +21,9 @@ In a separate cancer vs. non-cancer testing of the full 179-patient cohort, a re
 
 **Keywords:** Ovarian cancer; Early-stage detection; Circulating microRNA; Machine learning; Biomarker discovery; Computational oncology; CA-125
 
+## Additional Information/Pitch Deck:
+https://docs.google.com/presentation/d/1u8Ya0-vP86BKGIvbIwPzPQ1i-PLaRbbU1QoDiPfU6pY/edit?usp=sharing
+
 ## How to Run
 
 ### 1. Open the repository in Codespaces
