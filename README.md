@@ -2,7 +2,7 @@
 
 Research prototype for studying how combining symptomatic and clinical data can improve detection of early-stage epithelial ovarian cancer.
 
-## Research abstract
+## Research Abstract
 
 **Title:** *OVAI: Evaluating Machine Learning for Ovarian Cancer Classification Using Circulating microRNAs and Clinical Variables*
 
